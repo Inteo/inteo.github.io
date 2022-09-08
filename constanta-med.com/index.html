@@ -17,7 +17,7 @@
     <link href="f/css/main.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="bg-light top-navigation text-xs">
+    <nav class="bg-light top-navigation text-xs d-none d-lg-block">
         <div class="container">
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
@@ -47,17 +47,38 @@
         <div class="header__main-menu">
             <div class="container">
                 <div class="intro d-flex justify-content-between align-items-center">
-                    <div class="intro__logo">
+                    <div class="intro__menu d-lg-none flex-grow-0">
+                        <span class="menu-toggle"><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span>
+                    </div>
+                    <div class="intro__logo flex-grow-1">
                         <a href="/"><img src="f/i/logo.svg" alt="Константа Life"></a>
                     </div>
                     <div class="intro__actions d-flex align-items-center">
-                        <div class="intro__address text-xs">
+                        <div class="intro__address text-xs d-none d-lg-block">
                             <b><a href="tel:+74852778899">+7 (4852) 77-88-99</a></b>
                             Ярославль, ул. Победы, 14
                         </div>
                         <div class="intro__buttons d-flex">
-                            <a href="#" class="btn btn-outline-primary">Заказать звонок</a>
-                            <a href="#" class="btn btn-danger">Записаться онлайн</a>
+                            <a href="#" class="btn btn-outline-primary">
+                                <span class="d-lg-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.69 18.46" width="14" height="15">
+                                        <path d="M.05,3.82C.34,1.67,2.44-.32,3.94,0,4.9.27,5.32,2,5.62,3.21s0,1.72-.61,2-1.9.54-1.81,1.18c.26,1.88,3,6.58,4.47,7.74.52.4,1.39-.6,1.93-1s1.1-.39,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.22,1.47C4.1,16.39-.55,8.34.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
+                                        <path d="M9.35,1.73a7.67,7.67,0,0,1,5.43,9.39" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
+                                        <path d="M8.62,4.45a4.85,4.85,0,0,1,3.44,5.94" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
+                                        <path d="M7.93,7A2.18,2.18,0,0,1,9.47,9.7" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
+                                    </svg>
+                                </span>
+                                <span class="d-none d-lg-inline">Заказать звонок</span></a>
+                            <a href="#" class="btn btn-danger">
+                                <span class="d-lg-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.73 18.46" width="13" height="15">
+                                        <path d="M.05,3.82C.34,1.67,2.44-.31,3.94,0,4.91.28,5.32,2,5.61,3.21s0,1.72-.6,2-1.9.53-1.81,1.18c.26,1.87,3,6.57,4.47,7.73.52.4,1.39-.6,1.93-1s1.1-.4,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.21,1.47C4.1,16.39-.55,8.35.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
+                                        <line x1="8.79" y1="8.31" x2="14.08" y2="5.26" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.295699954032898px"/>
+                                        <polygon points="9.2 6.34 7.69 8.95 10.71 8.95 9.2 6.34" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.4891999959945679px"/>
+                                    </svg>
+                                </span>
+                                <span class="d-none d-lg-inline">Записаться онлайн</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +89,7 @@
                 <div class="container">
                     <div class="navigation-decor">
                         <div class="navigation d-flex justify-content-between">
-                            <div class="menu">
+                            <div class="menu d-none d-lg-block">
                                 <ul class="nav">
                                     <li class="nav-item nav-item_main"><a href="#" class="nav-link" data-open-menu><span class="menu-toggle menu-toggle_small"><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span> Услуги</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Лечение боли</a></li>
@@ -95,7 +116,7 @@
                                     <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
                                 </ul>
                             </div>
-                            <div class="search">
+                            <div class="search d-none d-lg-block">
                                 <a href="#" class="search__link text-sm d-flex align-items-center">
                                     <span class="icon icon_search">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.67 7.67">
@@ -114,7 +135,7 @@
                 </div>
             </div>
         </div>
-        <div class="header__extra-menu bg-light" data-menu>
+        <div class="header__extra-menu bg-light d-none d-lg-block" data-menu>
             <div class="header__extra-menu-holder scrollbar scrollbar_dark">
                 <div class="container">
                     <div class="tabs">
@@ -260,7 +281,7 @@
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="main-presentation__slide main-presentation__slide_light d-flex align-items-center swiper-lazy" data-background="f/i/bnr1.jpg">
+                                    <div class="main-presentation__slide main-presentation__slide_light d-flex align-items-end align-items-lg-center swiper-lazy" data-background="f/i/bnr1.jpg">
                                         <div class="swiper-lazy-preloader">
                                             <div class="heart-rate">
                                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73" xml:space="preserve">
@@ -275,11 +296,11 @@
                                                 <div class="main-presentation__event">
                                                     <span class="icon-block d-inline-block">
                                                         <span class="icon-block__icon font-bold text-center d-inline-block">%</span>
-                                                        <span class="text-sm font-medium">Экономия 1560 ₽</span>
+                                                        <span class="text-xxxs text-lg-sm font-medium">Экономия 1560 ₽</span>
                                                     </span>
                                                 </div>
-                                                <p class="main-presentation__title font-medium text-xxxl">Здоровое сердце - скидка 20%</p>
-                                                <p class="text-sm">Диагностическая программа, нацеленная на комплексную проверку сердечно-сосудистой системы, включая консультацию кардиолога высшей категории и забор базовых анализов</p>
+                                                <p class="main-presentation__title font-medium text-xxl text-lg-xxxxl">Здоровое сердце - скидка 20%</p>
+                                                <p class="d-none d-lg-block text-sm">Диагностическая программа, нацеленная на комплексную проверку сердечно-сосудистой системы, включая консультацию кардиолога высшей категории и забор базовых анализов</p>
                                                 <div class="main-presentation__actions d-flex flex-wrap">
                                                     <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
                                                     <a href="#" class="btn btn-outline-primary btn-light text-uppercase text-xxs font-medium">Подробнее</a>
@@ -289,7 +310,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="main-presentation__slide d-flex align-items-center swiper-lazy" data-background="f/i/bnr2.jpg">
+                                    <div class="main-presentation__slide d-flex align-items-end align-items-lg-center swiper-lazy" data-background="f/i/bnr2.jpg">
                                         <div class="swiper-lazy-preloader">
                                             <div class="heart-rate">
                                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73" xml:space="preserve">
@@ -304,11 +325,11 @@
                                                 <div class="main-presentation__event">
                                                     <span class="icon-block d-inline-block">
                                                         <span class="icon-block__icon font-bold text-center d-inline-block">%</span>
-                                                        <span class="text-sm font-medium">Экономия 1560 ₽</span>
+                                                        <span class="text-xxxs text-lg-sm font-medium">Экономия 1560 ₽</span>
                                                     </span>
                                                 </div>
-                                                <p class="main-presentation__title font-medium text-xxxl">Здоровое сердце - скидка 20%</p>
-                                                <p class="text-sm">Диагностическая программа, нацеленная на комплексную проверку сердечно-сосудистой системы, включая консультацию кардиолога высшей категории и забор базовых анализов</p>
+                                                <p class="main-presentation__title font-medium text-xxl text-lg-xxxxl">Здоровое сердце - скидка 20%</p>
+                                                <p class="d-none d-lg-block text-sm">Диагностическая программа, нацеленная на комплексную проверку сердечно-сосудистой системы, включая консультацию кардиолога высшей категории и забор базовых анализов</p>
                                                 <div class="main-presentation__actions d-flex flex-wrap">
                                                     <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
                                                     <a href="#" class="btn btn-outline-primary text-uppercase text-xxs">Подробнее</a>
@@ -320,8 +341,8 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev d-none d-lg-block"></div>
+                        <div class="swiper-button-next d-none d-lg-block"></div>
                     </div>
                     <script>
                       const mainswiper = new Swiper('.main-presentation .swiper', {
@@ -408,71 +429,134 @@
                           });
                         </script>
                     </div>
-                    <div class="tab-content" id="menuTabContent">
+                    <div class="tab-content text-sm text-lg-default" id="menuTabContent">
                         <div class="tab-pane fade show active" id="section1-tab-pane" role="tabpanel" aria-labelledby="section1-tab" tabindex="0">
-                            <ul class="nav-content">
-                                <li><a href="#" class="nav-content__link">Дерматология</a></li>
-                                <li><a href="#" class="nav-content__link">Неврология</a></li>
-                                <li><a href="#" class="nav-content__link">Отоларингология</a></li>
-                                <li><a href="#" class="nav-content__link">Офтальмология</a></li>
-                                <li><a href="#" class="nav-content__link">Педиатрия</a></li>
-                                <li><a href="#" class="nav-content__link nav-content__link_parent" data-bs-toggle="collapse" data-bs-target="#subSection1" aria-expanded="false" aria-controls="subSection1">Дополнительные услуги</a>
-                                    <div class="nav-content__submenu collapse" id="subSection1">
-                                        <ul>
-                                            <li><a href="#" class="nav-content__link">Вакцинация</a></li>
-                                            <li><a href="#" class="nav-content__link">Справки</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection1" aria-expanded="false" aria-controls="mSection1">Лечение боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="mSection1">
+                                    <ul class="nav-content">
+                                        <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        <li><a href="#" class="nav-content__link">Отоларингология</a></li>
+                                        <li><a href="#" class="nav-content__link">Офтальмология</a></li>
+                                        <li><a href="#" class="nav-content__link">Педиатрия</a></li>
+                                        <li><a href="#" class="nav-content__link nav-content__link_parent" data-bs-toggle="collapse" data-bs-target="#subSection1" aria-expanded="false" aria-controls="subSection1">Дополнительные услуги <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                            <div class="nav-content__submenu collapse" id="subSection1">
+                                                <ul>
+                                                    <li><a href="#" class="nav-content__link">Вакцинация</a></li>
+                                                    <li><a href="#" class="nav-content__link">Справки</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="section2-tab-pane" role="tabpanel" aria-labelledby="section2-tab" tabindex="0">
-                            <ul class="nav-content">
-                                <li><a href="#" class="nav-content__link">Дерматология</a></li>
-                                <li><a href="#" class="nav-content__link">Неврология</a></li>
-                            </ul>
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection2" aria-expanded="false" aria-controls="mSection2">Для взрослых <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="mSection2">
+                                    <ul class="nav-content">
+                                        <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="section3-tab-pane" role="tabpanel" aria-labelledby="section3-tab" tabindex="0">
-                            <ul class="nav-content">
-                                <li><a href="#" class="nav-content__link">Дерматология</a></li>
-                                <li><a href="#" class="nav-content__link">Неврология</a></li>
-                            </ul>
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection3" aria-expanded="false" aria-controls="mSection3">Для детей <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="mSection3">
+                                    <ul class="nav-content">
+                                        <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="section4-tab-pane" role="tabpanel" aria-labelledby="section4-tab" tabindex="0">
-                            <ul class="nav-content">
-                                <li><a href="#" class="nav-content__link">Дерматология</a></li>
-                                <li><a href="#" class="nav-content__link">Неврология</a></li>
-                            </ul>
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection4" aria-expanded="false" aria-controls="mSection4">Программы <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="mSection4">
+                                    <ul class="nav-content">
+                                        <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="section5-tab-pane" role="tabpanel" aria-labelledby="section5-tab" tabindex="0">
-                            <ul class="nav-content">
-                                <li><a href="#" class="nav-content__link">Дерматология</a></li>
-                                <li><a href="#" class="nav-content__link">Неврология</a></li>
-                            </ul>
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection5" aria-expanded="false" aria-controls="mSection5">Стоматология <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="mSection5">
+                                    <ul class="nav-content">
+                                        <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="section6-tab-pane" role="tabpanel" aria-labelledby="section6-tab" tabindex="0">
-                            <ul class="nav-content">
-                                <li><a href="#" class="nav-content__link">Дерматология</a></li>
-                                <li><a href="#" class="nav-content__link">Неврология</a></li>
-                            </ul>
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection6" aria-expanded="false" aria-controls="mSection6">Диагностика <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="mSection6">
+                                    <ul class="nav-content">
+                                        <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="section7-tab-pane" role="tabpanel" aria-labelledby="section7-tab" tabindex="0">
-                            <ul class="nav-content">
-                                <li><a href="#" class="nav-content__link">Дерматология</a></li>
-                                <li><a href="#" class="nav-content__link">Неврология</a></li>
-                            </ul>
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection7" aria-expanded="false" aria-controls="mSection7">Анализы <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="mSection7">
+                                    <ul class="nav-content">
+                                        <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="section8-tab-pane" role="tabpanel" aria-labelledby="section8-tab" tabindex="0">
-                            <ul class="nav-content">
-                                <li><a href="#" class="nav-content__link">Дерматология</a></li>
-                                <li><a href="#" class="nav-content__link">Неврология</a></li>
-                            </ul>
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection8" aria-expanded="false" aria-controls="mSection8">Выезд на дом <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="mSection8">
+                                    <ul class="nav-content">
+                                        <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="section9-tab-pane" role="tabpanel" aria-labelledby="section9-tab" tabindex="0">
-                            <ul class="nav-content">
-                                <li><a href="#" class="nav-content__link">Дерматология</a></li>
-                                <li><a href="#" class="nav-content__link">Неврология</a></li>
-                            </ul>
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection9" aria-expanded="false" aria-controls="mSection9">Covid-19 <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="mSection9">
+                                    <ul class="nav-content">
+                                        <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -486,144 +570,148 @@
         <div class="doctor-list bg-light">
             <div class="container">
                 <div class="row align-items-end header-links">
-                    <div class="col"><h2 class="text-uppercase"><span>Команда</span> врачей</h2></div>
-                    <div class="col-auto">
-                        <a href="#" class="more">Смотреть всех врачей</a>
+                    <div class="col-12 col-lg"><h2 class="text-uppercase"><span>Команда</span> врачей</h2></div>
+                    <div class="col-12 col-lg-auto">
+                        <a href="#" class="more">
+                            <span class="d-none d-lg-inline">Смотреть всех врачей</span>
+                            <span class="d-lg-none text-sm">Все врачи</span>
+                        </a>
                     </div>
                 </div>
                 <div class="swiper-container swiper-container_small">
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="doctor-card d-flex">
+                                <div class="doctor-card d-lg-flex">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
                                         <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
-                                        <div class="doctor-card__actions d-flex">
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
                                             <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
-                                            <a href="#" class="btn btn-link text-xxs font-medium">Профиль врача</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-flex">
+                                <div class="doctor-card d-lg-flex">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
                                         <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
-                                        <div class="doctor-card__actions d-flex">
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
                                             <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
-                                            <a href="#" class="btn btn-link text-xxs font-medium">Профиль врача</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-flex">
+                                <div class="doctor-card d-lg-flex">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
                                         <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
-                                        <div class="doctor-card__actions d-flex">
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
                                             <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
-                                            <a href="#" class="btn btn-link text-xxs font-medium">Профиль врача</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-flex">
+                                <div class="doctor-card d-lg-flex">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
                                         <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
-                                        <div class="doctor-card__actions d-flex">
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
                                             <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
-                                            <a href="#" class="btn btn-link text-xxs font-medium">Профиль врача</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-flex">
+                                <div class="doctor-card d-lg-flex">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
                                         <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
-                                        <div class="doctor-card__actions d-flex">
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
                                             <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
-                                            <a href="#" class="btn btn-link text-xxs font-medium">Профиль врача</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-flex">
+                                <div class="doctor-card d-lg-flex">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
                                         <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
-                                        <div class="doctor-card__actions d-flex">
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
                                             <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
-                                            <a href="#" class="btn btn-link text-xxs font-medium">Профиль врача</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-flex">
+                                <div class="doctor-card d-lg-flex">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
                                         <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
-                                        <div class="doctor-card__actions d-flex">
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
                                             <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
-                                            <a href="#" class="btn btn-link text-xxs font-medium">Профиль врача</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-flex">
+                                <div class="doctor-card d-lg-flex">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
                                         <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
-                                        <div class="doctor-card__actions d-flex">
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
                                             <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
-                                            <a href="#" class="btn btn-link text-xxs font-medium">Профиль врача</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination d-lg-none"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
@@ -631,13 +719,16 @@
                   const docswiper = new Swiper('.doctor-list .swiper', {
                     preloadImages: false,
                     slidesPerView: 1,
-                    spaceBetween: 12,
+                    spaceBetween: 15,
                     lazy: {
                       loadPrevNext: true,
                       loadPrevNextAmount: 1
                     },
                     loop: false,
-                    pagination: false,
+                    pagination: {
+                      el: '.doctor-list .swiper-pagination',
+                      //dynamicBullets: true
+                    },
                     watchSlidesProgress: true,
                     breakpoints: {
                       1200: {
@@ -658,7 +749,7 @@
                     <div class="col"><h2 class="text-uppercase about__short"><span>Константа</span> <span class="important">Life</span> - <br>клиника лечения боли</h2></div>
                 </div>
                 <p class="about__short">Мы лечим самые сложные болевые синдромы по мировым стандартам лечения и протоколам ведущих ассоциаций Европы и Америки.</p>
-                <div class="about__wrapper d-flex">
+                <div class="about__wrapper d-flex flex-wrap flex-lg-nowrap">
                     <div class="about__slides">
                         <div class="about__slides-wrapper">
                             <div class="swiper-container swiper-container_compact">
@@ -728,7 +819,7 @@
                                         </svg>
                                     </span>
                                 </span>
-                                <div class="about__icon-title text-center">Работаем ежедневно без&nbsp;выходных</div>
+                                <div class="about__icon-title text-center text-xs text-lg-default">Работаем ежедневно без&nbsp;выходных</div>
                             </div>
                             <div class="about__icon d-flex align-items-center justify-content-center flex-column">
                                 <span class="about__icon-image d-flex align-items-end">
@@ -745,7 +836,7 @@
                                         </svg>
                                     </span>
                                 </span>
-                                <div class="about__icon-title text-center">Оборудование экспертного класса</div>
+                                <div class="about__icon-title text-center text-xs text-lg-default">Оборудование экспертного класса</div>
                             </div>
                             <div class="about__icon d-flex align-items-center justify-content-center flex-column">
                                 <span class="about__icon-image d-flex align-items-end">
@@ -762,7 +853,7 @@
                                         </svg>
                                     </span>
                                 </span>
-                                <div class="about__icon-title text-center">Комплексные программы</div>
+                                <div class="about__icon-title text-center text-xs text-lg-default">Комплексные программы</div>
                             </div>
                             <div class="about__icon d-flex align-items-center justify-content-center flex-column">
                                 <span class="about__icon-image d-flex align-items-end">
@@ -776,7 +867,7 @@
                                         </svg>
                                     </span>
                                 </span>
-                                <div class="about__icon-title text-center">Удобная онлайн&#8209;запись</div>
+                                <div class="about__icon-title text-center text-xs text-lg-default">Удобная онлайн&#8209;запись</div>
                             </div>
                         </div>
                     </div>
@@ -786,9 +877,12 @@
         <div class="responses bg-light">
             <div class="container">
                 <div class="row align-items-end header-links">
-                    <div class="col"><h2 class="text-uppercase">Отзывы</h2></div>
-                    <div class="col-auto">
-                        <a href="#" class="more">Читать все отзывы</a>
+                    <div class="col-12 col-lg"><h2 class="text-uppercase">Отзывы</h2></div>
+                    <div class="col-12 col-lg-auto">
+                        <a href="#" class="more">
+                            <span class="d-none d-lg-inline">Читать все отзывы</span>
+                            <span class="d-lg-none text-sm">Все отзывы</span>
+                        </a>
                     </div>
                 </div>
                 <div class="swiper-container swiper-container_small">
@@ -916,20 +1010,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination d-lg-none"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
                 <script>
                   const responsesswiper = new Swiper('.responses .swiper', {
                     preloadImages: false,
-                    slidesPerView: 2,
-                    spaceBetween: 12,
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    breakpoints: {
+                      1200: {
+                        slidesPerView: 2
+                      }
+                    },
                     lazy: {
                       loadPrevNext: true,
                       loadPrevNextAmount: 1
                     },
                     loop: false,
-                    pagination: false,
+                    pagination: {
+                      el: '.responses .swiper-pagination',
+                      //dynamicBullets: true
+                    },
                     watchSlidesProgress: true,
                     navigation: {
                       nextEl: '.responses .swiper-button-next',
@@ -941,11 +1044,14 @@
         </div>
         <div class="request bg-light">
             <div class="container">
-                <div class="request__holder d-flex align-items-center">
+                <div class="row align-items-end header-links d-lg-none">
+                    <div class="col-12"><h2 class="text-uppercase">Всегда рядом</h2></div>
+                </div>
+                <div class="request__holder d-lg-flex align-items-lg-center">
                     <div class="request__image"><img src="f/i/request-back.jpg" alt=""></div>
                     <div class="request__content">
-                        <p class="request__title font-medium text-xxxl">Запишитесь на прием к своему врачу</p>
-                        <p class="text-sm">* Каждую среду и воскресенье скидка 20% на первичный прием к специалистам взрослого отделения</p>
+                        <p class="request__title font-medium text-xl text-lg-xxxxl">Запишитесь на прием к&nbsp;своему врачу</p>
+                        <p class="text-xs text-lg-sm">* Каждую среду и воскресенье скидка 20% на первичный прием к специалистам взрослого отделения</p>
                         <div class="request__buttons d-flex flex-wrap">
                             <a href="#" class="btn btn-white text-uppercase text-xxs font-medium">Записаться</a>
                             <a href="#" class="btn btn-outline-white text-uppercase text-xxs font-medium">Подробнее</a>
@@ -958,29 +1064,29 @@
             <div class="container position-relative z-2">
                 <div class="contacts__content">
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="contacts__block">
-                                <p class="contacts__header text-xl font-medium">Адрес</p>
+                        <div class="col-lg-3">
+                            <div class="contacts__block text-md text-lg-default">
+                                <p class="contacts__header text-lg text-lg-xl font-medium">Адрес</p>
                                 Ярославль,<br> ул. Победы, 14
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="contacts__block">
-                                <p class="contacts__header text-xl font-medium">Режим работы</p>
+                        <div class="col-lg-3">
+                            <div class="contacts__block text-md text-lg-default">
+                                <p class="contacts__header text-lg text-lg-xl font-medium">Режим работы</p>
                                 Пн-Пт:  8:00—20:00<br>
                                     Сб-Вс: 8:00—15:00
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="contacts__block">
-                                <p class="contacts__header text-xl font-medium">Телефоны</p>
+                        <div class="col-lg-3">
+                            <div class="contacts__block text-md text-lg-default">
+                                <p class="contacts__header text-lg text-lg-xl font-medium">Телефоны</p>
                                 <a href="tel:+74852778899">+7 (4852) 77-88-99</a><br>
                                     <a href="tel:+74852208820">+7 (4852) 20-88-20</a>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="contacts__block">
-                                <p class="contacts__header text-xl font-medium">Прием анализов</p>
+                        <div class="col-lg-3">
+                            <div class="contacts__block text-md text-lg-default">
+                                <p class="contacts__header text-lg text-lg-xl font-medium">Прием анализов</p>
                                 Пн-Пт:  8:00—16:00<br>
                                     Сб-Вс: 8:00—13:00
                             </div>
@@ -998,23 +1104,27 @@
         </div>
     </main>
     <footer>
-        <div class="footer__contacts text-mlg">
+        <div class="footer__contacts text-lg-mlg">
+            <div class="footer__callback d-flex d-lg-none justify-content-center">
+                <div class="btn btn-outline-white">Заказать звонок</div>
+            </div>
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="footer__phone flex-grow-0 d-flex align-items-center">
+                <div class="footer__contacts-holder d-flex flex-wrap flex-lg nowrap justify-content-center justify-content-lg-between align-items-center">
+                    <div class="footer__callback flex-grow-0 d-flex align-items-center d-none d-lg-block">
                         <a href="tel:+74852208820" class="text-lg font-bold">+7 (4852) 20-88-20</a>
                         <div class="btn btn-outline-white">Заказать звонок</div>
                     </div>
-                    <div class="footer__wrap flex-grow-0"></div>
-                    <div class="flex-grow-0">Ярославль, ул.&nbsp;Победы, 14</div>
-                    <div class="footer__wrap flex-grow-0"></div>
-                    <div class="flex-grow-0"><a href="mailto:info@constanta-med.com">info@constanta-med.com</a></div>
+                    <div class="footer__wrap flex-grow-0 d-none d-lg-block"></div>
+                    <div class="flex-grow-0 d-lg-none"><a href="tel:+74852208820">+7 (4852) 20-88-20</a></div>
+                    <div class="footer__address flex-grow-0">Ярославль, ул.&nbsp;Победы, 14</div>
+                    <div class="footer__wrap flex-grow-0 d-none d-lg-block"></div>
+                    <div class="flex-grow-0 d-none d-lg-block"><a href="mailto:info@constanta-med.com">info@constanta-med.com</a></div>
                 </div>
             </div>
         </div>
         <div class="footer__content">
             <div class="container">
-                <div class="footer__menu row text-mlg">
+                <div class="footer__menu row text-xxs text-lg-mlg">
                     <div class="col footer__menu-column">
                         <ul>
                             <li><a href="#" class="font-bold">Услуги</a>
@@ -1030,8 +1140,26 @@
                                 </ul>
                             </li>
                         </ul>
+                        <ul class="d-lg-none">
+                            <li><a href="#" class="font-bold">Программы</a>
+                                <ul>
+                                    <li><a href="#">Для взрослых</a></li>
+                                    <li><a href="#">Для детей</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="d-lg-none">
+                            <li><a href="#" class="font-bold">Врачи</a>
+                                <ul>
+                                    <li><a href="#">Взрослое отделение</a></li>
+                                    <li><a href="#">Детское отделение</a></li>
+                                    <li><a href="#">Мед. персонал</a></li>
+                                    <li><a href="#">Администрация</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col footer__menu-column">
+                    <div class="col footer__menu-column d-none d-lg-block">
                         <ul>
                             <li><a href="#" class="font-bold">Программы</a>
                                 <ul>
@@ -1058,8 +1186,22 @@
                             <li><a href="#" class="font-bold">Цены</a></li>
                             <li><a href="#" class="font-bold">Контакты</a></li>
                         </ul>
+                        <ul class="d-lg-none">
+                            <li><a href="#" class="font-bold">О нас</a></li>
+                            <li><a href="#" class="font-bold">Пациентам</a></li>
+                            <li><a href="#" class="font-bold">Организациям</a></li>
+                        </ul>
+                        <ul class="d-lg-none">
+                            <li><a href="#" class="font-bold">Блог</a>
+                                <ul>
+                                    <li><a href="#">Видео</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Статьи</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col footer__menu-column footer__menu-column_condensed">
+                    <div class="col footer__menu-column footer__menu-column_condensed d-none d-lg-block">
                         <ul>
                             <li><a href="#" class="font-bold">О нас</a></li>
                             <li><a href="#" class="font-bold">Пациентам</a></li>
@@ -1097,10 +1239,10 @@
         <div class="footer__extra">
             <div class="container">
                 <div class="footer__extra-holder">
-                    <div class="row justify-content-between text-xxxs">
-                        <div class="col-auto flex-grow-0"><p class="copyright">© 2016-2022 ООО Клиника диагностики «Константа» - <br>поликлиника в Ярославле</p></div>
-                        <div class="col-auto flex-grow-0"><p>Имеются противопоказания,<br> необходима консультация со специалистом!</p></div>
-                        <div class="col-auto flex-grow-0"><p class="developer"><!--noindex-->Разработка — <a href="https://inteo-s.ru" rel="external nofollow" target="_blank">Интео</a><!--/noindex--></p></div>
+                    <div class="row justify-content-lg-between text-xxxxs text-lg-xxxs">
+                        <div class="col-12 col-lg-auto"><p class="copyright">© 2016-2022 ООО Клиника диагностики «Константа» - <br>поликлиника в Ярославле</p></div>
+                        <div class="col-12 col-lg-auto"><p>Имеются противопоказания,<br> необходима консультация со специалистом!</p></div>
+                        <div class="col-12 col-lg-auto"><p class="developer"><!--noindex-->Разработка — <a href="https://inteo-s.ru" rel="external nofollow" target="_blank">Интео</a><!--/noindex--></p></div>
                     </div>
                 </div>
             </div>
