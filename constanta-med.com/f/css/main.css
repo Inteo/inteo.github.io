@@ -944,8 +944,12 @@ header {
 .main-services {
     padding: 56px 0 63px;
 }
-.tabs a:focus, .tabs a:active {
-    outline: 0;
+.tabs *:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .nav-tabs .swiper-slide {
     width: auto!important;
