@@ -956,6 +956,9 @@ header {
 .tab-content > .active {
     display: block;
 }
+.tab-pane.active {
+    outline: 0!important;
+}
 .tab-menu {
     background: #fff;
     position: relative;
