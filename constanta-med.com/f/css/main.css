@@ -863,8 +863,8 @@ header {
         border: 0!important;
     }
     .intro__logo img {
-        width: 114px;
-        height: 22px;
+        width: 130px;
+        height: 23px;
     }
     .navigation-holder {
         height: auto;
@@ -943,6 +943,9 @@ header {
 /*region Services tabs*/
 .main-services {
     padding: 56px 0 63px;
+}
+.tabs a:focus, .tabs a:active {
+    outline: 0;
 }
 .nav-tabs .swiper-slide {
     width: auto!important;
