@@ -406,10 +406,10 @@ h2 span {
     transition: top 0.1s 0.14s ease, opacity 0.1s ease;
 }
 .menu-toggle .menu-toggle__inner::after {
-    -webkit-transition: bottom 0.1s 0.14s ease, -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    -webkit-transition: bottom 0.1s 0.14s ease, -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19), width 0.1s 0.14s ease;
+    transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19), width 0.1s 0.14s ease;
 }
-.menu-toggle.toggled .menu-toggle__inner, .nav-link.active .menu-toggle__inner {
+.menu-toggle.active .menu-toggle__inner, .nav-link.active .menu-toggle__inner {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -418,18 +418,21 @@ h2 span {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.menu-toggle.toggled .menu-toggle__inner::before, .nav-link.active .menu-toggle__inner::before  {
+.menu-toggle.active .menu-toggle__inner::before, .nav-link.active .menu-toggle__inner::before  {
     top: 0;
     opacity: 0;
     -webkit-transition: top 0.1s ease, opacity 0.1s 0.14s ease;
     transition: top 0.1s ease, opacity 0.1s 0.14s ease;
 }
-.menu-toggle.toggled .menu-toggle__inner::after, .nav-link.active .menu-toggle__inner::after {
+.menu-toggle.active .menu-toggle__inner::after, .nav-link.active .menu-toggle__inner::after {
     bottom: 0;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-toggle:not(.menu-toggle_small).active .menu-toggle__inner::after {
+    width: 16px;
 }
 .menu-toggle__box {
     width: 16px;
@@ -473,6 +476,9 @@ h2 span {
 }
 .menu-toggle_small .menu-toggle__inner, .menu-toggle_small .menu-toggle__inner::before, .menu-toggle_small .menu-toggle__inner::after {
     width: 17px;
+    background-color: var(--color-important);
+}
+.menu-toggle.active .menu-toggle__inner, .menu-toggle.active .menu-toggle__inner::before, .menu-toggle.active .menu-toggle__inner::after {
     background-color: var(--color-important);
 }
 .menu-toggle_small .menu-toggle__inner::before {
@@ -893,6 +899,66 @@ header {
         padding-top: 2px;
         padding-bottom: 2px;
     }
+    .header__wrap {
+        transition: transform .25s;
+    }
+    body.fixed-menu .header__wrap {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-width: 1000px;
+    }
+    body.no-transition .header__wrap {
+        transition: none;
+    }
+    body.fixed-menu.is-hide-menu .header__wrap{
+        transform: translateY(-133px);
+    }
+    .fixed-menu header {
+        height: 101px;
+    }
+    .header__mobile-menu {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        max-height: calc(100vh - 50px);
+        z-index: 11;
+        overflow: hidden;
+        overflow-y: visible;
+        border-top: 1px solid #eeeeee;
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: all ease .2s;
+        pointer-events: none;
+        box-shadow: 0 0.5rem 0.5rem rgb(41 26 85 / 16%);
+        -webkit-overflow-scrolling: touch;
+    }
+    .header__mobile-menu.active {
+        transform: scaleY(1);
+        pointer-events: painted;
+    }
+    .header__mobile-menu-wrap {
+        padding: 26px 15px;
+    }
+    .header__mobile-menu-phone {
+        margin-bottom: 5px;
+    }
+    .header__mobile-menu-extra {
+        border-top: 1px solid #d2d2d7;
+        padding: 20px;
+    }
+    .header__mobile-menu-social {
+        margin-top: 20px;
+    }
+    .header__mobile-menu-social .social__item {
+        border-color: rgba(0, 0, 0, .26);
+    }
+    .header__mobile-menu-social .social__item:not(:hover) .social__icon path {
+        fill: rgba(0, 0, 0, .26);
+    }
+    .header__mobile-menu-social .social__item:not(:hover) .social__icon_vk path[fill='white'] {
+        fill: rgba(255, 255, 255, .8);
+    }
 }
 /*endregion*/
 /*region Top navigation*/
@@ -944,12 +1010,8 @@ header {
 .main-services {
     padding: 56px 0 63px;
 }
-.tabs *:focus {
-    outline: 0 !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
+.tabs a:focus, .tabs a:active {
+    outline: 0;
 }
 .nav-tabs .swiper-slide {
     width: auto!important;
@@ -1137,10 +1199,25 @@ header {
         background: #fff;
         border-radius: 10px;
     }
+    .header__mobile-menu .tab-pane__collapse {
+        margin-bottom: 6px;
+        background: transparent;
+    }
+    .header__mobile-menu .tab-pane__collapse .tab-pane__collapse {
+        background: #fff;
+        margin-top: 3px;
+        margin-bottom: 0;
+    }
     .tab-pane__collapse-header-link {
         display: block;
         padding: 10px 50px 10px 20px;
         position: relative;
+    }
+    .tab-pane__collapse-header-link_big {
+        padding: 20px 60px 20px 30px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, .11);
     }
     .main-services .tab-content > .tab-pane {
         display: block!important;
@@ -1163,16 +1240,22 @@ header {
     .tab-pane__collapse-header-link:hover {
         color: var(--bs-link-color);
     }
-    .tab-pane__collapse-header-link[aria-expanded='true'] {
+    .tab-pane__collapse-header-link:not(.tab-pane__collapse-header-link_big)[aria-expanded='true'] {
         background: var(--color-important);
         border-radius: 10px 10px 0 0;
         color: #fff;
+    }
+    .tab-pane__collapse-header-link_big[aria-expanded='true'] {
+        color: var(--color-important);
     }
     .nav-content__link[aria-expanded='true'] {
         background-color: #fafafa;
     }
     .nav-content__arrow {
         padding: 0 20px 0 20px;
+    }
+    .tab-pane__collapse-header-link_big .nav-content__arrow {
+        padding-right: 30px;
     }
     .nav-content__arrow svg {
         width: 8px;
@@ -1183,7 +1266,7 @@ header {
     .tab-pane__collapse-header-link[aria-expanded='true'] svg {
         transform: rotate(270deg);
     }
-    .tab-pane__collapse-header-link[aria-expanded='true'] svg polyline {
+    .tab-pane__collapse-header-link:not(.tab-pane__collapse-header-link_big)[aria-expanded='true'] svg polyline {
         stroke: #fff;
     }
 }
@@ -1974,6 +2057,9 @@ footer {
         order: 1;
         flex: 0 0 100%;
         margin: 0 0 22px;
+    }
+    .social {
+        margin-left: 0;
     }
     .social__item {
         margin: 0 5px;

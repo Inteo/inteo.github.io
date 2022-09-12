@@ -44,93 +44,282 @@
         </div>
     </nav>
     <header>
-        <div class="header__main-menu">
-            <div class="container">
-                <div class="intro d-flex justify-content-between align-items-center">
-                    <div class="intro__menu d-lg-none flex-grow-0">
-                        <span class="menu-toggle"><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span>
-                    </div>
-                    <div class="intro__logo flex-grow-1">
-                        <a href="/"><img src="f/i/logo.svg" alt="Константа Life"></a>
-                    </div>
-                    <div class="intro__actions d-flex align-items-center">
-                        <div class="intro__address text-xs d-none d-lg-block">
-                            <b><a href="tel:+74852778899">+7 (4852) 77-88-99</a></b>
-                            Ярославль, ул. Победы, 14
-                        </div>
-                        <div class="intro__buttons d-flex">
-                            <a href="#" class="btn btn-outline-primary">
-                                <span class="d-lg-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.69 18.46" width="14" height="15">
-                                        <path d="M.05,3.82C.34,1.67,2.44-.32,3.94,0,4.9.27,5.32,2,5.62,3.21s0,1.72-.61,2-1.9.54-1.81,1.18c.26,1.88,3,6.58,4.47,7.74.52.4,1.39-.6,1.93-1s1.1-.39,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.22,1.47C4.1,16.39-.55,8.34.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
-                                        <path d="M9.35,1.73a7.67,7.67,0,0,1,5.43,9.39" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
-                                        <path d="M8.62,4.45a4.85,4.85,0,0,1,3.44,5.94" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
-                                        <path d="M7.93,7A2.18,2.18,0,0,1,9.47,9.7" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
-                                    </svg>
-                                </span>
-                                <span class="d-none d-lg-inline">Заказать звонок</span></a>
-                            <a href="#" class="btn btn-danger">
-                                <span class="d-lg-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.73 18.46" width="13" height="15">
-                                        <path d="M.05,3.82C.34,1.67,2.44-.31,3.94,0,4.91.28,5.32,2,5.61,3.21s0,1.72-.6,2-1.9.53-1.81,1.18c.26,1.87,3,6.57,4.47,7.73.52.4,1.39-.6,1.93-1s1.1-.4,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.21,1.47C4.1,16.39-.55,8.35.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
-                                        <line x1="8.79" y1="8.31" x2="14.08" y2="5.26" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.295699954032898px"/>
-                                        <polygon points="9.2 6.34 7.69 8.95 10.71 8.95 9.2 6.34" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.4891999959945679px"/>
-                                    </svg>
-                                </span>
-                                <span class="d-none d-lg-inline">Записаться онлайн</span>
-                            </a>
+        <div class="js-header-fixed-element">
+            <div class="header__wrap">
+                <div class="header__main-menu">
+                    <div class="container">
+                        <div class="intro d-flex justify-content-between align-items-center">
+                            <div class="intro__menu d-lg-none flex-grow-0">
+                                <span class="menu-toggle" data-open-mobile-menu><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span>
+                            </div>
+                            <div class="intro__logo flex-grow-1">
+                                <a href="/"><img src="f/i/logo.svg" alt="Константа Life"></a>
+                            </div>
+                            <div class="intro__actions d-flex align-items-center">
+                                <div class="intro__address text-xs d-none d-lg-block">
+                                    <b><a href="tel:+74852778899">+7 (4852) 77-88-99</a></b>
+                                    Ярославль, ул. Победы, 14
+                                </div>
+                                <div class="intro__buttons d-flex">
+                                    <a href="#" class="btn btn-outline-primary">
+                                        <span class="d-lg-none">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.69 18.46" width="14" height="15">
+                                                <path d="M.05,3.82C.34,1.67,2.44-.32,3.94,0,4.9.27,5.32,2,5.62,3.21s0,1.72-.61,2-1.9.54-1.81,1.18c.26,1.88,3,6.58,4.47,7.74.52.4,1.39-.6,1.93-1s1.1-.39,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.22,1.47C4.1,16.39-.55,8.34.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
+                                                <path d="M9.35,1.73a7.67,7.67,0,0,1,5.43,9.39" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
+                                                <path d="M8.62,4.45a4.85,4.85,0,0,1,3.44,5.94" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
+                                                <path d="M7.93,7A2.18,2.18,0,0,1,9.47,9.7" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
+                                            </svg>
+                                        </span>
+                                        <span class="d-none d-lg-inline">Заказать звонок</span></a>
+                                    <a href="#" class="btn btn-danger">
+                                        <span class="d-lg-none">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.73 18.46" width="13" height="15">
+                                                <path d="M.05,3.82C.34,1.67,2.44-.31,3.94,0,4.91.28,5.32,2,5.61,3.21s0,1.72-.6,2-1.9.53-1.81,1.18c.26,1.87,3,6.57,4.47,7.73.52.4,1.39-.6,1.93-1s1.1-.4,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.21,1.47C4.1,16.39-.55,8.35.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
+                                                <line x1="8.79" y1="8.31" x2="14.08" y2="5.26" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.295699954032898px"/>
+                                                <polygon points="9.2 6.34 7.69 8.95 10.71 8.95 9.2 6.34" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.4891999959945679px"/>
+                                            </svg>
+                                        </span>
+                                        <span class="d-none d-lg-inline">Записаться онлайн</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="navigation-holder">
-            <div class="navigation-fixed">
-                <div class="container">
-                    <div class="navigation-decor">
-                        <div class="navigation d-flex justify-content-between">
-                            <div class="menu d-none d-lg-block">
-                                <ul class="nav">
-                                    <li class="nav-item nav-item_main"><a href="#" class="nav-link" data-open-menu><span class="menu-toggle menu-toggle_small"><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span> Услуги</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Лечение боли</a></li>
-                                    <li class="nav-item dropdown"><a href="#" class="nav-link">Программы <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
-                                        <div class="dropdown-menu text-md">
-                                            <ul>
-                                                <li><a href="#">Пункт 1</a></li>
-                                                <li><a href="#">Пункт 2</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown"><a href="#" class="nav-link">Врачи <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
-                                        <div class="dropdown-menu text-md">
-                                            <ul>
-                                                <li><a href="#">Взрослое отделение</a></li>
-                                                <li><a href="#">Детское отделение</a></li>
-                                                <li><a href="#">Диагностика</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Отзывы</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-                                </ul>
-                            </div>
-                            <div class="search d-none d-lg-block">
-                                <a href="#" class="search__link text-sm d-flex align-items-center">
-                                    <span class="icon icon_search">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.67 7.67">
-                                            <path d="M1,1A2.44,2.44,0,0,1,4.48,4.48,2.44,2.44,0,0,1,1,1Z" style="fill: none;stroke-width: 0.6236000061035156px"/>
-                                            <line x1="4.68" y1="4.68" x2="7.36" y2="7.36" style="fill: none;stroke-linecap: round;stroke-width: 0.6236000061035156px"/>
-                                        </svg>
-                                    </span>
-                                    <span class="search__link-text">Поиск по сайту</span>
-                                </a>
-                            </div>
-                            <div class="navigation-actions">
-                                <a href="#" class="btn btn-danger">Записаться онлайн</a>
+                <div class="navigation-holder">
+                    <div class="navigation-fixed">
+                        <div class="container">
+                            <div class="navigation-decor">
+                                <div class="navigation d-flex justify-content-between">
+                                    <div class="menu d-none d-lg-block">
+                                        <ul class="nav">
+                                            <li class="nav-item nav-item_main"><a href="#" class="nav-link" data-open-menu><span class="menu-toggle menu-toggle_small"><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span> Услуги</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Лечение боли</a></li>
+                                            <li class="nav-item dropdown"><a href="#" class="nav-link">Программы <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                                <div class="dropdown-menu text-md">
+                                                    <ul>
+                                                        <li><a href="#">Пункт 1</a></li>
+                                                        <li><a href="#">Пункт 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item dropdown"><a href="#" class="nav-link">Врачи <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                                <div class="dropdown-menu text-md">
+                                                    <ul>
+                                                        <li><a href="#">Взрослое отделение</a></li>
+                                                        <li><a href="#">Детское отделение</a></li>
+                                                        <li><a href="#">Диагностика</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Отзывы</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="search d-none d-lg-block">
+                                        <a href="#" class="search__link text-sm d-flex align-items-center">
+                                            <span class="icon icon_search">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.67 7.67">
+                                                    <path d="M1,1A2.44,2.44,0,0,1,4.48,4.48,2.44,2.44,0,0,1,1,1Z" style="fill: none;stroke-width: 0.6236000061035156px"/>
+                                                    <line x1="4.68" y1="4.68" x2="7.36" y2="7.36" style="fill: none;stroke-linecap: round;stroke-width: 0.6236000061035156px"/>
+                                                </svg>
+                                            </span>
+                                            <span class="search__link-text">Поиск по сайту</span>
+                                        </a>
+                                    </div>
+                                    <div class="navigation-actions">
+                                        <a href="#" class="btn btn-danger">Записаться онлайн</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="header__mobile-menu d-lg-none bg-light scrollbar scrollbar_dark" data-mobile-menu>
+                    <div class="header__mobile-menu-wrap text-sm">
+                        <div class="tab-pane__collapse">
+                            <div class="tab-pane__collapse-header">
+                                <a href="#" class="tab-pane__collapse-header-link tab-pane__collapse-header-link_big text-sm font-bold text-uppercase" data-bs-toggle="collapse" data-bs-target="#mobileSection1" aria-expanded="false" aria-controls="mobileSection1">Лечение боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                            </div>
+                            <div class="tab-pane__collapse-content collapse" id="mobileSection1">
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection1Sub" aria-expanded="false" aria-controls="mobileSection1Sub">Укажите место вашей боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mobileSection1Sub">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane__collapse">
+                            <div class="tab-pane__collapse-header">
+                                <a href="#" class="tab-pane__collapse-header-link tab-pane__collapse-header-link_big text-sm font-bold text-uppercase" data-bs-toggle="collapse" data-bs-target="#mobileSection2" aria-expanded="false" aria-controls="mobileSection1">Услуги <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                            </div>
+                            <div class="tab-pane__collapse-content collapse" id="mobileSection2">
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection21" aria-expanded="false" aria-controls="mSection21">Лечение боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection21">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                            <li><a href="#" class="nav-content__link">Отоларингология</a></li>
+                                            <li><a href="#" class="nav-content__link">Офтальмология</a></li>
+                                            <li><a href="#" class="nav-content__link">Педиатрия</a></li>
+                                            <li><a href="#" class="nav-content__link nav-content__link_parent" data-bs-toggle="collapse" data-bs-target="#subSection21" aria-expanded="false" aria-controls="subSection21">Дополнительные услуги <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                                <div class="nav-content__submenu collapse" id="subSection21">
+                                                    <ul>
+                                                        <li><a href="#" class="nav-content__link">Вакцинация</a></li>
+                                                        <li><a href="#" class="nav-content__link">Справки</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection22" aria-expanded="false" aria-controls="mSection22">Для взрослых <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection22">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection23" aria-expanded="false" aria-controls="mSection23">Для детей <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection23">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection24" aria-expanded="false" aria-controls="mSection24">Программы <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection24">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection25" aria-expanded="false" aria-controls="mSection25">Стоматология <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection25">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection26" aria-expanded="false" aria-controls="mSection26">Диагностика <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection26">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection27" aria-expanded="false" aria-controls="mSection27">Анализы <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection27">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection28" aria-expanded="false" aria-controls="mSection28">Выезд на дом <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection28">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection29" aria-expanded="false" aria-controls="mSection29">Covid-19 <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection29">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane__collapse">
+                            <div class="tab-pane__collapse-header">
+                                <a href="#" class="tab-pane__collapse-header-link tab-pane__collapse-header-link_big text-sm font-bold text-uppercase" data-bs-toggle="collapse" data-bs-target="#mobileSection3" aria-expanded="false" aria-controls="mobileSection1">Меню <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                            </div>
+                            <div class="tab-pane__collapse-content collapse" id="mobileSection3">
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold">О нас</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection31Sub" aria-expanded="false" aria-controls="mobileSection31Sub">Пациентам <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mobileSection31Sub">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Взрослое отделение</a></li>
+                                            <li><a href="#" class="nav-content__link">Детское отделение</a></li>
+                                            <li><a href="#" class="nav-content__link">Диагностика</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold">Организациям</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection34Sub" aria-expanded="false" aria-controls="mobileSection34Sub">Блог <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mobileSection34Sub">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Взрослое отделение</a></li>
+                                            <li><a href="#" class="nav-content__link">Детское отделение</a></li>
+                                            <li><a href="#" class="nav-content__link">Диагностика</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__mobile-menu-extra text-center">
+                        <div class="header__mobile-menu-phone"><a href="tel:+74852778899" class="text-mlg font-bold">+7 (4852) 77-88-99</a></div>
+                        <div class="header__mobile-menu-address text-sm">Ярославль, ул.&nbsp;Победы, 14<br><a href="mailto:info@constanta-med.com">info@constanta-med.com</a></div>
+                        <div class="header__mobile-menu-social"></div>
                     </div>
                 </div>
             </div>
