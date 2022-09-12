@@ -534,6 +534,30 @@ h2 span {
     .header-links .more {
         margin-top: 2px;
     }
+    body.mobile-menu-active {
+        overflow: hidden;
+        width: 100%;
+    }
+    .mobile-holder {
+        background: rgba(0,0,0,0);
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 110;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .24s ease;
+        overflow: hidden;
+        touch-action: none;
+    }
+    .mobile-menu-active .mobile-holder {
+        opacity: .2;
+        visibility: visible;
+        background: rgba(0,0,0,1);
+    }
 }
 /*endregion*/
 /*region Load icon*/
@@ -664,6 +688,7 @@ h2 span {
 /*region Header*/
 header {
     position: relative;
+    z-index: 120;
 }
 .header__main-menu {
     position: relative;

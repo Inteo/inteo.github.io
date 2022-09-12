@@ -19,10 +19,12 @@ const constantaJSCore = (function () {
     showMobileMenu: function() {
       $('[data-open-mobile-menu]').addClass('active');
       $('[data-mobile-menu]').addClass('active');
+      $('body').addClass('mobile-menu-active');
     },
     hideMobileMenu: function() {
       $('[data-open-mobile-menu]').removeClass('active');
       $('[data-mobile-menu]').removeClass('active');
+      $('body').removeClass('mobile-menu-active');
     },
     fixMenu: function() {
       const scrollY = $(document).scrollTop(),
@@ -111,6 +113,10 @@ $(document).ready(function(){
       constantaJSCore.hideMobileMenu();
     else
       constantaJSCore.showMobileMenu();
+    return false;
+  });
+  $('.mobile-holder').click(function(){
+    constantaJSCore.hideMobileMenu();
     return false;
   });
   $(document).click(function(event) {
