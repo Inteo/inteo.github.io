@@ -10,15 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="npm/swiper/swiper-bundle.min.css">
     <script src="f/js/jquery-3.6.1.min.js"></script>
-    <script src="f/js/common.js?2"></script>
+    <script src="f/js/common.js"></script>
     <script src="npm/swiper/swiper-bundle.min.js"></script>
     <script src="npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link href="dist/css/custom.min.css" rel="stylesheet">
-    <link href="f/css/main.css?3" rel="stylesheet">
+    <link href="f/css/main.css?32" rel="stylesheet">
 </head>
 <body>
     <nav class="bg-light top-navigation text-xs d-none d-lg-block">
-        <div class="container">
+        <div class="container-fluid container-xxl">
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
                 <li class="nav-item dropdown"><a href="#" class="nav-link">Пациентам <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
@@ -47,7 +47,7 @@
         <div class="js-header-fixed-element">
             <div class="header__wrap">
                 <div class="header__main-menu">
-                    <div class="container">
+                    <div class="container-fluid container-xxl">
                         <div class="intro d-flex justify-content-between align-items-center">
                             <div class="intro__menu d-lg-none flex-grow-0">
                                 <span class="menu-toggle" data-open-mobile-menu><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="navigation-holder">
                     <div class="navigation-fixed">
-                        <div class="container">
+                        <div class="container-fluid container-xxl">
                             <div class="navigation-decor">
                                 <div class="navigation d-flex justify-content-between">
                                     <div class="menu d-none d-lg-block">
@@ -326,7 +326,7 @@
         </div>
         <div class="header__extra-menu bg-light d-none d-lg-block" data-menu>
             <div class="header__extra-menu-holder scrollbar scrollbar_dark">
-                <div class="container">
+                <div class="container-fluid container-xxl">
                     <div class="tabs">
                         <div class="tab-menu">
                             <div class="swiper-container swiper-container_large">
@@ -464,7 +464,7 @@
     </header>
     <main>
         <div class="main-intro">
-            <div class="container">
+            <div class="container-fluid container-xxl">
                 <div class="main-presentation bg-light">
                     <div class="swiper-container swiper-container_large">
                         <div class="swiper">
@@ -538,7 +538,8 @@
                         preloadImages: false,
                         lazy: {
                           loadPrevNext: true,
-                          loadPrevNextAmount: 1
+                          loadPrevNextAmount: 1,
+                          checkInView: true,
                         },
                         loop: true,
                         pagination: {
@@ -554,7 +555,7 @@
             </div>
         </div>
         <div class="main-services bg-light">
-            <div class="container">
+            <div class="container-fluid container-xxl">
                 <div class="tabs">
                     <div class="tab-menu">
                         <div class="swiper-container swiper-container_large">
@@ -752,12 +753,12 @@
             </div>
         </div>
         <div class="pain-locator">
-            <div class="container">
+            <div class="container-fluid container-xxl">
                 <img src="f/i/temp.png" alt="" style="max-width: 100%">
             </div>
         </div>
         <div class="doctor-list bg-light">
-            <div class="container">
+            <div class="container-fluid container-xxl">
                 <div class="row align-items-end header-links">
                     <div class="col-12 col-lg"><h2 class="text-uppercase"><span>Команда</span> врачей</h2></div>
                     <div class="col-12 col-lg-auto">
@@ -911,7 +912,8 @@
                     spaceBetween: 15,
                     lazy: {
                       loadPrevNext: true,
-                      loadPrevNextAmount: 1
+                      loadPrevNextAmount: 1,
+                      checkInView: true,
                     },
                     loop: false,
                     pagination: {
@@ -933,11 +935,43 @@
             </div>
         </div>
         <div class="about">
-            <div class="container">
+            <div class="container-fluid container-xxl">
                 <div class="row align-items-end header-links">
                     <div class="col"><h2 class="text-uppercase about__short"><span>Константа</span> <span class="important">Life</span> - <br>клиника лечения боли</h2></div>
                 </div>
-                <p class="about__short">Мы лечим самые сложные болевые синдромы по мировым стандартам лечения и протоколам ведущих ассоциаций Европы и Америки.</p>
+                <!--<p class="about__short">Мы лечим самые сложные болевые синдромы по мировым стандартам лечения и протоколам ведущих ассоциаций Европы и Америки.</p>-->
+                <div class="features">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-sm-6 col-lg-3 features__item text-center text-lg-left">
+                            <div class="features__image features__image_tall d-flex align-items-end">
+                                <img src="f/i/f1.png" alt="">
+                            </div>
+                            <p class="features__title text-lg-xxl font-semibold">Мировые стандарты</p>
+                            <p class="features__description text-xxs text-lg-default">Мы лечим самые сложные болевые синдромы по мировым стандартам и протоколам ведущих ассоциаций Европы и Америки</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 features__item text-center text-lg-left">
+                            <div class="features__image features__image_tall d-flex align-items-end">
+                                <img src="f/i/f2.png" alt="">
+                            </div>
+                            <p class="features__title text-lg-xxl font-semibold">Высокие технологии</p>
+                            <p class="features__description text-xxs text-lg-default">Мы используем в лечении боли оборудование экспертного класса - высокоточные инъекции под УЗИ-навигацией, криоанальгезия и методы РЧА</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 features__item text-center text-lg-left">
+                            <div class="features__image features__image_tall d-flex align-items-end">
+                                <img src="f/i/f3.png" alt="">
+                            </div>
+                            <p class="features__title text-lg-xxl font-semibold">Командный подход</p>
+                            <p class="features__description text-xxs text-lg-default">Мы используем междисциплинарный подход для постановки точного диагноза и согласованного полноценного лечения</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 features__item text-center text-lg-left">
+                            <div class="features__image features__image_tall d-flex align-items-end">
+                                <img src="f/i/f4.png" alt="">
+                            </div>
+                            <p class="features__title text-lg-xxl font-semibold">Лучшие специалисты</p>
+                            <p class="features__description text-xxs text-lg-default">Мы собрали лучших специалистов города, имеющих международный практический опыт и работающих в концепции доказательной медицины</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="about__wrapper d-flex flex-wrap flex-lg-nowrap">
                     <div class="about__slides">
                         <div class="about__slides-wrapper">
@@ -981,7 +1015,8 @@
                                 spaceBetween: 0,
                                 lazy: {
                                   loadPrevNext: true,
-                                  loadPrevNextAmount: 1
+                                  loadPrevNextAmount: 1,
+                                  checkInView: true,
                                 },
                                 loop: true,
                                 pagination: {
@@ -1063,8 +1098,237 @@
                 </div>
             </div>
         </div>
+        <div class="diseases bg-light">
+            <div class="container-fluid container-xxl">
+                <div class="row align-items-end header-links">
+                    <div class="col-12 col-lg"><h2 class="text-uppercase">Что мы <span>лечим</span></h2></div>
+                    <div class="col-12 col-lg-auto">
+                        <a href="#" class="more">
+                            <span class="text-sm text-lg-default">Все болевые синдромы</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-container swiper-container_small">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Головная боль</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Лицевая боль</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Боль в шее</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Боль в спине</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Боль в пояснице</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Тазовые боли</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Боль в животе</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Головная боль</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Лицевая боль</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="disease-card d-flex flex-column">
+                                    <div class="disease-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="disease-card__content flex-grow-1 d-flex justify-content-between flex-column">
+                                        <p class="disease-card__title text-sm text-lg-default font-medium"><a href="#">Боль в шее</a></p>
+                                        <div class="disease-card__actions d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary text-uppercase text-xxxxs font-medium">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination d-lg-none"></div>
+                    <div class="swiper-button-prev d-none d-lg-flex"></div>
+                    <div class="swiper-button-next d-none d-lg-flex"></div>
+                </div>
+                <script>
+                  const diseasesswiper = new Swiper('.diseases .swiper', {
+                    preloadImages: false,
+                    slidesPerView: "auto",
+                    spaceBetween: 15,
+                    slideToClickedSlide: true,
+                    lazy: {
+                      loadPrevNext: true,
+                      loadPrevNextAmount: 10,
+                      checkInView: true,
+                    },
+                    loop: false,
+                    pagination: {
+                      el: '.diseases .swiper-pagination',
+                      //dynamicBullets: true
+                    },
+                    watchSlidesProgress: true,
+                    breakpoints: {
+                      1200: {
+                        slideToClickedSlide: true
+                      }
+                    },
+                    navigation: {
+                      nextEl: '.diseases .swiper-button-next',
+                      prevEl: '.diseases .swiper-button-prev',
+                    },
+                  });
+                </script>
+            </div>
+        </div>
+        <div class="bonuses">
+            <div class="container-fluid container-xxl">
+                <div class="row align-items-end header-links">
+                    <div class="col"><h2 class="text-uppercase about__short"><span class="important">Приятные бонусы</span> <br>для вас</h2></div>
+                </div>
+                <!--<p class="about__short">Мы лечим самые сложные болевые синдромы по мировым стандартам лечения и протоколам ведущих ассоциаций Европы и Америки.</p>-->
+                <div class="features">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-sm-6 col-lg-3 features__item text-center text-lg-left">
+                            <div class="features__image">
+                                <img src="f/i/b1.jpg" alt="" class="img-rounded">
+                            </div>
+                            <p class="features__title text-lg-xxl font-semibold">Бесплатная консультация</p>
+                            <p class="features__description text-xxs text-lg-default">Только до 31.11.2022 алголог (специалист по лечению боли) принимает бесплатно</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 features__item text-center text-lg-left">
+                            <div class="features__image">
+                                <img src="f/i/b2.jpg" alt="">
+                            </div>
+                            <p class="features__title text-lg-xxl font-semibold">Сопровождение по&nbsp;телефону</p>
+                            <p class="features__description text-xxs text-lg-default">Врач во время лечения всегда находится с вами на связи </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 features__item text-center text-lg-left">
+                            <div class="features__image">
+                                <img src="f/i/b3.jpg" alt="">
+                            </div>
+                            <p class="features__title text-lg-xxl font-semibold">Консилиум врачей</p>
+                            <p class="features__description text-xxs text-lg-default">В самых сложных случаях организуется онлайн консилиум с экспертами российских и зарубежных клиник</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 features__item text-center text-lg-left">
+                            <div class="features__image">
+                                <img src="f/i/b4.jpg" alt="">
+                            </div>
+                            <p class="features__title text-lg-xxl font-semibold">Квоты на&nbsp;лечение</p>
+                            <p class="features__description text-xxs text-lg-default">Возможность получения квоты на бесплатное лечение в Москве</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="responses bg-light">
-            <div class="container">
+            <div class="container-fluid container-xxl">
                 <div class="row align-items-end header-links">
                     <div class="col-12 col-lg"><h2 class="text-uppercase">Отзывы</h2></div>
                     <div class="col-12 col-lg-auto">
@@ -1215,7 +1479,8 @@
                     },
                     lazy: {
                       loadPrevNext: true,
-                      loadPrevNextAmount: 1
+                      loadPrevNextAmount: 1,
+                      checkInView: true,
                     },
                     loop: false,
                     pagination: {
@@ -1232,7 +1497,7 @@
             </div>
         </div>
         <div class="request bg-light">
-            <div class="container">
+            <div class="container-fluid container-xxl">
                 <div class="row align-items-end header-links d-lg-none">
                     <div class="col-12"><h2 class="text-uppercase">Всегда рядом</h2></div>
                 </div>
@@ -1250,7 +1515,7 @@
             </div>
         </div>
         <div class="contacts bg-light">
-            <div class="container position-relative z-2">
+            <div class="container-fluid container-xxl position-relative z-2">
                 <div class="contacts__content">
                     <div class="row">
                         <div class="col-lg-3">
@@ -1297,7 +1562,7 @@
             <div class="footer__callback d-flex d-lg-none justify-content-center">
                 <div class="btn btn-outline-white">Заказать звонок</div>
             </div>
-            <div class="container">
+            <div class="container-fluid container-xxl">
                 <div class="footer__contacts-holder d-flex flex-wrap flex-lg nowrap justify-content-center justify-content-lg-between align-items-center">
                     <div class="footer__callback flex-grow-0 d-flex align-items-center d-none d-lg-block">
                         <a href="tel:+74852208820" class="text-lg font-bold">+7 (4852) 20-88-20</a>
@@ -1312,91 +1577,93 @@
             </div>
         </div>
         <div class="footer__content">
-            <div class="container">
-                <div class="footer__menu row text-xxs text-lg-mlg">
-                    <div class="col footer__menu-column">
-                        <ul>
-                            <li><a href="#" class="font-bold">Услуги</a>
-                                <ul>
-                                    <li><a href="#">Взрослое отделение</a></li>
-                                    <li><a href="#">Детское отделение</a></li>
-                                    <li><a href="#">Программы</a></li>
-                                    <li><a href="#">Стоматология</a></li>
-                                    <li><a href="#">Диагностика</a></li>
-                                    <li><a href="#">Анализы</a></li>
-                                    <li><a href="#">Выезд на дом</a></li>
-                                    <li><a href="#">Covid-19</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="d-lg-none">
-                            <li><a href="#" class="font-bold">Программы</a>
-                                <ul>
-                                    <li><a href="#">Для взрослых</a></li>
-                                    <li><a href="#">Для детей</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="d-lg-none">
-                            <li><a href="#" class="font-bold">Врачи</a>
-                                <ul>
-                                    <li><a href="#">Взрослое отделение</a></li>
-                                    <li><a href="#">Детское отделение</a></li>
-                                    <li><a href="#">Мед. персонал</a></li>
-                                    <li><a href="#">Администрация</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col footer__menu-column d-none d-lg-block">
-                        <ul>
-                            <li><a href="#" class="font-bold">Программы</a>
-                                <ul>
-                                    <li><a href="#">Для взрослых</a></li>
-                                    <li><a href="#">Для детей</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li><a href="#" class="font-bold">Врачи</a>
-                                <ul>
-                                    <li><a href="#">Взрослое отделение</a></li>
-                                    <li><a href="#">Детское отделение</a></li>
-                                    <li><a href="#">Мед. персонал</a></li>
-                                    <li><a href="#">Администрация</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col footer__menu-column footer__menu-column_condensed">
-                        <ul>
-                            <li><a href="#" class="font-bold">Отзывы</a></li>
-                            <li><a href="#" class="font-bold">Акции</a></li>
-                            <li><a href="#" class="font-bold">Цены</a></li>
-                            <li><a href="#" class="font-bold">Контакты</a></li>
-                        </ul>
-                        <ul class="d-lg-none">
-                            <li><a href="#" class="font-bold">О нас</a></li>
-                            <li><a href="#" class="font-bold">Пациентам</a></li>
-                            <li><a href="#" class="font-bold">Организациям</a></li>
-                        </ul>
-                        <ul class="d-lg-none">
-                            <li><a href="#" class="font-bold">Блог</a>
-                                <ul>
-                                    <li><a href="#">Видео</a></li>
-                                    <li><a href="#">Новости</a></li>
-                                    <li><a href="#">Статьи</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col footer__menu-column footer__menu-column_condensed d-none d-lg-block">
-                        <ul>
-                            <li><a href="#" class="font-bold">О нас</a></li>
-                            <li><a href="#" class="font-bold">Пациентам</a></li>
-                            <li><a href="#" class="font-bold">Организациям</a></li>
-                            <li><a href="#" class="font-bold">Блог</a></li>
-                        </ul>
+            <div class="container-fluid container-xxl">
+                <div class="footer__menu">
+                    <div class="row text-xxs text-lg-mlg">
+                        <div class="col footer__menu-column">
+                            <ul>
+                                <li><a href="#" class="font-bold">Услуги</a>
+                                    <ul>
+                                        <li><a href="#">Взрослое отделение</a></li>
+                                        <li><a href="#">Детское отделение</a></li>
+                                        <li><a href="#">Программы</a></li>
+                                        <li><a href="#">Стоматология</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Анализы</a></li>
+                                        <li><a href="#">Выезд на дом</a></li>
+                                        <li><a href="#">Covid-19</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="d-lg-none">
+                                <li><a href="#" class="font-bold">Программы</a>
+                                    <ul>
+                                        <li><a href="#">Для взрослых</a></li>
+                                        <li><a href="#">Для детей</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="d-lg-none">
+                                <li><a href="#" class="font-bold">Врачи</a>
+                                    <ul>
+                                        <li><a href="#">Взрослое отделение</a></li>
+                                        <li><a href="#">Детское отделение</a></li>
+                                        <li><a href="#">Мед. персонал</a></li>
+                                        <li><a href="#">Администрация</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col footer__menu-column d-none d-lg-block">
+                            <ul>
+                                <li><a href="#" class="font-bold">Программы</a>
+                                    <ul>
+                                        <li><a href="#">Для взрослых</a></li>
+                                        <li><a href="#">Для детей</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" class="font-bold">Врачи</a>
+                                    <ul>
+                                        <li><a href="#">Взрослое отделение</a></li>
+                                        <li><a href="#">Детское отделение</a></li>
+                                        <li><a href="#">Мед. персонал</a></li>
+                                        <li><a href="#">Администрация</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col footer__menu-column footer__menu-column_condensed">
+                            <ul>
+                                <li><a href="#" class="font-bold">Отзывы</a></li>
+                                <li><a href="#" class="font-bold">Акции</a></li>
+                                <li><a href="#" class="font-bold">Цены</a></li>
+                                <li><a href="#" class="font-bold">Контакты</a></li>
+                            </ul>
+                            <ul class="d-lg-none">
+                                <li><a href="#" class="font-bold">О нас</a></li>
+                                <li><a href="#" class="font-bold">Пациентам</a></li>
+                                <li><a href="#" class="font-bold">Организациям</a></li>
+                            </ul>
+                            <ul class="d-lg-none">
+                                <li><a href="#" class="font-bold">Блог</a>
+                                    <ul>
+                                        <li><a href="#">Видео</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="#">Статьи</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col footer__menu-column footer__menu-column_condensed d-none d-lg-block">
+                            <ul>
+                                <li><a href="#" class="font-bold">О нас</a></li>
+                                <li><a href="#" class="font-bold">Пациентам</a></li>
+                                <li><a href="#" class="font-bold">Организациям</a></li>
+                                <li><a href="#" class="font-bold">Блог</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="social d-flex align-items-center justify-content-center">
@@ -1426,7 +1693,7 @@
             </div>
         </div>
         <div class="footer__extra">
-            <div class="container">
+            <div class="container-fluid container-xxl">
                 <div class="footer__extra-holder">
                     <div class="row justify-content-lg-between text-xxxxs text-lg-xxxs">
                         <div class="col-12 col-lg-auto"><p class="copyright">© 2016-2022 ООО Клиника диагностики «Константа» - <br>поликлиника в Ярославле</p></div>
