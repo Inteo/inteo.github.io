@@ -14,14 +14,14 @@
     <script src="npm/swiper/swiper-bundle.min.js"></script>
     <script src="npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link href="dist/css/custom.min.css" rel="stylesheet">
-    <link href="f/css/main.css?32" rel="stylesheet">
+    <link href="f/css/main.css?62" rel="stylesheet">
 </head>
 <body>
     <nav class="bg-light top-navigation text-xs d-none d-lg-block">
         <div class="container-fluid container-xxl">
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-                <li class="nav-item dropdown"><a href="#" class="nav-link">Пациентам <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                <li class="nav-item"><a href="#" class="nav-link">О клинике</a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-link">Пациентам <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round; stroke-width: 0.6px"/></svg></span></a>
                     <div class="dropdown-menu">
                         <ul>
                             <li><a href="#">Взрослое отделение</a></li>
@@ -31,7 +31,7 @@
                     </div>
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link">Организациям</a></li>
-                <li class="nav-item dropdown"><a href="#" class="nav-link">Блог <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                <li class="nav-item dropdown"><a href="#" class="nav-link">Блог <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round; stroke-width: 0.6px"/></svg></span></a>
                     <div class="dropdown-menu">
                         <ul>
                             <li><a href="#">Взрослое отделение</a></li>
@@ -53,7 +53,10 @@
                                 <span class="menu-toggle" data-open-mobile-menu><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span>
                             </div>
                             <div class="intro__logo flex-grow-1">
-                                <a href="/"><img src="f/i/logo.svg" alt="Константа Life"></a>
+                                <a href="/">
+                                    <span class="intro__logo-title">Клиника лечения боли</span>
+                                    <img src="f/i/logo_light.svg" alt="Константа Life">
+                                </a>
                             </div>
                             <div class="intro__actions d-flex align-items-center">
                                 <div class="intro__address text-xs d-none d-lg-block">
@@ -61,7 +64,7 @@
                                     Ярославль, ул. Победы, 14
                                 </div>
                                 <div class="intro__buttons d-flex">
-                                    <a href="#" class="btn btn-outline-primary">
+                                    <a href="#" class="btn btn-outline-primary btn-lowercase">
                                         <span class="d-lg-none">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.69 18.46" width="14" height="15">
                                                 <path d="M.05,3.82C.34,1.67,2.44-.32,3.94,0,4.9.27,5.32,2,5.62,3.21s0,1.72-.61,2-1.9.54-1.81,1.18c.26,1.88,3,6.58,4.47,7.74.52.4,1.39-.6,1.93-1s1.1-.39,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.22,1.47C4.1,16.39-.55,8.34.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
@@ -71,7 +74,7 @@
                                             </svg>
                                         </span>
                                         <span class="d-none d-lg-inline">Заказать звонок</span></a>
-                                    <a href="#" class="btn btn-danger">
+                                    <a href="#" class="btn btn-danger btn-lowercase">
                                         <span class="d-lg-none">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.73 18.46" width="13" height="15">
                                                 <path d="M.05,3.82C.34,1.67,2.44-.31,3.94,0,4.91.28,5.32,2,5.61,3.21s0,1.72-.6,2-1.9.53-1.81,1.18c.26,1.87,3,6.57,4.47,7.73.52.4,1.39-.6,1.93-1s1.1-.4,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.21,1.47C4.1,16.39-.55,8.35.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
@@ -130,7 +133,7 @@
                                         </a>
                                     </div>
                                     <div class="navigation-actions">
-                                        <a href="#" class="btn btn-danger">Записаться онлайн</a>
+                                        <a href="#" class="btn btn-danger btn-lowercase">Записаться онлайн</a>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +141,7 @@
                     </div>
                 </div>
                 <div class="header__mobile-menu d-lg-none bg-light scrollbar scrollbar_dark" data-mobile-menu>
-                    <div class="header__mobile-menu-wrap text-sm">
+                    <div class="header__mobile-menu-wrap text-xxs">
                         <div class="tab-pane__collapse">
                             <div class="tab-pane__collapse-header">
                                 <a href="#" class="tab-pane__collapse-header-link tab-pane__collapse-header-link_big text-sm font-bold text-uppercase" data-bs-toggle="collapse" data-bs-target="#mobileSection1" aria-expanded="false" aria-controls="mobileSection1">Лечение боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
@@ -146,7 +149,7 @@
                             <div class="tab-pane__collapse-content collapse" id="mobileSection1">
                                 <div class="tab-pane__collapse">
                                     <div class="tab-pane__collapse-header">
-                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection1Sub" aria-expanded="false" aria-controls="mobileSection1Sub">Укажите место вашей боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection1Sub" aria-expanded="false" aria-controls="mobileSection1Sub">Укажите место вашей боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
                                     </div>
                                     <div class="tab-pane__collapse-content collapse" id="mobileSection1Sub">
                                         <ul class="nav-content">
@@ -281,12 +284,12 @@
                             <div class="tab-pane__collapse-content collapse" id="mobileSection3">
                                 <div class="tab-pane__collapse">
                                     <div class="tab-pane__collapse-header">
-                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold">О нас</a>
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold">О нас</a>
                                     </div>
                                 </div>
                                 <div class="tab-pane__collapse">
                                     <div class="tab-pane__collapse-header">
-                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection31Sub" aria-expanded="false" aria-controls="mobileSection31Sub">Пациентам <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection31Sub" aria-expanded="false" aria-controls="mobileSection31Sub">Пациентам <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
                                     </div>
                                     <div class="tab-pane__collapse-content collapse" id="mobileSection31Sub">
                                         <ul class="nav-content">
@@ -298,12 +301,12 @@
                                 </div>
                                 <div class="tab-pane__collapse">
                                     <div class="tab-pane__collapse-header">
-                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold">Организациям</a>
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold">Организациям</a>
                                     </div>
                                 </div>
                                 <div class="tab-pane__collapse">
                                     <div class="tab-pane__collapse-header">
-                                        <a href="#" class="tab-pane__collapse-header-link text-sm font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection34Sub" aria-expanded="false" aria-controls="mobileSection34Sub">Блог <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection34Sub" aria-expanded="false" aria-controls="mobileSection34Sub">Блог <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
                                     </div>
                                     <div class="tab-pane__collapse-content collapse" id="mobileSection34Sub">
                                         <ul class="nav-content">
@@ -333,45 +336,36 @@
                                 <div class="swiper">
                                     <ul class="nav nav-tabs swiper-wrapper" id="menuExtraTab" role="tablist">
                                         <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium active" id="extrasection1-tab" data-bs-toggle="tab" data-bs-target="#extrasection1-tab-pane" type="button" role="tab" aria-controls="extrasection1-tab-pane" aria-selected="true">Лечение боли</button>
+                                            <button class="nav-link font-semibold active" id="extrasection1-tab" data-bs-toggle="tab" data-bs-target="#extrasection1-tab-pane" type="button" role="tab" aria-controls="extrasection1-tab-pane" aria-selected="true">Лечение боли</button>
                                         </li>
                                         <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection2-tab" data-bs-toggle="tab" data-bs-target="#extrasection2-tab-pane" type="button" role="tab" aria-controls="extrasection2-tab-pane" aria-selected="false">Для взрослых</button>
+                                            <button class="nav-link font-semibold" id="extrasection2-tab" data-bs-toggle="tab" data-bs-target="#extrasection2-tab-pane" type="button" role="tab" aria-controls="extrasection2-tab-pane" aria-selected="false">Для взрослых</button>
                                         </li>
                                         <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection3-tab" data-bs-toggle="tab" data-bs-target="#extrasection3-tab-pane" type="button" role="tab" aria-controls="extrasection3-tab-pane" aria-selected="false">Для детей</button>
+                                            <button class="nav-link font-semibold" id="extrasection3-tab" data-bs-toggle="tab" data-bs-target="#extrasection3-tab-pane" type="button" role="tab" aria-controls="extrasection3-tab-pane" aria-selected="false">Для детей</button>
                                         </li>
                                         <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection4-tab" data-bs-toggle="tab" data-bs-target="#extrasection4-tab-pane" type="button" role="tab" aria-controls="extrasection4-tab-pane" aria-selected="false">Программы</button>
+                                            <button class="nav-link font-semibold" id="extrasection4-tab" data-bs-toggle="tab" data-bs-target="#extrasection4-tab-pane" type="button" role="tab" aria-controls="extrasection4-tab-pane" aria-selected="false">Программы</button>
                                         </li>
                                         <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection5-tab" data-bs-toggle="tab" data-bs-target="#extrasection5-tab-pane" type="button" role="tab" aria-controls="extrasection5-tab-pane" aria-selected="false">Стоматология</button>
+                                            <button class="nav-link font-semibold" id="extrasection5-tab" data-bs-toggle="tab" data-bs-target="#extrasection5-tab-pane" type="button" role="tab" aria-controls="extrasection5-tab-pane" aria-selected="false">Стоматология</button>
                                         </li>
                                         <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection6-tab" data-bs-toggle="tab" data-bs-target="#extrasection6-tab-pane" type="button" role="tab" aria-controls="extrasection6-tab-pane" aria-selected="false">Диагностика</button>
+                                            <button class="nav-link font-semibold" id="extrasection6-tab" data-bs-toggle="tab" data-bs-target="#extrasection6-tab-pane" type="button" role="tab" aria-controls="extrasection6-tab-pane" aria-selected="false">Диагностика</button>
                                         </li>
                                         <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection7-tab" data-bs-toggle="tab" data-bs-target="#extrasection7-tab-pane" type="button" role="tab" aria-controls="extrasection7-tab-pane" aria-selected="false">Анализы</button>
+                                            <button class="nav-link font-semibold" id="extrasection7-tab" data-bs-toggle="tab" data-bs-target="#extrasection7-tab-pane" type="button" role="tab" aria-controls="extrasection7-tab-pane" aria-selected="false">Анализы</button>
                                         </li>
                                         <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection8-tab" data-bs-toggle="tab" data-bs-target="#extrasection8-tab-pane" type="button" role="tab" aria-controls="extrasection8-tab-pane" aria-selected="false">Выезд на дом</button>
+                                            <button class="nav-link font-semibold" id="extrasection8-tab" data-bs-toggle="tab" data-bs-target="#extrasection8-tab-pane" type="button" role="tab" aria-controls="extrasection8-tab-pane" aria-selected="false">Выезд на дом</button>
                                         </li>
                                         <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection9-tab" data-bs-toggle="tab" data-bs-target="#extrasection9-tab-pane" type="button" role="tab" aria-controls="extrasection9-tab-pane" aria-selected="false">Covid-19</button>
-                                        </li>
-                                        <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection10-tab" data-bs-toggle="tab" data-bs-target="#extrasection10-tab-pane" type="button" role="tab" aria-controls="extrasection10-tab-pane" aria-selected="false">Тест пункта</button>
-                                        </li>
-                                        <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection11-tab" data-bs-toggle="tab" data-bs-target="#extrasection11-tab-pane" type="button" role="tab" aria-controls="extrasection11-tab-pane" aria-selected="false">Тест пункта</button>
-                                        </li>
-                                        <li class="swiper-slide nav-item" role="presentation">
-                                            <button class="nav-link font-medium" id="extrasection12-tab" data-bs-toggle="tab" data-bs-target="#extrasection12-tab-pane" type="button" role="tab" aria-controls="extrasection12-tab-pane" aria-selected="false">Тест пункта</button>
+                                            <button class="nav-link font-semibold" id="extrasection9-tab" data-bs-toggle="tab" data-bs-target="#extrasection9-tab-pane" type="button" role="tab" aria-controls="extrasection9-tab-pane" aria-selected="false">Covid-19</button>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="swiper-button-prev font-medium">...</div>
-                                <div class="swiper-button-next font-medium">...</div>
+                                <div class="swiper-button-prev font-semibold">Еще...</div>
+                                <div class="swiper-button-next font-semibold">Еще...</div>
                             </div>
                             <script>
                               const extraservicesswiper = new Swiper('.header__extra-menu .tab-menu .swiper', {
@@ -541,7 +535,9 @@
                           loadPrevNextAmount: 1,
                           checkInView: true,
                         },
-                        loop: true,
+                        loop: {
+                          delay: 5000
+                        },
                         pagination: {
                           el: '.main-presentation .swiper-pagination',
                         },
@@ -549,12 +545,13 @@
                           nextEl: '.main-presentation .swiper-button-next',
                           prevEl: '.main-presentation .swiper-button-prev',
                         },
+                        autoplay: true
                       });
                     </script>
                 </div>
             </div>
         </div>
-        <div class="main-services bg-light">
+        <div class="main-services bg-light inner-shadow">
             <div class="container-fluid container-xxl">
                 <div class="tabs">
                     <div class="tab-menu">
@@ -562,45 +559,36 @@
                             <div class="swiper">
                                 <ul class="nav nav-tabs swiper-wrapper" id="menuTab" role="tablist">
                                     <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium active" id="section1-tab" data-bs-toggle="tab" data-bs-target="#section1-tab-pane" type="button" role="tab" aria-controls="section1-tab-pane" aria-selected="true">Лечение боли</button>
+                                        <button class="nav-link font-semibold active" id="section1-tab" data-bs-toggle="tab" data-bs-target="#section1-tab-pane" type="button" role="tab" aria-controls="section1-tab-pane" aria-selected="true">Лечение боли</button>
                                     </li>
                                     <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section2-tab-pane" type="button" role="tab" aria-controls="section2-tab-pane" aria-selected="false">Для взрослых</button>
+                                        <button class="nav-link font-semibold" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section2-tab-pane" type="button" role="tab" aria-controls="section2-tab-pane" aria-selected="false">Для взрослых</button>
                                     </li>
                                     <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section3-tab" data-bs-toggle="tab" data-bs-target="#section3-tab-pane" type="button" role="tab" aria-controls="section3-tab-pane" aria-selected="false">Для детей</button>
+                                        <button class="nav-link font-semibold" id="section3-tab" data-bs-toggle="tab" data-bs-target="#section3-tab-pane" type="button" role="tab" aria-controls="section3-tab-pane" aria-selected="false">Для детей</button>
                                     </li>
                                     <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section4-tab" data-bs-toggle="tab" data-bs-target="#section4-tab-pane" type="button" role="tab" aria-controls="section4-tab-pane" aria-selected="false">Программы</button>
+                                        <button class="nav-link font-semibold" id="section4-tab" data-bs-toggle="tab" data-bs-target="#section4-tab-pane" type="button" role="tab" aria-controls="section4-tab-pane" aria-selected="false">Программы</button>
                                     </li>
                                     <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section5-tab" data-bs-toggle="tab" data-bs-target="#section5-tab-pane" type="button" role="tab" aria-controls="section5-tab-pane" aria-selected="false">Стоматология</button>
+                                        <button class="nav-link font-semibold" id="section5-tab" data-bs-toggle="tab" data-bs-target="#section5-tab-pane" type="button" role="tab" aria-controls="section5-tab-pane" aria-selected="false">Стоматология</button>
                                     </li>
                                     <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section6-tab" data-bs-toggle="tab" data-bs-target="#section6-tab-pane" type="button" role="tab" aria-controls="section6-tab-pane" aria-selected="false">Диагностика</button>
+                                        <button class="nav-link font-semibold" id="section6-tab" data-bs-toggle="tab" data-bs-target="#section6-tab-pane" type="button" role="tab" aria-controls="section6-tab-pane" aria-selected="false">Диагностика</button>
                                     </li>
                                     <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section7-tab" data-bs-toggle="tab" data-bs-target="#section7-tab-pane" type="button" role="tab" aria-controls="section7-tab-pane" aria-selected="false">Анализы</button>
+                                        <button class="nav-link font-semibold" id="section7-tab" data-bs-toggle="tab" data-bs-target="#section7-tab-pane" type="button" role="tab" aria-controls="section7-tab-pane" aria-selected="false">Анализы</button>
                                     </li>
                                     <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section8-tab" data-bs-toggle="tab" data-bs-target="#section8-tab-pane" type="button" role="tab" aria-controls="section8-tab-pane" aria-selected="false">Выезд на дом</button>
+                                        <button class="nav-link font-semibold" id="section8-tab" data-bs-toggle="tab" data-bs-target="#section8-tab-pane" type="button" role="tab" aria-controls="section8-tab-pane" aria-selected="false">Выезд на дом</button>
                                     </li>
                                     <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section9-tab" data-bs-toggle="tab" data-bs-target="#section9-tab-pane" type="button" role="tab" aria-controls="section9-tab-pane" aria-selected="false">Covid-19</button>
-                                    </li>
-                                    <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section10-tab" data-bs-toggle="tab" data-bs-target="#section10-tab-pane" type="button" role="tab" aria-controls="section10-tab-pane" aria-selected="false">Тест пункта</button>
-                                    </li>
-                                    <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section11-tab" data-bs-toggle="tab" data-bs-target="#section11-tab-pane" type="button" role="tab" aria-controls="section11-tab-pane" aria-selected="false">Тест пункта</button>
-                                    </li>
-                                    <li class="swiper-slide nav-item" role="presentation">
-                                        <button class="nav-link font-medium" id="section12-tab" data-bs-toggle="tab" data-bs-target="#section12-tab-pane" type="button" role="tab" aria-controls="section12-tab-pane" aria-selected="false">Тест пункта</button>
+                                        <button class="nav-link font-semibold" id="section9-tab" data-bs-toggle="tab" data-bs-target="#section9-tab-pane" type="button" role="tab" aria-controls="section9-tab-pane" aria-selected="false">Covid-19</button>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="swiper-button-prev font-medium">...</div>
-                            <div class="swiper-button-next font-medium">...</div>
+                            <div class="swiper-button-prev font-semibold">Еще...</div>
+                            <div class="swiper-button-next font-semibold">Еще...</div>
                         </div>
                         <script>
                           const servicesswiper = new Swiper('.main-services .tab-menu .swiper', {
@@ -619,7 +607,7 @@
                           });
                         </script>
                     </div>
-                    <div class="tab-content text-sm text-lg-default" id="menuTabContent">
+                    <div class="tab-content text-xxs text-lg-default" id="menuTabContent">
                         <div class="tab-pane fade show active" id="section1-tab-pane" role="tabpanel" aria-labelledby="section1-tab" tabindex="0">
                             <div class="tab-pane__collapse">
                                 <div class="tab-pane__collapse-header">
@@ -757,7 +745,7 @@
                 <img src="f/i/temp.png" alt="" style="max-width: 100%">
             </div>
         </div>
-        <div class="doctor-list bg-light">
+        <div class="doctor-list bg-light inner-shadow">
             <div class="container-fluid container-xxl">
                 <div class="row align-items-end header-links">
                     <div class="col-12 col-lg"><h2 class="text-uppercase"><span>Команда</span> врачей</h2></div>
@@ -772,128 +760,128 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="doctor-card d-lg-flex">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
-                                    <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
-                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
-                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xxl-center flex-column">
+                                        <p class="doctor-card__name text-sm text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-xxxxs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs text-lg-xxs font-medium">Записаться</a>
                                             <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-lg-flex">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
-                                    <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
-                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
-                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xxl-center flex-column">
+                                        <p class="doctor-card__name text-sm text-lg-xl font-semibold font-lg-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-xxxxs text-lg-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs text-lg-xxs font-medium">Записаться</a>
                                             <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-lg-flex">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
-                                    <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
-                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
-                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xxl-center flex-column">
+                                        <p class="doctor-card__name text-sm text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-xxxxs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs text-lg-xxs font-medium">Записаться</a>
                                             <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-lg-flex">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
-                                    <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
-                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
-                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xxl-center flex-column">
+                                        <p class="doctor-card__name text-sm text-lg-xl font-semibold font-lg-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-xxxxs text-lg-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs text-lg-xxs font-medium">Записаться</a>
                                             <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-lg-flex">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
-                                    <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
-                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
-                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xxl-center flex-column">
+                                        <p class="doctor-card__name text-sm text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-xxxxs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs text-lg-xxs font-medium">Записаться</a>
                                             <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-lg-flex">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
-                                    <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
-                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
-                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xxl-center flex-column">
+                                        <p class="doctor-card__name text-sm text-lg-xl font-semibold font-lg-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-xxxxs text-lg-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs text-lg-xxs font-medium">Записаться</a>
                                             <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-lg-flex">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
-                                    <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
-                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
-                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xxl-center flex-column">
+                                        <p class="doctor-card__name text-sm text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-xxxxs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs text-lg-xxs font-medium">Записаться</a>
                                             <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="doctor-card d-lg-flex">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
                                     <div class="doctor-card__image">
                                         <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
-                                    <div class="doctor-card__content d-flex justify-content-between justify-content-xxl-center flex-column">
-                                        <p class="doctor-card__name text-md text-lg-xl font-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
-                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
-                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start">
-                                            <a href="#" class="btn btn-primary text-uppercase text-xxs font-medium">Записаться</a>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xxl-center flex-column">
+                                        <p class="doctor-card__name text-sm text-lg-xl font-semibold font-lg-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xxl-grow-0 text-xxxxs text-lg-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxxxs text-lg-xxs font-medium">Записаться</a>
                                             <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
                                         </div>
                                     </div>
@@ -908,11 +896,12 @@
                 <script>
                   const docswiper = new Swiper('.doctor-list .swiper', {
                     preloadImages: false,
-                    slidesPerView: 1,
+                    slidesPerView: "auto",
                     spaceBetween: 15,
+                    slideToClickedSlide: true,
                     lazy: {
                       loadPrevNext: true,
-                      loadPrevNextAmount: 1,
+                      loadPrevNextAmount: 2,
                       checkInView: true,
                     },
                     loop: false,
@@ -922,7 +911,7 @@
                     },
                     watchSlidesProgress: true,
                     breakpoints: {
-                      1200: {
+                      992: {
                         slidesPerView: 2
                       }
                     },
@@ -972,7 +961,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about__wrapper d-flex flex-wrap flex-lg-nowrap">
+                <div class="about__wrapper d-flex flex-wrap flex-md-nowrap">
                     <div class="about__slides">
                         <div class="about__slides-wrapper">
                             <div class="swiper-container swiper-container_compact">
@@ -1018,7 +1007,9 @@
                                   loadPrevNextAmount: 1,
                                   checkInView: true,
                                 },
-                                loop: true,
+                                loop: {
+                                  delay: 5000,
+                                },
                                 pagination: {
                                   el: '.about__slides .swiper-pagination',
                                 },
@@ -1026,79 +1017,88 @@
                                   nextEl: '.about__slides .swiper-button-next',
                                   prevEl: '.about__slides .swiper-button-prev',
                                 },
+                                autoplay: true
                               });
                             </script>
                         </div>
                     </div>
                     <div class="about__details">
                         <div class="about__icons">
-                            <div class="about__icon d-flex align-items-center justify-content-center flex-column">
-                                <span class="about__icon-image d-flex align-items-end">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.48 36.32" width="68px" height="75px">
-                                            <path d="M23.52,2.32h3.11A4.73,4.73,0,0,1,31.34,7V30.47a4.73,4.73,0,0,1-4.71,4.72H5.85a4.74,4.74,0,0,1-4.72-4.72V7A4.74,4.74,0,0,1,5.85,2.32H9" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <path d="M18.59,1.13v2m-4.7-2v2" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="1.5" y1="10.66" x2="31.32" y2="10.66" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <path d="M12.21,17.13h8.07a17.9,17.9,0,0,0-4.22,9.65" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                        </svg>
+                            <div class="about__icon">
+                                <a href="#" class="about__icon-content d-flex flex-column align-items-center justify-content-center">
+                                    <span class="about__icon-image d-flex align-items-end">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.48 36.32" width="68px" height="75px">
+                                                <path d="M23.52,2.32h3.11A4.73,4.73,0,0,1,31.34,7V30.47a4.73,4.73,0,0,1-4.71,4.72H5.85a4.74,4.74,0,0,1-4.72-4.72V7A4.74,4.74,0,0,1,5.85,2.32H9" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <path d="M18.59,1.13v2m-4.7-2v2" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="1.5" y1="10.66" x2="31.32" y2="10.66" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <path d="M12.21,17.13h8.07a17.9,17.9,0,0,0-4.22,9.65" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                            </svg>
+                                        </span>
                                     </span>
-                                </span>
-                                <div class="about__icon-title text-center text-xs text-lg-default">Работаем ежедневно без&nbsp;выходных</div>
+                                    <span class="about__icon-title text-center text-xxxxs text-lg-default">Работаем ежедневно без&nbsp;выходных</span>
+                                </a>
                             </div>
-                            <div class="about__icon d-flex align-items-center justify-content-center flex-column">
-                                <span class="about__icon-image d-flex align-items-end">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.62 36.92" width="56" height="76">
-                                            <path d="M5.28,6.71,8.59,4.8a1.32,1.32,0,0,1,1.79.48l3.52,6.11a5,5,0,0,1,.79,3.07c0,.79,0,1.46-.64,1.82l-1.56.9c-.63.36-1.23.05-1.9-.36a4.89,4.89,0,0,1-2.26-2.21L4.8,8.5A1.31,1.31,0,0,1,5.28,6.71Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="2.62" y1="3.97" x2="7.54" y2="1.13" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="8.8" y1="15.32" x2="14.28" y2="12.16" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="5.32" y1="3.04" x2="6.86" y2="5.7" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <path d="M2.36,20.46l-.31-.54h0a6.85,6.85,0,0,1,2.5-9.34h0l1-.57m9.32,18.46h0L22,24.36c2.73-1.57,4.63,1.94,1.94,3.35h0L16.81,31.8h0a6.83,6.83,0,0,1-5.18.68M7.36,13.41l-.87.51h0a3,3,0,0,0-1.11,4h0l.31.56" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <path d="M7.66,21.2A4.64,4.64,0,1,1,3,25.84,4.64,4.64,0,0,1,7.66,21.2Z" style="fill: #fff;fill-rule: evenodd" class="fill"/>
-                                            <path d="M7.66,21.2A4.64,4.64,0,1,1,3,25.84,4.64,4.64,0,0,1,7.66,21.2Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="1.34" y1="35.79" x2="25.49" y2="35.79" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                        </svg>
+                            <div class="about__icon">
+                                <a href="#" class="about__icon-content d-flex flex-column align-items-center justify-content-center">
+                                    <span class="about__icon-image d-flex align-items-end">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.62 36.92" width="56" height="76">
+                                                <path d="M5.28,6.71,8.59,4.8a1.32,1.32,0,0,1,1.79.48l3.52,6.11a5,5,0,0,1,.79,3.07c0,.79,0,1.46-.64,1.82l-1.56.9c-.63.36-1.23.05-1.9-.36a4.89,4.89,0,0,1-2.26-2.21L4.8,8.5A1.31,1.31,0,0,1,5.28,6.71Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="2.62" y1="3.97" x2="7.54" y2="1.13" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="8.8" y1="15.32" x2="14.28" y2="12.16" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="5.32" y1="3.04" x2="6.86" y2="5.7" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <path d="M2.36,20.46l-.31-.54h0a6.85,6.85,0,0,1,2.5-9.34h0l1-.57m9.32,18.46h0L22,24.36c2.73-1.57,4.63,1.94,1.94,3.35h0L16.81,31.8h0a6.83,6.83,0,0,1-5.18.68M7.36,13.41l-.87.51h0a3,3,0,0,0-1.11,4h0l.31.56" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <path d="M7.66,21.2A4.64,4.64,0,1,1,3,25.84,4.64,4.64,0,0,1,7.66,21.2Z" style="fill: #fff;fill-rule: evenodd" class="fill"/>
+                                                <path d="M7.66,21.2A4.64,4.64,0,1,1,3,25.84,4.64,4.64,0,0,1,7.66,21.2Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="1.34" y1="35.79" x2="25.49" y2="35.79" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                            </svg>
+                                        </span>
                                     </span>
-                                </span>
-                                <div class="about__icon-title text-center text-xs text-lg-default">Оборудование экспертного класса</div>
+                                    <span class="about__icon-title text-center text-xxxxs text-lg-default">Оборудование экспертного класса</span>
+                                </a>
                             </div>
-                            <div class="about__icon d-flex align-items-center justify-content-center flex-column">
-                                <span class="about__icon-image d-flex align-items-end">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.04 37.04" width="77px" height="77px">
-                                            <path d="M2.29,15.76a4,4,0,1,1,0,5.59A4,4,0,0,1,2.29,15.76Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="7.88" y1="21.35" x2="13.08" y2="26.55" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <path d="M21.35,2.29a4,4,0,1,1-5.59,0A4,4,0,0,1,21.35,2.29Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="15.76" y1="7.88" x2="10.56" y2="13.08" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <path d="M34.75,21.28a4,4,0,1,1,0-5.59A4,4,0,0,1,34.75,21.28Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="29.16" y1="15.69" x2="23.96" y2="10.49" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <path d="M15.69,34.75a3.95,3.95,0,1,1,5.59,0A3.95,3.95,0,0,1,15.69,34.75Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="21.28" y1="29.17" x2="26.48" y2="23.96" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                        </svg>
+                            <div class="about__icon">
+                                <a href="#" class="about__icon-content d-flex flex-column align-items-center justify-content-center">
+                                    <span class="about__icon-image d-flex align-items-end">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.04 37.04" width="77px" height="77px">
+                                                <path d="M2.29,15.76a4,4,0,1,1,0,5.59A4,4,0,0,1,2.29,15.76Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="7.88" y1="21.35" x2="13.08" y2="26.55" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <path d="M21.35,2.29a4,4,0,1,1-5.59,0A4,4,0,0,1,21.35,2.29Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="15.76" y1="7.88" x2="10.56" y2="13.08" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <path d="M34.75,21.28a4,4,0,1,1,0-5.59A4,4,0,0,1,34.75,21.28Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="29.16" y1="15.69" x2="23.96" y2="10.49" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <path d="M15.69,34.75a3.95,3.95,0,1,1,5.59,0A3.95,3.95,0,0,1,15.69,34.75Z" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="21.28" y1="29.17" x2="26.48" y2="23.96" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                            </svg>
+                                        </span>
                                     </span>
-                                </span>
-                                <div class="about__icon-title text-center text-xs text-lg-default">Комплексные программы</div>
+                                    <span class="about__icon-title text-center text-xxxxs text-lg-default">Комплексные программы</span>
+                                </a>
                             </div>
-                            <div class="about__icon d-flex align-items-center justify-content-center flex-column">
-                                <span class="about__icon-image d-flex align-items-end">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.7 35.57" width="54px" height="73px">
-                                            <path d="M21.07,25.88v5.88a2.68,2.68,0,0,1-2.67,2.68H3.81a2.69,2.69,0,0,1-2.68-2.68V3.81A2.69,2.69,0,0,1,3.81,1.13H18.4a2.69,2.69,0,0,1,2.67,2.68V6.1" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <path d="M24,14.77a7.83,7.83,0,0,1,.11,1.29,7.33,7.33,0,1,1-7.32-7.32,7.11,7.11,0,0,1,3.23.74" style="fill: #fff;fill-rule: evenodd" class="fill"/>
-                                            <path d="M24,14.77a7.83,7.83,0,0,1,.11,1.29,7.33,7.33,0,1,1-7.32-7.32,7.11,7.11,0,0,1,3.23.74" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <polyline points="24.56 9.53 16.96 17.13 13.84 14.01" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                            <line x1="1.8" y1="29.57" x2="20.4" y2="29.57" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
-                                        </svg>
+                            <div class="about__icon">
+                                <a href="#" class="about__icon-content d-flex flex-column align-items-center justify-content-center">
+                                    <span class="about__icon-image d-flex align-items-end">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.7 35.57" width="54px" height="73px">
+                                                <path d="M21.07,25.88v5.88a2.68,2.68,0,0,1-2.67,2.68H3.81a2.69,2.69,0,0,1-2.68-2.68V3.81A2.69,2.69,0,0,1,3.81,1.13H18.4a2.69,2.69,0,0,1,2.67,2.68V6.1" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <path d="M24,14.77a7.83,7.83,0,0,1,.11,1.29,7.33,7.33,0,1,1-7.32-7.32,7.11,7.11,0,0,1,3.23.74" style="fill: #fff;fill-rule: evenodd" class="fill"/>
+                                                <path d="M24,14.77a7.83,7.83,0,0,1,.11,1.29,7.33,7.33,0,1,1-7.32-7.32,7.11,7.11,0,0,1,3.23.74" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <polyline points="24.56 9.53 16.96 17.13 13.84 14.01" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                                <line x1="1.8" y1="29.57" x2="20.4" y2="29.57" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.267699956893921px"/>
+                                            </svg>
+                                        </span>
                                     </span>
-                                </span>
-                                <div class="about__icon-title text-center text-xs text-lg-default">Удобная онлайн&#8209;запись</div>
+                                    <div class="about__icon-title text-center text-xxxxs text-lg-default">Удобная онлайн&#8209;запись</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="diseases bg-light">
+        <div class="diseases bg-light inner-shadow">
             <div class="container-fluid container-xxl">
                 <div class="row align-items-end header-links">
                     <div class="col-12 col-lg"><h2 class="text-uppercase">Что мы <span>лечим</span></h2></div>
@@ -1327,7 +1327,7 @@
                 </div>
             </div>
         </div>
-        <div class="responses bg-light">
+        <div class="responses bg-light inner-shadow">
             <div class="container-fluid container-xxl">
                 <div class="row align-items-end header-links">
                     <div class="col-12 col-lg"><h2 class="text-uppercase">Отзывы</h2></div>
@@ -1343,121 +1343,121 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="response-card d-flex flex-column">
-                                    <div class="response-card__date text-sm">
+                                    <div class="response-card__date text-xxxxs text-lg-sm">
                                         15 июля 2022
                                     </div>
-                                    <div class="response-card__text text-md flex-grow-1">
+                                    <div class="response-card__text text-xxs text-lg-md flex-grow-1">
                                         <span class="response-card__text-wrapper">Дунаев Андрей Владимирович, Очень грамотный доктор - невролог высшей категории, врач от Бога,  и просто хороший, чуткий и отзывчивый человек. Были у него на приеме, когда жутко болела голова, но теперь это уже все в порядке</span>
-                                        <a href="#" class="more more_small font-semibold text-sm">Читать полностью</a>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
                                     </div>
                                     <div class="response-card__doctor d-flex align-items-center">
                                         <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc3.jpg" class="swiper-lazy"></a></div>
-                                        <div class="response-card__doctor-details text-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
+                                        <div class="response-card__doctor-details text-xxxxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="response-card d-flex flex-column">
-                                    <div class="response-card__date text-sm">
+                                    <div class="response-card__date text-xxxxs text-lg-sm">
                                         9 мая 2022
                                     </div>
-                                    <div class="response-card__text text-md flex-grow-1">
+                                    <div class="response-card__text text-xxs text-lg-md flex-grow-1">
                                         <span class="response-card__text-wrapper">Про поликлинику узнал от друзей. Приехал из другого города, чтобы пройти обследование перед операцией. Прошел многих специалистов за короткий срок. Был составлен протокол лечения и вот наконец я могу жить </span>
-                                        <a href="#" class="more more_small font-semibold text-sm">Читать полностью</a>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
                                     </div>
                                     <div class="response-card__doctor d-flex align-items-center">
                                         <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc4.jpg" class="swiper-lazy"></a></div>
-                                        <div class="response-card__doctor-details text-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
+                                        <div class="response-card__doctor-details text-xxxxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="response-card d-flex flex-column">
-                                    <div class="response-card__date text-sm">
+                                    <div class="response-card__date text-xxxxs text-lg-sm">
                                         15 июля 2022
                                     </div>
-                                    <div class="response-card__text text-md flex-grow-1">
+                                    <div class="response-card__text text-xxs text-lg-md flex-grow-1">
                                         <span class="response-card__text-wrapper">Дунаев Андрей Владимирович, Очень грамотный доктор - невролог высшей категории, врач от Бога,  и просто хороший, чуткий и отзывчивый человек. Были у него на приеме, когда жутко болела голова, но теперь это уже все в порядке</span>
-                                        <a href="#" class="more more_small font-semibold text-sm">Читать полностью</a>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
                                     </div>
                                     <div class="response-card__doctor d-flex align-items-center">
                                         <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc3.jpg" class="swiper-lazy"></a></div>
-                                        <div class="response-card__doctor-details text-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
+                                        <div class="response-card__doctor-details text-xxxxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="response-card d-flex flex-column">
-                                    <div class="response-card__date text-sm">
+                                    <div class="response-card__date text-xxxxs text-lg-sm">
                                         9 мая 2022
                                     </div>
-                                    <div class="response-card__text text-md flex-grow-1">
+                                    <div class="response-card__text text-xxs text-lg-md flex-grow-1">
                                         <span class="response-card__text-wrapper">Про поликлинику узнал от друзей. Приехал из другого города, чтобы пройти обследование перед операцией. Прошел многих специалистов за короткий срок. Был составлен протокол лечения и вот наконец я могу жить </span>
-                                        <a href="#" class="more more_small font-semibold text-sm">Читать полностью</a>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
                                     </div>
                                     <div class="response-card__doctor d-flex align-items-center">
                                         <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc4.jpg" class="swiper-lazy"></a></div>
-                                        <div class="response-card__doctor-details text-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
+                                        <div class="response-card__doctor-details text-xxxxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="response-card d-flex flex-column">
-                                    <div class="response-card__date text-sm">
+                                    <div class="response-card__date text-xxxxs text-lg-sm">
                                         15 июля 2022
                                     </div>
-                                    <div class="response-card__text text-md flex-grow-1">
+                                    <div class="response-card__text text-xxs text-lg-md flex-grow-1">
                                         <span class="response-card__text-wrapper">Дунаев Андрей Владимирович, Очень грамотный доктор - невролог высшей категории, врач от Бога,  и просто хороший, чуткий и отзывчивый человек. Были у него на приеме, когда жутко болела голова, но теперь это уже все в порядке</span>
-                                        <a href="#" class="more more_small font-semibold text-sm">Читать полностью</a>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
                                     </div>
                                     <div class="response-card__doctor d-flex align-items-center">
                                         <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc3.jpg" class="swiper-lazy"></a></div>
-                                        <div class="response-card__doctor-details text-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
+                                        <div class="response-card__doctor-details text-xxxxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="response-card d-flex flex-column">
-                                    <div class="response-card__date text-sm">
+                                    <div class="response-card__date text-xxxxs text-lg-sm">
                                         9 мая 2022
                                     </div>
-                                    <div class="response-card__text text-md flex-grow-1">
+                                    <div class="response-card__text text-xxs text-lg-md flex-grow-1">
                                         <span class="response-card__text-wrapper">Про поликлинику узнал от друзей. Приехал из другого города, чтобы пройти обследование перед операцией. Прошел многих специалистов за короткий срок. Был составлен протокол лечения и вот наконец я могу жить </span>
-                                        <a href="#" class="more more_small font-semibold text-sm">Читать полностью</a>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
                                     </div>
                                     <div class="response-card__doctor d-flex align-items-center">
                                         <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc4.jpg" class="swiper-lazy"></a></div>
-                                        <div class="response-card__doctor-details text-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
+                                        <div class="response-card__doctor-details text-xxxxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="response-card d-flex flex-column">
-                                    <div class="response-card__date text-sm">
+                                    <div class="response-card__date text-xxxxs text-lg-sm">
                                         15 июля 2022
                                     </div>
-                                    <div class="response-card__text text-md flex-grow-1">
+                                    <div class="response-card__text text-xxs text-lg-md flex-grow-1">
                                         <span class="response-card__text-wrapper">Дунаев Андрей Владимирович, Очень грамотный доктор - невролог высшей категории, врач от Бога,  и просто хороший, чуткий и отзывчивый человек. Были у него на приеме, когда жутко болела голова, но теперь это уже все в порядке</span>
-                                        <a href="#" class="more more_small font-semibold text-sm">Читать полностью</a>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
                                     </div>
                                     <div class="response-card__doctor d-flex align-items-center">
                                         <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc3.jpg" class="swiper-lazy"></a></div>
-                                        <div class="response-card__doctor-details text-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
+                                        <div class="response-card__doctor-details text-xxxxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="response-card d-flex flex-column">
-                                    <div class="response-card__date text-sm">
+                                    <div class="response-card__date text-xxxxs text-lg-sm">
                                         9 мая 2022
                                     </div>
-                                    <div class="response-card__text text-md flex-grow-1">
+                                    <div class="response-card__text text-xxs text-lg-md flex-grow-1">
                                         <span class="response-card__text-wrapper">Про поликлинику узнал от друзей. Приехал из другого города, чтобы пройти обследование перед операцией. Прошел многих специалистов за короткий срок. Был составлен протокол лечения и вот наконец я могу жить </span>
-                                        <a href="#" class="more more_small font-semibold text-sm">Читать полностью</a>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
                                     </div>
                                     <div class="response-card__doctor d-flex align-items-center">
                                         <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc4.jpg" class="swiper-lazy"></a></div>
-                                        <div class="response-card__doctor-details text-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
+                                        <div class="response-card__doctor-details text-xxxxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
@@ -1470,10 +1470,11 @@
                 <script>
                   const responsesswiper = new Swiper('.responses .swiper', {
                     preloadImages: false,
-                    slidesPerView: 1,
+                    slidesPerView: "auto",
+                    slideToClickedSlide: true,
                     spaceBetween: 15,
                     breakpoints: {
-                      1200: {
+                      992: {
                         slidesPerView: 2
                       }
                     },
@@ -1504,8 +1505,8 @@
                 <div class="request__holder d-lg-flex align-items-lg-center">
                     <div class="request__image"><img src="f/i/request-back.jpg" alt=""></div>
                     <div class="request__content">
-                        <p class="request__title font-medium text-xl text-lg-xxxxl">Запишитесь на прием к&nbsp;своему врачу</p>
-                        <p class="text-xs text-lg-sm">* Каждую среду и воскресенье скидка 20% на первичный прием к специалистам взрослого отделения</p>
+                        <p class="request__title font-medium text-lg text-lg-xxxxl">Запишитесь на прием к&nbsp;своему врачу</p>
+                        <p class="text-xxs text-lg-sm">* Каждую среду и воскресенье скидка 20% на первичный прием к специалистам взрослого отделения</p>
                         <div class="request__buttons d-flex flex-wrap">
                             <a href="#" class="btn btn-white text-uppercase text-xxs font-medium">Записаться</a>
                             <a href="#" class="btn btn-outline-white text-uppercase text-xxs font-medium">Подробнее</a>
@@ -1519,35 +1520,35 @@
                 <div class="contacts__content">
                     <div class="row">
                         <div class="col-lg-3">
-                            <div class="contacts__block text-md text-lg-default">
-                                <p class="contacts__header text-lg text-lg-xl font-medium">Адрес</p>
-                                Ярославль,<br> ул. Победы, 14
+                            <div class="contacts__block">
+                                <p class="contacts__header text-lg-xl font-medium">Адрес</p>
+                                <span class="text-xxs text-lg-default">Ярославль,<br> ул. Победы, 14</span>
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="contacts__block text-md text-lg-default">
-                                <p class="contacts__header text-lg text-lg-xl font-medium">Режим работы</p>
-                                Пн-Пт:  8:00—20:00<br>
-                                    Сб-Вс: 8:00—15:00
+                            <div class="contacts__block">
+                                <p class="contacts__header text-lg-xl font-medium">Режим работы</p>
+                                <span class="text-xxs text-lg-default">Пн-Пт:  8:00—20:00<br>
+                                    Сб-Вс: 8:00—15:00</span>
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="contacts__block text-md text-lg-default">
-                                <p class="contacts__header text-lg text-lg-xl font-medium">Телефоны</p>
-                                <a href="tel:+74852778899">+7 (4852) 77-88-99</a><br>
-                                    <a href="tel:+74852208820">+7 (4852) 20-88-20</a>
+                            <div class="contacts__block">
+                                <p class="contacts__header text-lg-xl font-medium">Телефоны</p>
+                                <span class="text-xxs text-lg-default"><a href="tel:+74852778899">+7 (4852) 77-88-99</a><br>
+                                    <a href="tel:+74852208820">+7 (4852) 20-88-20</a></span>
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="contacts__block text-md text-lg-default">
-                                <p class="contacts__header text-lg text-lg-xl font-medium">Прием анализов</p>
-                                Пн-Пт:  8:00—16:00<br>
-                                    Сб-Вс: 8:00—13:00
+                            <div class="contacts__block">
+                                <p class="contacts__header text-lg-xl font-medium">Прием анализов</p>
+                                <span class="text-xxs text-lg-default">Пн-Пт:  8:00—16:00<br>
+                                    Сб-Вс: 8:00—13:00</span>
                             </div>
                         </div>
                     </div>
                     <div class="contacts__buttons d-flex justify-content-center">
-                        <div class="btn btn-primary font-medium text-xxs text-uppercase">Проложить маршрут</div>
+                        <div class="btn btn-primary font-medium text-lg-xxs text-uppercase">Проложить маршрут</div>
                     </div>
                 </div>
             </div>
@@ -1569,8 +1570,8 @@
                         <div class="btn btn-outline-white">Заказать звонок</div>
                     </div>
                     <div class="footer__wrap flex-grow-0 d-none d-lg-block"></div>
-                    <div class="flex-grow-0 d-lg-none"><a href="tel:+74852208820">+7 (4852) 20-88-20</a></div>
-                    <div class="footer__address flex-grow-0">Ярославль, ул.&nbsp;Победы, 14</div>
+                    <div class="flex-grow-0 text-sm d-lg-none"><a href="tel:+74852208820">+7 (4852) 20-88-20</a></div>
+                    <div class="footer__address text-sm text-lg-default flex-grow-0">Ярославль, ул.&nbsp;Победы, 14</div>
                     <div class="footer__wrap flex-grow-0 d-none d-lg-block"></div>
                     <div class="flex-grow-0 d-none d-lg-block"><a href="mailto:info@constanta-med.com">info@constanta-med.com</a></div>
                 </div>
@@ -1579,7 +1580,7 @@
         <div class="footer__content">
             <div class="container-fluid container-xxl">
                 <div class="footer__menu">
-                    <div class="row text-xxs text-lg-mlg">
+                    <div class="row text-xxxs text-lg-mlg">
                         <div class="col footer__menu-column">
                             <ul>
                                 <li><a href="#" class="font-bold">Услуги</a>
@@ -1695,7 +1696,7 @@
         <div class="footer__extra">
             <div class="container-fluid container-xxl">
                 <div class="footer__extra-holder">
-                    <div class="row justify-content-lg-between text-xxxxs text-lg-xxxs">
+                    <div class="row justify-content-lg-between text-xxxxxs text-lg-xxxs">
                         <div class="col-12 col-lg-auto"><p class="copyright">© 2016-2022 ООО Клиника диагностики «Константа» - <br>поликлиника в Ярославле</p></div>
                         <div class="col-12 col-lg-auto"><p>Имеются противопоказания,<br> необходима консультация со специалистом!</p></div>
                         <div class="col-12 col-lg-auto"><p class="developer"><!--noindex-->Разработка — <a href="https://inteo-s.ru" rel="external nofollow" target="_blank">Интео</a><!--/noindex--></p></div>
