@@ -119,11 +119,19 @@ $(document).ready(function(){
     constantaJSCore.hideMobileMenu();
     return false;
   });
+  $('[data-messengers]').click(function(){
+    $(this).closest('.dropdown').addClass('active');
+  });
+
   $(document).click(function(event) {
     const $target = $(event.target);
     if(!$target.closest('[data-menu]').length &&
       $('[data-menu]').is(".active")) {
       constantaJSCore.hideServicesMenu();
+    }
+    if(!$target.closest('.dropdown').length &&
+        $('[data-messengers]').closest('.dropdown').is(".active")) {
+      $('[data-messengers]').closest('.dropdown').removeClass('active');
     }
   });
   $(window).scroll(function(e) {

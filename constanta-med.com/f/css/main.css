@@ -89,6 +89,20 @@
     --bs-btn-color: var(--color-main);
     --bs-btn-bg: #fff;
     --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--color-main);
+    --bs-btn-hover-border-color: var(--color-main);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--color-main);
+    --bs-btn-active-border-color: var(--color-main);
+    --bs-btn-disabled-color: var(--color-main);
+    --bs-btn-disabled-bg: #fff;
+    --bs-btn-disabled-border-color: #fff;
+}
+.btn-outline-white {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #fff;
     --bs-btn-hover-color: var(--color-main);
     --bs-btn-hover-bg: #fff;
     --bs-btn-hover-border-color: #fff;
@@ -99,7 +113,7 @@
     --bs-btn-disabled-bg: #fff;
     --bs-btn-disabled-border-color: #fff;
 }
-.btn-outline-white {
+.btn-outline-white-light {
     --bs-btn-color: #fff;
     --bs-btn-bg: transparent;
     --bs-btn-border-color: #fff;
@@ -297,6 +311,9 @@
     .text-lg-default {
         font-size: var(--bs-body-font-size);
         line-height: var(--bs-body-line-height);
+    }
+    .btn.text-lg-default {
+        font-size: var(--bs-btn-font-size);
     }
     .text-lg-left {
         text-align: left;
@@ -561,6 +578,10 @@ h2 span {
 .scrollbar_dark::-webkit-scrollbar-thumb, .scrollbar_dark::-webkit-scrollbar-thumb:window-inactive {
     border-color: var(--color-background);
 }
+.symbols {
+    position: fixed;
+    display: none;
+}
 @media (max-width: 991.98px) {
     .inner-shadow {
         box-shadow: 0 15px 15px -15px rgba(0,0,0,.25) inset;
@@ -770,6 +791,132 @@ h2 span {
     }
 }
 /*endregion*/
+/*region Messengers*/
+.messenger.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+.messengers__link {
+    position: relative;
+}
+.messengers__link .dropdown-menu {
+    padding-top: 13px;
+    left: -14px;
+    margin-top: 0;
+    transform: translateX(0);
+}
+.messengers__link:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+.messengers__link.dropdown:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -14px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #161616 transparent transparent transparent;
+    transform: scale(.9);
+}
+.messengers__link .dropdown-menu ul {
+    padding: 15px 19px 10px;
+}
+.messengers__link .dropdown-menu a {
+    padding: 0;
+}
+.messengers__link .dropdown-menu a:hover {
+    background: transparent!important;
+}
+.messengers__link .dropdown-menu li {
+    margin-bottom: 5px;
+}
+.messenger__text {
+    margin-left: 8px;
+}
+.messenger {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+}
+.messenger_small {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+.messenger_whatsapp {
+    background: #16c950;
+}
+.messenger_viber {
+    background: #7360f2;
+}
+.messenger_telegram {
+    background: linear-gradient(180deg, rgba(42,171,238,1) 0%, rgba(34,158,217,1) 100%);
+}
+.messenger svg {
+    width: 22px;
+    height: 22px;
+    margin-top: -2px;
+}
+.messenger.messenger_whatsapp svg {
+    width: 20px;
+    height: 20px;
+}
+.messenger.messenger_viber svg {
+    width: 23px;
+    height: 23px;
+}
+.messenger.messenger_small svg {
+    width: 18px;
+    height: 18px;
+    margin-top: -2px;
+}
+.messenger_viber svg {
+    margin-left: 2px;
+}
+@media (max-width: 991.98px) {
+    .messengers__link.active .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .messengers__link .dropdown-menu {
+        padding-top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -2px;
+    }
+    .messengers__link .dropdown-menu ul {
+        transform: translateY(0) scaleY(.9);
+        transform-origin: center top;
+    }
+    .messenger {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+    }
+    .messenger.messenger_whatsapp svg {
+        width: 18px;
+        height: 18px;
+    }
+    .messenger__text, .messengers__link.dropdown:after {
+        display: none;
+    }
+    .messengers__link .dropdown-menu ul {
+        padding: 2px;
+        border-radius: 36px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    }
+    .messengers__link .dropdown-menu li:last-child {
+        margin-bottom: 0;
+    }
+}
+/*endregion*/
 /*region Header*/
 header {
     position: relative;
@@ -813,8 +960,11 @@ header {
     margin-bottom: 4px;
     display: block;
 }
+.intro__contacts {
+    margin-left: 25px;
+}
 .intro__buttons {
-    margin-left: 26px;
+    margin-left: 20px;
 }
 .intro__buttons .btn {
     margin-left: 12px;
@@ -992,6 +1142,9 @@ header {
     .intro__logo {
         margin-bottom: -4px;
     }
+    .intro__logo a {
+        display: inline-block;
+    }
     .intro__logo-title {
         letter-spacing: 0;
         font-size: 10.8px;
@@ -1003,10 +1156,13 @@ header {
     .intro__menu {
         margin-left: -15px;
     }
+    .intro__buttons {
+        order: 2;
+    }
     .intro__buttons .btn {
         min-width: 0;
-        width: 31px;
-        height: 31px;
+        width: 32px;
+        height: 32px;
         background: var(--color-main)!important;
         padding: 0;
         border-radius: 50%;
@@ -1018,6 +1174,10 @@ header {
     .intro__logo img {
         width: 130px;
         height: 23px;
+    }
+    .intro__contacts {
+        order: 3;
+        margin-left: 7px;
     }
     .navigation-holder {
         height: auto;
@@ -2301,12 +2461,18 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
 .features__image {
     margin-bottom: 11px;
 }
+.features__image svg * {
+    stroke: var(--color-main);
+}
 .features__image_tall {
     height: 170px;
     margin-bottom: 29px;
 }
-.features__image img {
+.features__image img, .features__image svg {
     max-height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
 .features__description {
     margin-bottom: 0;
@@ -2426,6 +2592,17 @@ footer {
 }
 .social__item:not(:hover) .social__icon path {
     fill: rgba(255, 255, 255, .26);
+}
+.footer__messengers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__messengers li {
+    margin-right: 7px;
+}
+.footer__messengers li.footer__messengers-phone {
+    margin-left: 13px;
 }
 @media (max-width: 1199.98px) {
     .footer__menu-column {
