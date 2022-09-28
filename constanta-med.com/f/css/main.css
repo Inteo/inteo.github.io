@@ -99,6 +99,9 @@
     --bs-btn-disabled-bg: #fff;
     --bs-btn-disabled-border-color: #fff;
 }
+.btn-white-hover {
+    --bs-btn-hover-border-color: #fff;
+}
 .btn-outline-white {
     --bs-btn-color: #fff;
     --bs-btn-bg: transparent;
@@ -822,10 +825,11 @@ h2 span {
     top: 50%;
     width: 0;
     height: 0;
+    margin-top: -2px;
     border-style: solid;
     border-width: 5px 5px 0 5px;
     border-color: #161616 transparent transparent transparent;
-    transform: scale(.9);
+    transform: scale(.85);
 }
 .messengers__link .dropdown-menu ul {
     padding: 15px 19px 10px;
@@ -846,8 +850,8 @@ a:hover .messenger__text {
     color: var(--bs-link-hover-color);
 }
 .messenger {
-    width: 40px;
-    height: 40px;
+    width: 41px;
+    height: 41px;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
@@ -873,20 +877,34 @@ a:hover .messenger__text {
     margin-top: -2px;
 }
 .messenger.messenger_whatsapp svg {
-    width: 20px;
-    height: 20px;
+    width: 21px;
+    height: 21px;
+    margin-top: 0;
 }
-.messenger.messenger_viber svg {
-    width: 23px;
-    height: 23px;
-}
-.messenger.messenger_small svg {
+.messenger.messenger_small.messenger_whatsapp svg {
     width: 18px;
     height: 18px;
+    margin-left: 1px;
     margin-top: -2px;
 }
-.messenger_viber svg {
+.messenger.messenger_viber svg {
+    width: 22px;
+    height: 22px;
     margin-left: 2px;
+    margin-top: 1px;
+}
+.messenger.messenger_small.messenger_viber svg {
+    width: 17px;
+    height: 17px;
+    margin-top: -2px;
+}
+.messenger.messenger_telegram svg {
+    width: 26px;
+    height: 26px;
+}
+.messenger.messenger_small.messenger_telegram svg {
+    width: 19px;
+    height: 19px;
 }
 @media (max-width: 991.98px) {
     .messengers__link.active .dropdown-menu {
@@ -904,13 +922,9 @@ a:hover .messenger__text {
         transform-origin: center top;
     }
     .messenger {
-        width: 32px;
-        height: 32px;
-        line-height: 32px;
-    }
-    .messenger.messenger_whatsapp svg {
-        width: 18px;
-        height: 18px;
+        width: 36px;
+        height: 36px;
+        line-height: 34px;
     }
     .messenger__text, .messengers__link.dropdown:after {
         display: none;
@@ -922,6 +936,25 @@ a:hover .messenger__text {
     }
     .messengers__link .dropdown-menu li:last-child {
         margin-bottom: 0;
+    }
+    .messenger.messenger_whatsapp svg {
+        width: 18px;
+        height: 18px;
+    }
+    .messenger.messenger_small.messenger_whatsapp svg {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .messenger.messenger_small.messenger_viber svg {
+        width: 18px;
+        height: 18px;
+        margin-top: 0;
+    }
+    .messenger.messenger_small.messenger_telegram svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 0;
+        margin-top: 0;
     }
 }
 /*endregion*/
@@ -960,7 +993,7 @@ header {
 .intro__address {
     white-space: nowrap;
     text-align: right;
-    margin-bottom: -10px;
+    margin-bottom: -4px;
 }
 .intro__address b {
     font-size: 20px;
@@ -1088,6 +1121,7 @@ header {
 .intro__logo-title {
     display: block;
     text-transform: lowercase;
+    margin-bottom: -1px;
     font-size: 12.9px;
     line-height: 12.9px;
     white-space: nowrap;
@@ -1155,12 +1189,12 @@ header {
         margin-bottom: -4px;
     }
     .intro__logo-title {
-        letter-spacing: 0;
-        font-size: 10.8px;
-        line-height: 10.8px;
+        font-size: 9.3px;
+        line-height: 9.3px;
+        letter-spacing: .01em;
     }
     .intro__logo img {
-        margin-top: -5px;
+        margin-top: -7px;
     }
     .intro__menu {
         margin-left: -15px;
@@ -1170,19 +1204,19 @@ header {
     }
     .intro__buttons .btn {
         min-width: 0;
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
         background: var(--color-main)!important;
         padding: 0;
         border-radius: 50%;
         text-align: center;
-        line-height: 31px;
+        line-height: 35px;
         margin-left: 7px;
         border: 0!important;
     }
     .intro__logo img {
-        width: 130px;
-        height: 23px;
+        width: 114px;
+        height: 11px;
     }
     .intro__contacts {
         order: 3;
@@ -1218,7 +1252,10 @@ header {
     .header__wrap {
         transition: transform .25s;
     }
-    body.fixed-menu .header__wrap {
+    .js-header-fixed-element {
+        height: 101px;
+    }
+    /*body.fixed-menu */.header__wrap {
         position: fixed;
         top: 0;
         width: 100%;
@@ -1546,7 +1583,7 @@ header {
     }
     .tab-pane__collapse-header-link {
         display: block;
-        padding: 12px 50px 12px 20px;
+        padding: 10px 50px 10px 20px;
         position: relative;
     }
     .tab-pane__collapse-header-link_big {
@@ -1784,14 +1821,14 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         line-height: 18px;
         height: 20px;
         border-radius: 0 10px 10px 0;
-        padding-right: 10px;
+        padding-right: 9px;
     }
     .icon-block__icon {
         font-size: 12px;
         width: 20px;
         height: 20px;
         line-height: 20px;
-        margin-right: 5px;
+        margin-right: 1px;
         margin-left: -10px;
     }
 }
@@ -2294,7 +2331,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     .response-card__text-wrapper {
         display: block;
         margin-right: 0;
-        height: 96px;
+        height: 102px;
         overflow: hidden;
         margin-bottom: 5px;
     }
@@ -2354,7 +2391,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     }
     .request__holder {
         height: auto;
-        border-radius: 10px 10px 20px 20px;
+        border-radius: 20px;
         background: var(--color-main);
     }
     .request__image {
@@ -2365,7 +2402,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         overflow: hidden;
         width: 100%;
         padding-bottom: 52.4%;
-        border-radius: 10px;
+        border-radius: 20px;
     }
     .request__image img {
         position: absolute;
@@ -2504,9 +2541,15 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
 .features__title {
     margin-bottom: 14px;
 }
+.features__image img, .features__image svg {
+    display: block;
+    margin: 0 auto;
+}
 @media (min-width: 992px) {
     .features__title {
-        max-width: 240px;
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media (min-width: 1240px) {
@@ -2528,8 +2571,6 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     .features__image img, .features__image svg {
         max-height: 100%;
         width: auto;
-        display: block;
-        margin: 0 auto;
     }
     .features__image {
         height: 115px;
@@ -2539,6 +2580,11 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     }
     .features__title {
         margin-bottom: 2px;
+    }
+    .features__description {
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto
     }
 }
 /*endregion*/
@@ -2609,15 +2655,32 @@ footer {
     background: transparent;
     transition: background-color .24s, border-color .24s;
 }
-.social__item:hover {
-    background: #fff;
-    border-color: #fff;
+.social__item_vk {
+    border-color: #366ed0;
+}
+.social__item_vk:hover {
+    background: #366ed0;
+    border-color: #366ed0;
+}
+.social__item_ok {
+    border-color: #ee8208;
+}
+.social__item_ok:hover {
+    background: #ee8208;
+    border-color: #ee8208;
+}
+.social__item_yt {
+    border-color: #f00;
+}
+.social__item_yt:hover {
+    background: #f00;
+    border-color: #f00;
 }
 .social__icon path {
     transition: fill .24s;
 }
-.social__item:not(:hover) .social__icon path {
-    fill: rgba(255, 255, 255, .26);
+.social__item:hover .social__icon path {
+    fill: #fff;
 }
 .footer__messengers {
     list-style: none;
@@ -2675,6 +2738,9 @@ footer {
     .footer__callback .btn {
         text-transform: uppercase;
         min-width: 157px;
+    }
+    .footer__callback-icons {
+        margin-left: 18px;
     }
     .footer__address {
         margin-top: 4px;

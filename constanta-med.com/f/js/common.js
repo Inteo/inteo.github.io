@@ -1,7 +1,7 @@
 const constantaJSCore = (function () {
   return {
     init: function() {
-      this.fixMenu();
+      //this.fixMenu();
       $(".social").clone().appendTo(".header__mobile-menu-social");
     },
     showServicesMenu: function() {
@@ -100,7 +100,7 @@ const constantaJSCore = (function () {
 
 $(document).ready(function(){
   constantaJSCore.init();
-  $("header").JQueryHeader();
+  //$("header").JQueryHeader();
   $('[data-open-menu]').click(function(){
     if ($(this).hasClass('active'))
       constantaJSCore.hideServicesMenu();
@@ -134,7 +134,7 @@ $(document).ready(function(){
       $('[data-messengers]').closest('.dropdown').removeClass('active');
     }
   });
-  $(window).scroll(function(e) {
+  /*$(window).scroll(function(e) {
     constantaJSCore.fixMenu();
-  });
+  });*/
 });
