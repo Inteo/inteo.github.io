@@ -1,20 +1,20 @@
 const constantaJSCore = (function () {
   return {
     init: function() {
-      //this.fixMenu();
+      this.fixMenu();
       $(".social").clone().appendTo(".header__mobile-menu-social");
     },
     showServicesMenu: function() {
       $('[data-open-menu]').addClass('active');
       $('[data-menu]').addClass('active');
       $('.navigation-fixed').addClass('active');
-      //$('body').addClass('no-scroll');
+      $('body').addClass('no-scroll');
     },
     hideServicesMenu: function() {
       $('[data-open-menu]').removeClass('active');
       $('[data-menu]').removeClass('active');
       $('.navigation-fixed').removeClass('active');
-      //$('body').removeClass('no-scroll');
+      $('body').removeClass('no-scroll');
     },
     showMobileMenu: function() {
       $('[data-open-mobile-menu]').addClass('active');
@@ -134,7 +134,7 @@ $(document).ready(function(){
       $('[data-messengers]').closest('.dropdown').removeClass('active');
     }
   });
-  /*$(window).scroll(function(e) {
+  $(window).scroll(function(e) {
     constantaJSCore.fixMenu();
-  });*/
+  });
 });
