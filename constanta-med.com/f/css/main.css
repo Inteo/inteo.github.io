@@ -2338,7 +2338,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     .response-card__text-wrapper {
         display: block;
         margin-right: 0;
-        height: 102px;
+        height: 120px;
         overflow: hidden;
         margin-bottom: 5px;
     }
