@@ -342,6 +342,9 @@
 .inner-shadow {
     box-shadow: 0 40px 40px -40px rgba(0,0,0,.18) inset;
 }
+.inner-border {
+    border-top: 4px solid #fff;
+}
 a {
     text-decoration: none;
 }
@@ -817,6 +820,26 @@ ol.list-styled li:before, [data-counter]:before {
 .swiper-container_compact .swiper-button-next {
     right: 14px;
 }
+.swiper-container_controls-bottom {
+    padding-bottom: 90px;
+}
+.swiper-container_controls-bottom .swiper-button-prev, .swiper-container_controls-bottom .swiper-button-next {
+    opacity: 1;
+    top: auto;
+    bottom: 20px;
+}
+.swiper-container_controls-bottom .swiper-button-prev {
+    left: 0;
+}
+.swiper-container_controls-bottom .swiper-button-next {
+    right: 0;
+}
+.swiper-container_controls-bottom .swiper-pagination-bullets {
+    bottom: 31px!important;
+}
+.swiper-container_controls-bottom .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    background: var(--color-background);
+}
 .swiper-button-icon {
     margin-top: -1px;
 }
@@ -971,6 +994,9 @@ a:hover .messenger__text {
         transform: translateY(0) scaleY(.9);
         transform-origin: center top;
     }
+    .messengers__link.active .dropdown-menu ul {
+        transform: translateY(0) scaleY(1);
+    }
     .messenger {
         width: 36px;
         height: 36px;
@@ -1015,7 +1041,7 @@ header {
 }
 .header__main-menu {
     position: relative;
-    z-index: 11;
+    z-index: 12;
     background: #fff;
 }
 .header__extra-menu {
@@ -1165,6 +1191,7 @@ header {
 }
 .dropdown-menu a:hover {
     background: #efefef;
+    color: var(--bs-link-hover-color);
 }
 .intro__logo a {
     display: inline-block;
@@ -1679,6 +1706,9 @@ header {
     .tab-pane__collapse-header-link_big[aria-expanded='true'] {
         color: var(--color-important);
     }
+    .tab-pane__collapse-header-link_big[aria-expanded='true'] .nav-content__arrow svg polyline {
+        stroke: var(--color-important);
+    }
     .nav-content__link[aria-expanded='true'] {
         background-color: #fafafa;
     }
@@ -1952,6 +1982,9 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     position: relative;
     z-index: 7;
 }
+.doctor-list_wide {
+    padding: 68px 0 74px;
+}
 .doctor-list .swiper {
     overflow: visible;
 }
@@ -2097,6 +2130,9 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     position: relative;
     z-index: 6;
 }
+.diseases_wide {
+    padding: 68px 0 74px;
+}
 .diseases .header-links {
     margin-bottom: 36px;
 }
@@ -2147,6 +2183,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
 }
 .disease-card__title {
     margin-bottom: 11px;
+    min-height: 44px;
 }
 .disease-card__title a {
     color: inherit;
@@ -2155,7 +2192,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     color: var(--color-important);
 }
 .disease-card__actions {
-    margin-top: 25px;
+    margin-top: 4px;
 }
 @media (max-width: 991.98px) {
     .diseases {
@@ -2175,9 +2212,6 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     }
     .swiper-slide-active .disease-card {
         box-shadow: var(--block-shadow-card);
-    }
-    .disease-card__actions {
-        margin-top: 4px;
     }
 }
 @media (min-width: 992px) {
@@ -2337,6 +2371,9 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     overflow: hidden;
     position: relative;
     z-index: 8;
+}
+.responses_wide {
+    padding: 68px 0 74px;
 }
 .responses .swiper {
     overflow: visible;
@@ -2754,7 +2791,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     flex: 0 0 66.7857%;
     max-width: 66.7857%;
     border-right: 1px solid #e5e5e5;
-    padding-bottom: 80px;
+    padding-bottom: 90px;
 }
 .inner-content__block {
     padding-right: 130px;
@@ -2764,6 +2801,11 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
 }
 .inner-content__block h3 {
     margin-bottom: 30px;
+}
+.inner-content__sidebar {
+    flex: 0 0 323px;
+    max-width: 323px;
+    padding-bottom: 90px;
 }
 .small-gallery {
     padding-bottom: 25px;
@@ -2793,6 +2835,48 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
 .steps__item-content .small-gallery {
     margin: 30px 0 0;
     padding-bottom: 10px;
+}
+.sticky {
+    position: sticky;
+    top: 137px;
+}
+/*endregion*/
+/*region Promo events*/
+.promo-event {
+    position: relative;
+    height: 0;
+    padding-bottom: 147.9876%;
+    border-radius: 20px;
+    width: 100%;
+}
+.promo-event__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 21px 21px;
+}
+.promo-event__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(10px);
+    padding: 30px 32px;
+    border-radius: 20px;
+}
+.promo-event__title b {
+    color: var(--color-important);
+}
+.promo-event__actions {
+    margin-top: 23px;
+    text-align: center;
+}
+.promo-event__actions .btn {
+    min-width: 154px;
 }
 /*endregion*/
 /*region Footer*/
