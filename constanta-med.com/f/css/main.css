@@ -2180,6 +2180,12 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         margin-top: 4px;
     }
 }
+@media (min-width: 992px) {
+    .disease-card, .diseases .swiper-slide {
+        width: 237px;
+        max-width: 237px;
+    }
+}
 /*endregion*/
 /*region About*/
 .about {
