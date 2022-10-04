@@ -130,7 +130,15 @@ $(document).ready(function(){
   $('[data-messengers]').click(function(){
     $(this).closest('.dropdown').addClass('active');
   });
-
+  $('[data-scrollto]').click(function(){
+    if ($(this).hasClass('active')) return false;
+    const $target = $(this).data('scrollto');
+    $.scrollTo($('[data-scrollto-target="'+$target+'"]'), {
+      offset: {'top': -110},
+      duration: 300
+    });
+    return false;
+  });
   $(document).click(function(event) {
     const $target = $(event.target);
     if(!$target.closest('[data-menu]').length &&
