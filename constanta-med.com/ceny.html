@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Константа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="npm/swiper/swiper-bundle.min.css">
+    <script src="f/js/jquery-3.6.1.min.js"></script>
+    <script src="f/js/common.js?v7"></script>
+    <script src="npm/swiper/swiper-bundle.min.js"></script>
+    <script src="npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="dist/css/custom.min.css?v7" rel="stylesheet">
+    <link href="f/css/main.css?v7" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-light top-navigation text-xs d-none d-lg-block">
+        <div class="container-fluid container-xxl">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link">О клинике</a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-link">Пациентам <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round; stroke-width: 0.6px"/></svg></span></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#">Взрослое отделение</a></li>
+                            <li><a href="#">Детское отделение</a></li>
+                            <li><a href="#">Диагностика</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Организациям</a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-link">Блог <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round; stroke-width: 0.6px"/></svg></span></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#">Взрослое отделение</a></li>
+                            <li><a href="#">Детское отделение</a></li>
+                            <li><a href="#">Диагностика</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="js-header-fixed-element">
+            <div class="header__wrap">
+                <div class="header__main-menu">
+                    <div class="container-fluid container-xxl">
+                        <div class="intro d-flex justify-content-between align-items-center">
+                            <div class="intro__menu d-lg-none flex-grow-0">
+                                <span class="menu-toggle" data-open-mobile-menu><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span>
+                            </div>
+                            <div class="intro__logo flex-grow-1">
+                                <a href="/">
+                                    <span class="intro__logo-title">Клиника лечения боли</span>
+                                    <img src="f/i/logo_light.svg" alt="Константа Life">
+                                </a>
+                            </div>
+                            <div class="intro__actions d-flex align-items-center">
+                                <div class="intro__address text-xs d-none d-lg-block">
+                                    <b><a href="tel:+74852778899">+7 (4852) 77-88-99</a></b>
+                                    Ярославль, ул. Победы, 14
+                                </div>
+                                <div class="intro__contacts messengers">
+                                    <div class="messengers__link dropdown">
+                                        <span class="messenger messenger_whatsapp" data-messengers><svg><use xlink:href="#whatsapp"></use></svg></span>
+                                        <div class="dropdown-menu text-md">
+                                            <ul>
+                                                <li>
+                                                    <a class="d-flex align-items-center" href="#">
+                                                        <span class="flex-grow-0">
+                                                            <span class="messenger messenger_small messenger_whatsapp"><svg><use xlink:href="#whatsapp"></use></svg></span>
+                                                        </span>
+                                                        <span class="messenger__text">+7 (910) 111-11-11</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="d-flex align-items-center" href="#">
+                                                        <span class="flex-grow-0">
+                                                            <span class="messenger messenger_small messenger_viber"><svg><use xlink:href="#viber"></use></svg></span>
+                                                        </span>
+                                                        <span class="messenger__text">+7 (910) 111-11-11</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="d-flex align-items-center" href="#">
+                                                        <span class="flex-grow-0">
+                                                            <span class="messenger messenger_small messenger_telegram"><svg><use xlink:href="#telegram"></use></svg></span>
+                                                        </span>
+                                                        <span class="messenger__text">constanta</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="intro__buttons d-flex">
+                                    <a href="#" class="btn btn-outline-primary btn-lowercase">
+                                        <span class="d-lg-none">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.69 18.46" width="15" height="16">
+                                                <path d="M.05,3.82C.34,1.67,2.44-.32,3.94,0,4.9.27,5.32,2,5.62,3.21s0,1.72-.61,2-1.9.54-1.81,1.18c.26,1.88,3,6.58,4.47,7.74.52.4,1.39-.6,1.93-1s1.1-.39,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.22,1.47C4.1,16.39-.55,8.34.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
+                                                <path d="M9.35,1.73a7.67,7.67,0,0,1,5.43,9.39" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
+                                                <path d="M8.62,4.45a4.85,4.85,0,0,1,3.44,5.94" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
+                                                <path d="M7.93,7A2.18,2.18,0,0,1,9.47,9.7" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-width: 1.3027000427246094px"/>
+                                            </svg>
+                                        </span>
+                                        <span class="d-none d-lg-inline">Заказать звонок</span></a>
+                                    <a href="#" class="btn btn-danger btn-lowercase d-none d-lg-block">
+                                        <span class="d-lg-none">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.73 18.46" width="13" height="15">
+                                                <path d="M.05,3.82C.34,1.67,2.44-.31,3.94,0,4.91.28,5.32,2,5.61,3.21s0,1.72-.6,2-1.9.53-1.81,1.18c.26,1.87,3,6.57,4.47,7.73.52.4,1.39-.6,1.93-1s1.1-.4,2,.48,2.19,2.08,1.91,3c-.44,1.48-3.21,2.3-5.21,1.47C4.1,16.39-.55,8.35.05,3.82Z" style="fill: #fff;fill-rule: evenodd"/>
+                                                <line x1="8.79" y1="8.31" x2="14.08" y2="5.26" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.295699954032898px"/>
+                                                <polygon points="9.2 6.34 7.69 8.95 10.71 8.95 9.2 6.34" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.4891999959945679px"/>
+                                            </svg>
+                                        </span>
+                                        <span class="d-none d-lg-inline">Записаться онлайн</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-holder">
+                    <div class="navigation-fixed">
+                        <div class="container-fluid container-xxl">
+                            <div class="navigation-decor">
+                                <div class="navigation d-flex justify-content-between">
+                                    <div class="menu d-none d-lg-block">
+                                        <ul class="nav">
+                                            <li class="nav-item nav-item_main"><a href="#" class="nav-link" data-open-menu><span class="menu-toggle menu-toggle_small"><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span> Услуги</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Лечение боли</a></li>
+                                            <li class="nav-item dropdown"><a href="#" class="nav-link">Программы <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                                <div class="dropdown-menu text-md">
+                                                    <ul>
+                                                        <li><a href="#">Пункт 1</a></li>
+                                                        <li><a href="#">Пункт 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item dropdown"><a href="#" class="nav-link">Врачи <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                                <div class="dropdown-menu text-md">
+                                                    <ul>
+                                                        <li><a href="#">Взрослое отделение</a></li>
+                                                        <li><a href="#">Детское отделение</a></li>
+                                                        <li><a href="#">Диагностика</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Отзывы</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="search d-none d-lg-block">
+                                        <a href="#" class="search__link text-sm d-flex align-items-center">
+                                            <span class="icon icon_search">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.67 7.67">
+                                                    <path d="M1,1A2.44,2.44,0,0,1,4.48,4.48,2.44,2.44,0,0,1,1,1Z" style="fill: none;stroke-width: 0.6236000061035156px"/>
+                                                    <line x1="4.68" y1="4.68" x2="7.36" y2="7.36" style="fill: none;stroke-linecap: round;stroke-width: 0.6236000061035156px"/>
+                                                </svg>
+                                            </span>
+                                            <span class="search__link-text">Поиск по сайту</span>
+                                        </a>
+                                    </div>
+                                    <div class="navigation-actions">
+                                        <a href="#" class="btn btn-danger btn-lowercase text-xs text-lg-default">Записаться онлайн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__mobile-menu d-lg-none bg-light scrollbar scrollbar_dark" data-mobile-menu>
+                    <div class="header__mobile-menu-wrap text-sm">
+                        <div class="tab-pane__collapse">
+                            <div class="tab-pane__collapse-header">
+                                <a href="#" class="tab-pane__collapse-header-link tab-pane__collapse-header-link_big text-sm font-bold text-uppercase" data-bs-toggle="collapse" data-bs-target="#mobileSection1" aria-expanded="false" aria-controls="mobileSection1">Лечение боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                            </div>
+                            <div class="tab-pane__collapse-content collapse" id="mobileSection1">
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection1Sub" aria-expanded="false" aria-controls="mobileSection1Sub">Укажите место вашей боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mobileSection1Sub">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane__collapse">
+                            <div class="tab-pane__collapse-header">
+                                <a href="#" class="tab-pane__collapse-header-link tab-pane__collapse-header-link_big text-sm font-bold text-uppercase" data-bs-toggle="collapse" data-bs-target="#mobileSection2" aria-expanded="false" aria-controls="mobileSection1">Услуги <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                            </div>
+                            <div class="tab-pane__collapse-content collapse" id="mobileSection2">
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection21" aria-expanded="false" aria-controls="mSection21">Лечение боли <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection21">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                            <li><a href="#" class="nav-content__link">Отоларингология</a></li>
+                                            <li><a href="#" class="nav-content__link">Офтальмология</a></li>
+                                            <li><a href="#" class="nav-content__link">Педиатрия</a></li>
+                                            <li><a href="#" class="nav-content__link nav-content__link_parent" data-bs-toggle="collapse" data-bs-target="#subSection21" aria-expanded="false" aria-controls="subSection21">Дополнительные услуги <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round;"/></svg></span></a>
+                                                <div class="nav-content__submenu collapse" id="subSection21">
+                                                    <ul>
+                                                        <li><a href="#" class="nav-content__link">Вакцинация</a></li>
+                                                        <li><a href="#" class="nav-content__link">Справки</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection22" aria-expanded="false" aria-controls="mSection22">Для взрослых <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection22">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection23" aria-expanded="false" aria-controls="mSection23">Для детей <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection23">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection25" aria-expanded="false" aria-controls="mSection25">Стоматология <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection25">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection26" aria-expanded="false" aria-controls="mSection26">Диагностика <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection26">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection27" aria-expanded="false" aria-controls="mSection27">Анализы <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection27">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection28" aria-expanded="false" aria-controls="mSection28">Выезд на дом <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection28">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection24" aria-expanded="false" aria-controls="mSection24">Программы <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection24">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mSection29" aria-expanded="false" aria-controls="mSection29">Covid-19 <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mSection29">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                            <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane__collapse">
+                            <div class="tab-pane__collapse-header">
+                                <a href="#" class="tab-pane__collapse-header-link tab-pane__collapse-header-link_big text-sm font-bold text-uppercase" data-bs-toggle="collapse" data-bs-target="#mobileSection3" aria-expanded="false" aria-controls="mobileSection1">Меню <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                            </div>
+                            <div class="tab-pane__collapse-content collapse" id="mobileSection3">
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold">О нас</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection31Sub" aria-expanded="false" aria-controls="mobileSection31Sub">Пациентам <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mobileSection31Sub">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Взрослое отделение</a></li>
+                                            <li><a href="#" class="nav-content__link">Детское отделение</a></li>
+                                            <li><a href="#" class="nav-content__link">Диагностика</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold">Организациям</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse">
+                                    <div class="tab-pane__collapse-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#mobileSection34Sub" aria-expanded="false" aria-controls="mobileSection34Sub">Блог <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-content collapse" id="mobileSection34Sub">
+                                        <ul class="nav-content">
+                                            <li><a href="#" class="nav-content__link">Взрослое отделение</a></li>
+                                            <li><a href="#" class="nav-content__link">Детское отделение</a></li>
+                                            <li><a href="#" class="nav-content__link">Диагностика</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__mobile-menu-extra text-center">
+                        <div class="header__mobile-menu-phone"><a href="tel:+74852778899" class="text-mlg font-bold">+7 (4852) 77-88-99</a></div>
+                        <div class="header__mobile-menu-address text-sm">Ярославль, ул.&nbsp;Победы, 14<br><a href="mailto:info@constanta-med.com">info@constanta-med.com</a></div>
+                        <div class="header__mobile-menu-social"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__extra-menu bg-light d-none d-lg-block" data-menu>
+            <div class="header__extra-menu-holder scrollbar scrollbar_dark">
+                <div class="container-fluid container-xxl">
+                    <div class="tabs">
+                        <div class="tab-menu">
+                            <div class="swiper-container swiper-container_large">
+                                <div class="swiper">
+                                    <ul class="nav nav-tabs swiper-wrapper" id="menuExtraTab" role="tablist">
+                                        <li class="swiper-slide nav-item" role="presentation">
+                                            <button class="nav-link font-semibold active" id="extrasection1-tab" data-bs-toggle="tab" data-bs-target="#extrasection1-tab-pane" type="button" role="tab" aria-controls="extrasection1-tab-pane" aria-selected="true">Лечение боли</button>
+                                        </li>
+                                        <li class="swiper-slide nav-item" role="presentation">
+                                            <button class="nav-link font-semibold" id="extrasection2-tab" data-bs-toggle="tab" data-bs-target="#extrasection2-tab-pane" type="button" role="tab" aria-controls="extrasection2-tab-pane" aria-selected="false">Для взрослых</button>
+                                        </li>
+                                        <li class="swiper-slide nav-item" role="presentation">
+                                            <button class="nav-link font-semibold" id="extrasection3-tab" data-bs-toggle="tab" data-bs-target="#extrasection3-tab-pane" type="button" role="tab" aria-controls="extrasection3-tab-pane" aria-selected="false">Для детей</button>
+                                        </li>
+                                        <li class="swiper-slide nav-item" role="presentation">
+                                            <button class="nav-link font-semibold" id="extrasection5-tab" data-bs-toggle="tab" data-bs-target="#extrasection5-tab-pane" type="button" role="tab" aria-controls="extrasection5-tab-pane" aria-selected="false">Стоматология</button>
+                                        </li>
+                                        <li class="swiper-slide nav-item" role="presentation">
+                                            <button class="nav-link font-semibold" id="extrasection6-tab" data-bs-toggle="tab" data-bs-target="#extrasection6-tab-pane" type="button" role="tab" aria-controls="extrasection6-tab-pane" aria-selected="false">Диагностика</button>
+                                        </li>
+                                        <li class="swiper-slide nav-item" role="presentation">
+                                            <button class="nav-link font-semibold" id="extrasection7-tab" data-bs-toggle="tab" data-bs-target="#extrasection7-tab-pane" type="button" role="tab" aria-controls="extrasection7-tab-pane" aria-selected="false">Анализы</button>
+                                        </li>
+                                        <li class="swiper-slide nav-item" role="presentation">
+                                            <button class="nav-link font-semibold" id="extrasection8-tab" data-bs-toggle="tab" data-bs-target="#extrasection8-tab-pane" type="button" role="tab" aria-controls="extrasection8-tab-pane" aria-selected="false">Выезд на дом</button>
+                                        </li>
+                                        <li class="swiper-slide nav-item" role="presentation">
+                                            <button class="nav-link font-semibold" id="extrasection4-tab" data-bs-toggle="tab" data-bs-target="#extrasection4-tab-pane" type="button" role="tab" aria-controls="extrasection4-tab-pane" aria-selected="false">Программы</button>
+                                        </li>
+                                        <li class="swiper-slide nav-item" role="presentation">
+                                            <button class="nav-link font-semibold" id="extrasection9-tab" data-bs-toggle="tab" data-bs-target="#extrasection9-tab-pane" type="button" role="tab" aria-controls="extrasection9-tab-pane" aria-selected="false">Covid-19</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-button-prev font-semibold noshadow"><span class="swiper-button-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.38 4.26"><polyline points="0.25 0.25 2.13 2.13 0.25 4.01" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.5px"/></svg></span>Еще</div>
+                                <div class="swiper-button-next font-semibold noshadow">Еще<span class="swiper-button-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.38 4.26"><polyline points="0.25 0.25 2.13 2.13 0.25 4.01" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.5px"/></svg></span></div>
+                            </div>
+                            <script>
+                              const extraservicesswiper = new Swiper('.header__extra-menu .tab-menu .swiper', {
+                                loop: false,
+                                pagination: false,
+                                freeMode: true,
+                                slidesPerView: "auto",
+                                slidesPerGroup: 3,
+                                slideToClickedSlide: false,
+                                spaceBetween: 0,
+                                watchSlidesProgress: true,
+                                navigation: {
+                                  nextEl: '.header__extra-menu .tab-menu .swiper-button-next',
+                                  prevEl: '.header__extra-menu .tab-menu .swiper-button-prev',
+                                },
+                              });
+                            </script>
+                        </div>
+                        <div class="tab-content" id="menuExtraTabContent">
+                            <div class="tab-pane fade show active" id="extrasection1-tab-pane" role="tabpanel" aria-labelledby="extrasection1-tab" tabindex="0">
+                                <ul class="nav-content">
+                                    <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                    <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                    <li><a href="#" class="nav-content__link">Отоларингология</a></li>
+                                    <li><a href="#" class="nav-content__link">Офтальмология</a></li>
+                                    <li><a href="#" class="nav-content__link">Педиатрия</a></li>
+                                    <li><a href="#" class="nav-content__link nav-content__link_parent" data-bs-toggle="collapse" data-bs-target="#extrasubSection1" aria-expanded="false" aria-controls="extrasubSection1">Дополнительные услуги <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                        <div class="nav-content__submenu collapse" id="extrasubSection1">
+                                            <ul>
+                                                <li><a href="#" class="nav-content__link">Вакцинация</a></li>
+                                                <li><a href="#" class="nav-content__link">Справки</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="extrasection2-tab-pane" role="tabpanel" aria-labelledby="extrasection2-tab" tabindex="0">
+                                <ul class="nav-content">
+                                    <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                    <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="extrasection3-tab-pane" role="tabpanel" aria-labelledby="extrasection3-tab" tabindex="0">
+                                <ul class="nav-content">
+                                    <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                    <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="extrasection4-tab-pane" role="tabpanel" aria-labelledby="extrasection4-tab" tabindex="0">
+                                <ul class="nav-content">
+                                    <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                    <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="extrasection5-tab-pane" role="tabpanel" aria-labelledby="extrasection5-tab" tabindex="0">
+                                <ul class="nav-content">
+                                    <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                    <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="extrasection6-tab-pane" role="tabpanel" aria-labelledby="extrasection6-tab" tabindex="0">
+                                <ul class="nav-content">
+                                    <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                    <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="extrasection7-tab-pane" role="tabpanel" aria-labelledby="extrasection7-tab" tabindex="0">
+                                <ul class="nav-content">
+                                    <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                    <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="extrasection8-tab-pane" role="tabpanel" aria-labelledby="extrasection8-tab" tabindex="0">
+                                <ul class="nav-content">
+                                    <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                    <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="extrasection9-tab-pane" role="tabpanel" aria-labelledby="extrasection9-tab" tabindex="0">
+                                <ul class="nav-content">
+                                    <li><a href="#" class="nav-content__link">Дерматология</a></li>
+                                    <li><a href="#" class="nav-content__link">Неврология</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="bg-light">
+        <div class="breadcrumbs">
+            <div class="container-fluid container-xxl">
+                <ul class="breadcrumbs-list text-xxxs text-lg-xxs">
+                    <li><a href="/">Главная</a></li>
+                    <li>Цены</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="default-page">
+            <div class="container-fluid container-xxl">
+                <h1>Цены</h1>
+                <div class="tabs prices">
+                    <div class="tab-menu">
+                        <div class="swiper-container swiper-container_large">
+                            <div class="swiper">
+                                <ul class="nav nav-tabs swiper-wrapper" id="pricesTab" role="tablist">
+                                    <li class="swiper-slide nav-item" role="presentation">
+                                        <button class="nav-link font-semibold active" id="prices1-tab" data-bs-toggle="tab" data-bs-target="#prices1-tab-pane" type="button" role="tab" aria-controls="prices1-tab-pane" aria-selected="true">Для взрослых</button>
+                                    </li>
+                                    <li class="swiper-slide nav-item" role="presentation">
+                                        <button class="nav-link font-semibold" id="prices3-tab" data-bs-toggle="tab" data-bs-target="#prices3-tab-pane" type="button" role="tab" aria-controls="prices3-tab-pane" aria-selected="false">Для детей</button>
+                                    </li>
+                                    <li class="swiper-slide nav-item" role="presentation">
+                                        <button class="nav-link font-semibold" id="prices5-tab" data-bs-toggle="tab" data-bs-target="#prices5-tab-pane" type="button" role="tab" aria-controls="prices5-tab-pane" aria-selected="false">Стоматология</button>
+                                    </li>
+                                    <li class="swiper-slide nav-item" role="presentation">
+                                        <button class="nav-link font-semibold" id="prices6-tab" data-bs-toggle="tab" data-bs-target="#prices6-tab-pane" type="button" role="tab" aria-controls="prices6-tab-pane" aria-selected="false">Диагностика</button>
+                                    </li>
+                                    <li class="swiper-slide nav-item" role="presentation">
+                                        <button class="nav-link font-semibold" id="prices7-tab" data-bs-toggle="tab" data-bs-target="#prices7-tab-pane" type="button" role="tab" aria-controls="prices7-tab-pane" aria-selected="false">Анализы</button>
+                                    </li>
+                                    <li class="swiper-slide nav-item" role="presentation">
+                                        <button class="nav-link font-semibold" id="prices8-tab" data-bs-toggle="tab" data-bs-target="#prices8-tab-pane" type="button" role="tab" aria-controls="prices8-tab-pane" aria-selected="false">Выезд на дом</button>
+                                    </li>
+                                    <li class="swiper-slide nav-item" role="presentation">
+                                        <button class="nav-link font-semibold" id="prices4-tab" data-bs-toggle="tab" data-bs-target="#prices4-tab-pane" type="button" role="tab" aria-controls="prices4-tab-pane" aria-selected="false">Программы</button>
+                                    </li>
+                                    <li class="swiper-slide nav-item" role="presentation">
+                                        <button class="nav-link font-semibold" id="prices9-tab" data-bs-toggle="tab" data-bs-target="#prices9-tab-pane" type="button" role="tab" aria-controls="prices9-tab-pane" aria-selected="false">Covid-19</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-button-prev font-semibold noshadow"><span class="swiper-button-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.38 4.26"><polyline points="0.25 0.25 2.13 2.13 0.25 4.01" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.5px"/></svg></span>Еще</div>
+                            <div class="swiper-button-next font-semibold noshadow">Еще<span class="swiper-button-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.38 4.26"><polyline points="0.25 0.25 2.13 2.13 0.25 4.01" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.5px"/></svg></span></div>
+                        </div>
+                        <script>
+                          const pricesswiper = new Swiper('.prices .swiper', {
+                            loop: false,
+                            pagination: false,
+                            freeMode: true,
+                            slidesPerView: "auto",
+                            slidesPerGroup: 3,
+                            slideToClickedSlide: false,
+                            spaceBetween: 0,
+                            watchSlidesProgress: true,
+                            navigation: {
+                              nextEl: '.prices .swiper-button-next',
+                              prevEl: '.prices .swiper-button-prev',
+                            },
+                          });
+                        </script>
+                    </div>
+                    <div class="tab-content prices__tab text-sm text-lg-default" id="pricesTabContent">
+                        <div class="tab-pane fade show active" id="prices1-tab-pane" role="tabpanel" aria-labelledby="prices1-tab" tabindex="0">
+                            <div class="tab-pane__collapse">
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#priceSection1" aria-expanded="false" aria-controls="priceSection1">Для взрослых <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="priceSection1">
+                                    <div class="tab-pane__collapse-sub-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#priceSubSection1" aria-expanded="false" aria-controls="priceSubSection1"><span class="price__title">Акушерство-Гинекология</span><span class="label">Акция</span> <span class="nav-content__arrow d-flex align-items-center"><span class="nav-content__arrow_text d-none d-lg-inline font-medium text-xxs"><span class="nav-content__arrow_closed">Развернуть</span><span class="nav-content__arrow_opened">Свернуть</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-sub-content collapse" id="priceSubSection1">
+                                        <div class="prices__section">
+                                            <div class="tab-pane__collapse-sub-sub-header">
+                                                <a href="#" class="tab-pane__collapse-header-link font-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection1" aria-expanded="false" aria-controls="priceSubSubSection1">Прием специалистов <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                            </div>
+                                            <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection1">
+                                                <ul class="prices__list">
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span>
+                                                        <span class="prices__price">1 595 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price">1 045 ₽</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="prices__section">
+                                            <div class="tab-pane__collapse-sub-sub-header">
+                                                <a href="#" class="tab-pane__collapse-header-link font-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection2" aria-expanded="false" aria-controls="priceSubSubSection2"><span class="price__title">Услуги</span><span class="label">Акция</span> <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                            </div>
+                                            <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection2">
+                                                <ul class="prices__list">
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title"><span class="price__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span><a href="#" onclick="return false" class="label" data-bs-toggle="tooltip" data-bs-title="<p>Свободная информация по акции - от названия до тезисного изложения</p><a href='#'>Посмотреть Акцию</a>" data-bs-html="true" data-bs-trigger="focus">Акция</a></span>
+                                                        <span class="prices__price">1 595 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price">1 045 ₽</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="prices__section">
+                                            <div class="tab-pane__collapse-sub-sub-header">
+                                                <a href="#" class="tab-pane__collapse-header-link font-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection3" aria-expanded="false" aria-controls="priceSubSubSection3">Дополнительно <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                            </div>
+                                            <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection3">
+                                                <ul class="prices__list">
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span>
+                                                        <span class="prices__price">1 595 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price">1 045 ₽</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="prices__extra d-flex align-items-center">
+                                            <a href="#" class="btn btn-outline-white btn-light text-uppercase text-xxxxs font-medium">Скачать прайс</a>
+                                            <span class="nav-content__arrow d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#priceSubSection1" aria-expanded="false" aria-controls="priceSubSection1"><span class="nav-content__arrow_text d-none d-lg-inline font-medium text-xxs">Свернуть</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane__collapse-sub-header">
+                                        <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#priceSubSection2" aria-expanded="false" aria-controls="priceSubSection2"><span class="price__title">Аллергология</span> <span class="nav-content__arrow d-flex align-items-center"><span class="nav-content__arrow_text d-none d-lg-inline font-medium text-xxs"><span class="nav-content__arrow_closed">Развернуть</span><span class="nav-content__arrow_opened">Свернуть</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                    </div>
+                                    <div class="tab-pane__collapse-sub-content collapse" id="priceSubSection2">
+                                        <div class="prices__section">
+                                            <div class="tab-pane__collapse-sub-sub-header">
+                                                <a href="#" class="tab-pane__collapse-header-link font-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection21" aria-expanded="false" aria-controls="priceSubSubSection21">Прием специалистов <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                            </div>
+                                            <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection21">
+                                                <ul class="prices__list">
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span>
+                                                        <span class="prices__price">1 595 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price">1 045 ₽</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="prices__section">
+                                            <div class="tab-pane__collapse-sub-sub-header">
+                                                <a href="#" class="tab-pane__collapse-header-link font-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection22" aria-expanded="false" aria-controls="priceSubSubSection22"><span class="price__title">Услуги</span> <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                            </div>
+                                            <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection22">
+                                                <ul class="prices__list">
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title"><span class="price__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span></span>
+                                                        <span class="prices__price">1 595 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price">1 045 ₽</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="prices__section">
+                                            <div class="tab-pane__collapse-sub-sub-header">
+                                                <a href="#" class="tab-pane__collapse-header-link font-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection23" aria-expanded="false" aria-controls="priceSubSubSection23">Дополнительно <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                            </div>
+                                            <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection23">
+                                                <ul class="prices__list">
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span>
+                                                        <span class="prices__price">1 595 ₽</span>
+                                                    </li>
+                                                    <li class="prices__item d-flex justify-content-between">
+                                                        <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                                        <span class="prices__price">1 045 ₽</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="prices__extra d-flex align-items-center">
+                                            <a href="#" class="btn btn-outline-white btn-light text-uppercase text-xxxxs font-medium">Скачать прайс</a>
+                                            <span class="nav-content__arrow d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#priceSubSection2" aria-expanded="false" aria-controls="priceSubSection2"><span class="nav-content__arrow_text d-none d-lg-inline font-medium text-xxs">Свернуть</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane__collapse-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#priceSection2" aria-expanded="false" aria-controls="priceSection2">Для детей <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-content collapse" id="priceSection2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="request bg-light">
+            <div class="container-fluid container-xxl">
+                <div class="row align-items-end header-links d-lg-none">
+                    <div class="col-12"><h2 class="text-uppercase">Всегда рядом</h2></div>
+                </div>
+                <div class="request__holder d-lg-flex align-items-lg-center">
+                    <div class="request__image"><img src="f/i/request-back.jpg" alt=""></div>
+                    <div class="request__content">
+                        <p class="request__title font-medium text-lg text-lg-xxxxl">Запишитесь на прием к&nbsp;своему врачу</p>
+                        <p class="text-xs text-lg-sm">* Каждую среду и воскресенье скидка 20% на первичный прием к специалистам взрослого отделения</p>
+                        <div class="request__buttons d-flex flex-wrap">
+                            <a href="#" class="btn btn-white btn-white-hover text-uppercase text-xxs font-medium">Записаться</a>
+                            <a href="#" class="btn btn-outline-white text-uppercase text-xxs font-medium">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts bg-light">
+            <div class="container-fluid container-xxl position-relative z-2">
+                <div class="contacts__content">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="contacts__block">
+                                <p class="contacts__header text-lg-xl font-medium">Адрес</p>
+                                <span class="text-sm text-lg-default">Ярославль,<br> ул. Победы, 14</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="contacts__block">
+                                <p class="contacts__header text-lg-xl font-medium">Режим работы</p>
+                                <span class="text-sm text-lg-default">Пн-Пт:  8:00—20:00<br>
+                                    Сб-Вс: 8:00—15:00</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="contacts__block">
+                                <p class="contacts__header text-lg-xl font-medium">Телефоны</p>
+                                <span class="text-sm text-lg-default"><a href="tel:+74852778899">+7 (4852) 77-88-99</a><br>
+                                    <a href="tel:+74852208820">+7 (4852) 20-88-20</a></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="contacts__block">
+                                <p class="contacts__header text-lg-xl font-medium">Прием анализов</p>
+                                <span class="text-sm text-lg-default">Пн-Пт:  8:00—16:00<br>
+                                    Сб-Вс: 8:00—13:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__buttons d-flex justify-content-center">
+                        <div class="btn btn-primary font-medium text-xxs text-uppercase">Проложить маршрут</div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative z-1 contacts__map-holder">
+                <div class="contacts__map" style="background: url(f/i/map.jpg) center top repeat">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__contacts text-lg-mlg">
+            <div class="footer__callback d-flex d-lg-none justify-content-center align-items-center">
+                <div><a href="#" class="btn btn-outline-white">Заказать звонок</a></div>
+                <div class="footer__callback-icons flex-grow-0 d-block d-lg-none">
+                    <ul class="footer__messengers d-flex align-items-center">
+                        <li>
+                            <a href="#"><span class="messenger messenger_small messenger_whatsapp"><svg><use xlink:href="#whatsapp"></use></svg></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="messenger messenger_small messenger_viber"><svg><use xlink:href="#viber"></use></svg></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="messenger messenger_small messenger_telegram"><svg><use xlink:href="#telegram"></use></svg></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid container-xxl">
+                <div class="footer__contacts-holder d-flex flex-wrap flex-lg nowrap justify-content-center justify-content-lg-between align-items-center">
+                    <div class="footer__callback flex-grow-0 d-flex align-items-center d-none d-lg-block">
+                        <a href="tel:+74852208820" class="text-lg font-bold">+7 (4852) 20-88-20</a>
+                        <div class="btn btn-outline-white">Заказать звонок</div>
+                    </div>
+                    <div class="footer__wrap flex-grow-0 d-none d-lg-block"></div>
+                    <div class="flex-grow-0 text-sm d-lg-none"><a href="tel:+74852208820">+7 (4852) 20-88-20</a></div>
+                    <div class="footer__address text-sm flex-grow-0 d-lg-none">Ярославль, ул.&nbsp;Победы, 14</div>
+                    <div class="footer__address flex-grow-0 d-none d-lg-block">
+                        <ul class="footer__messengers d-flex align-items-center">
+                            <li>
+                                <a href="#"><span class="messenger messenger_whatsapp"><svg><use xlink:href="#whatsapp"></use></svg></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="messenger messenger_viber"><svg><use xlink:href="#viber"></use></svg></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="messenger messenger_telegram"><svg><use xlink:href="#telegram"></use></svg></span></a>
+                            </li>
+                            <li class="footer__messengers-phone text-lg font-bold">+7 (910) 111-11-11</li>
+                        </ul>
+                    </div>
+                    <div class="footer__wrap flex-grow-0 d-none d-lg-block"></div>
+                    <div class="flex-grow-0 d-none d-lg-block"><a href="mailto:info@constanta-med.com" class="text-lg font-bold">Ярославль, ул.&nbsp;Победы, 14</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__content">
+            <div class="container-fluid container-xxl">
+                <div class="footer__menu">
+                    <div class="row text-xxs text-lg-mlg">
+                        <div class="col footer__menu-column">
+                            <ul>
+                                <li><a href="#" class="font-bold">Услуги</a>
+                                    <ul>
+                                        <li><a href="#">Взрослое отделение</a></li>
+                                        <li><a href="#">Детское отделение</a></li>
+                                        <li><a href="#">Стоматология</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Анализы</a></li>
+                                        <li><a href="#">Выезд на дом</a></li>
+                                        <li><a href="#">Программы</a></li>
+                                        <li><a href="#">Covid-19</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="d-lg-none">
+                                <li><a href="#" class="font-bold">Программы</a>
+                                    <ul>
+                                        <li><a href="#">Для взрослых</a></li>
+                                        <li><a href="#">Для детей</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="d-lg-none">
+                                <li><a href="#" class="font-bold">Врачи</a>
+                                    <ul>
+                                        <li><a href="#">Взрослое отделение</a></li>
+                                        <li><a href="#">Детское отделение</a></li>
+                                        <li><a href="#">Мед. персонал</a></li>
+                                        <li><a href="#">Администрация</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col footer__menu-column d-none d-lg-block">
+                            <ul>
+                                <li><a href="#" class="font-bold">Программы</a>
+                                    <ul>
+                                        <li><a href="#">Для взрослых</a></li>
+                                        <li><a href="#">Для детей</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" class="font-bold">Врачи</a>
+                                    <ul>
+                                        <li><a href="#">Взрослое отделение</a></li>
+                                        <li><a href="#">Детское отделение</a></li>
+                                        <li><a href="#">Мед. персонал</a></li>
+                                        <li><a href="#">Администрация</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col footer__menu-column footer__menu-column_condensed">
+                            <ul>
+                                <li><a href="#" class="font-bold">Отзывы</a></li>
+                                <li><a href="#" class="font-bold">Акции</a></li>
+                                <li><a href="#" class="font-bold">Цены</a></li>
+                                <li><a href="#" class="font-bold">Контакты</a></li>
+                            </ul>
+                            <ul class="d-lg-none">
+                                <li><a href="#" class="font-bold">О нас</a></li>
+                                <li><a href="#" class="font-bold">Пациентам</a></li>
+                                <li><a href="#" class="font-bold">Организациям</a></li>
+                            </ul>
+                            <ul class="d-lg-none">
+                                <li><a href="#" class="font-bold">Блог</a>
+                                    <ul>
+                                        <li><a href="#">Видео</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="#">Статьи</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col footer__menu-column footer__menu-column_condensed d-none d-lg-block">
+                            <ul>
+                                <li><a href="#" class="font-bold">О нас</a></li>
+                                <li><a href="#" class="font-bold">Пациентам</a></li>
+                                <li><a href="#" class="font-bold">Организациям</a></li>
+                                <li><a href="#" class="font-bold">Блог</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex align-items-center justify-content-center">
+                    <a href="#" class="social__item social__item_vk d-flex align-items-center justify-content-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="33px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 33.4 19.67"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" class="social__icon social__icon_vk">
+  <path fill="#366ed0" d="M11.99 2.01c0.45,0.51 0.75,0.86 0.78,1.57l0 6.34c-0.03,0.58 0.13,0.92 -0.42,0.64 -3.36,-1.85 -4.94,-5.75 -5.42,-9.38 -0.17,-0.73 -0.72,-1.11 -1.45,-1.18l-4.47 0c-0.74,0.08 -1.04,0.58 -1.01,1.29 1,6.66 3.93,12.49 9.8,16.08 2.87,1.57 5.68,2.27 8.95,2.3 0.72,-0.09 1.15,-0.51 1.23,-1.24 0,-0.89 -0.04,-1.8 0,-2.69 0,-0.45 -0.11,-0.98 0.07,-1.39 0.68,-1.02 3.96,2.53 4.37,2.98 0.77,0.91 1.44,2.2 2.74,2.34l5.47 0c2.74,-0.32 -2.59,-5.87 -3.23,-6.55 -0.67,-0.71 -1.51,-1.46 -1.99,-2.32l-0.03 -0.06c2.11,-2.79 4.07,-5.99 4.97,-9.41 0.13,-0.7 -0.1,-1.25 -0.87,-1.33l-4.24 0c-0.63,0.06 -1.04,0.37 -1.41,0.86 -1.64,2.71 -2.74,5.82 -5.04,8.08 -0.32,0.26 -0.61,0.52 -0.81,0.06l0 -7.77c-0.08,-0.72 -0.51,-1.16 -1.23,-1.23l-5.99 0c-0.84,0.09 -1.6,0.72 -1.09,1.59 0.1,0.15 0.21,0.28 0.32,0.42z"/>
+</svg>
+                            <!--<svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon_vk">
+                                <path d="M0 23.04C0 12.1788 0 6.74826 3.37413 3.37413C6.74826 0 12.1788 0 23.04 0H24.96C35.8212 0 41.2517 0 44.6259 3.37413C48 6.74826 48 12.1788 48 23.04V24.96C48 35.8212 48 41.2517 44.6259 44.6259C41.2517 48 35.8212 48 24.96 48H23.04C12.1788 48 6.74826 48 3.37413 44.6259C0 41.2517 0 35.8212 0 24.96V23.04Z" fill="#0077FF"/>
+                                <path d="M25.54 34.5801C14.6 34.5801 8.3601 27.0801 8.1001 14.6001H13.5801C13.7601 23.7601 17.8 27.6401 21 28.4401V14.6001H26.1602V22.5001C29.3202 22.1601 32.6398 18.5601 33.7598 14.6001H38.9199C38.0599 19.4801 34.4599 23.0801 31.8999 24.5601C34.4599 25.7601 38.5601 28.9001 40.1201 34.5801H34.4399C33.2199 30.7801 30.1802 27.8401 26.1602 27.4401V34.5801H25.54Z" fill="white"/>
+                            </svg>-->
+                        </span>
+                    </a>
+                    <a href="#" class="social__item social__item_ok d-flex align-items-center justify-content-center">
+                        <span>
+                            <svg width="22" height="36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.43 16.93" class="social__icon social__icon_ok">
+                                <path d="M5.22,2.7h0a1.66,1.66,0,0,0-1.1.43s0,0,0,.05a1.65,1.65,0,0,0-.48,1.15h0A1.59,1.59,0,0,0,4,5.42l.05,0A1.61,1.61,0,0,0,5.22,6h0a1.59,1.59,0,0,0,1.14-.48,1.6,1.6,0,0,0,.48-1.14h0a1.61,1.61,0,0,0-.48-1.15h0A1.62,1.62,0,0,0,5.22,2.7Zm0-2.7h0A4.3,4.3,0,0,1,8.27,1.27h0A4.3,4.3,0,0,1,9.54,4.32h0A4.34,4.34,0,0,1,8.28,7.39,4.37,4.37,0,0,1,5.22,8.65h0A4.35,4.35,0,0,1,2.16,7.39L2.08,7.3a4.33,4.33,0,0,1-1.18-3h0A4.31,4.31,0,0,1,2.16,1.27l.09-.08A4.29,4.29,0,0,1,5.22,0Zm3.1,8.91a1.35,1.35,0,0,1,1.53,2.23h0a6.62,6.62,0,0,1-.59.37,5.84,5.84,0,0,1-.61.31,8.59,8.59,0,0,1-1.71.57l2.23,2.23a1.35,1.35,0,0,1-1.92,1.91l-2-2-2,2a1.35,1.35,0,0,1-1.91-1.91L3.49,12.4c-.24-.05-.47-.11-.7-.18l-.38-.12h0A8,8,0,0,1,.6,11.2,1.35,1.35,0,1,1,2.11,9a5.46,5.46,0,0,0,1.21.6l.25.09a5.46,5.46,0,0,0,1.61.24h0a5.58,5.58,0,0,0,2.33-.51l.41-.21c.13-.07.26-.16.4-.25Z" fill="#EE8208" fill-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="social__item social__item_yt d-flex align-items-center justify-content-center">
+                        <span>
+                            <svg width="35" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 13.02" class="social__icon social__icon_yt">
+                                <path d="M8.25,1.13c-1.83,0-3.66.08-5.5.26a1.79,1.79,0,0,0-1.46.91,1,1,0,0,0-.11.3,1.26,1.26,0,0,0-.05.33v7.14A1.52,1.52,0,0,0,2,11.42a1.63,1.63,0,0,0,.34.14,2.2,2.2,0,0,0,.37.07h0c1.82.17,3.65.26,5.5.26s3.68-.09,5.5-.26a1.79,1.79,0,0,0,1.46-.91,1.34,1.34,0,0,0,.12-.3,1.86,1.86,0,0,0,0-.34V3a1.55,1.55,0,0,0-.89-1.36,2,2,0,0,0-.34-.13,1.51,1.51,0,0,0-.37-.07h0c-1.82-.17-3.65-.26-5.5-.26ZM5.73,3.64l6,2.87-6,2.87ZM2.64.26C4.52.09,6.38,0,8.25,0S12,.09,13.86.26h0a2.21,2.21,0,0,1,.57.11A2.52,2.52,0,0,1,15,.59,2.62,2.62,0,0,1,16.5,3v7.14a2.9,2.9,0,0,1-.07.6,2.52,2.52,0,0,1-.21.54,2.93,2.93,0,0,1-2.36,1.53C12,12.93,10.1,13,8.25,13s-3.71-.09-5.61-.26h0a2.74,2.74,0,0,1-.57-.11,2.52,2.52,0,0,1-.54-.21A2.62,2.62,0,0,1,0,10.07H0V3H0a2.35,2.35,0,0,1,.08-.6,2.79,2.79,0,0,1,.2-.55A3,3,0,0,1,2.64.26Z" fill="#f00" fill-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__extra">
+            <div class="container-fluid container-xxl">
+                <div class="footer__extra-holder">
+                    <div class="row justify-content-lg-between text-xxxs text-lg-xxxs">
+                        <div class="col-12 col-lg-auto"><p class="copyright">© 2016-2022 ООО Клиника лечения боли «Константа LIFE» - <br>поликлиника в Ярославле</p></div>
+                        <div class="col-12 col-lg-auto"><p>Имеются противопоказания,<br> необходима консультация со специалистом!</p></div>
+                        <div class="col-12 col-lg-auto"><p class="developer">© 2016-2022 ООО Клиника лечения боли «Константа LIFE»<br><!--noindex-->Разработка — <a href="https://inteo-s.ru" rel="external nofollow" target="_blank">Интео</a><!--/noindex--></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-holder"></div>
+    <div class="symbols">
+        <svg>
+            <symbol viewBox="0 0 418.135 418.135" id="whatsapp">
+                <path style="fill:#fff;" d="M198.929,0.242C88.5,5.5,1.356,97.466,1.691,208.02c0.102,33.672,8.231,65.454,22.571,93.536
+            L2.245,408.429c-1.191,5.781,4.023,10.843,9.766,9.483l104.723-24.811c26.905,13.402,57.125,21.143,89.108,21.631
+            c112.869,1.724,206.982-87.897,210.5-200.724C420.113,93.065,320.295-5.538,198.929,0.242z M323.886,322.197
+            c-30.669,30.669-71.446,47.559-114.818,47.559c-25.396,0-49.71-5.698-72.269-16.935l-14.584-7.265l-64.206,15.212l13.515-65.607
+            l-7.185-14.07c-11.711-22.935-17.649-47.736-17.649-73.713c0-43.373,16.89-84.149,47.559-114.819
+            c30.395-30.395,71.837-47.56,114.822-47.56C252.443,45,293.218,61.89,323.887,92.558c30.669,30.669,47.559,71.445,47.56,114.817
+            C371.446,250.361,354.281,291.803,323.886,322.197z"/>
+                <path style="fill:#fff;" d="M309.712,252.351l-40.169-11.534c-5.281-1.516-10.968-0.018-14.816,3.903l-9.823,10.008
+            c-4.142,4.22-10.427,5.576-15.909,3.358c-19.002-7.69-58.974-43.23-69.182-61.007c-2.945-5.128-2.458-11.539,1.158-16.218
+            l8.576-11.095c3.36-4.347,4.069-10.185,1.847-15.21l-16.9-38.223c-4.048-9.155-15.747-11.82-23.39-5.356
+            c-11.211,9.482-24.513,23.891-26.13,39.854c-2.851,28.144,9.219,63.622,54.862,106.222c52.73,49.215,94.956,55.717,122.449,49.057
+            c15.594-3.777,28.056-18.919,35.921-31.317C323.568,266.34,319.334,255.114,309.712,252.351z"/>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="viber">
+                <path style="fill:#fff;" d="m20.19 2.337c-.595-.545-3.005-2.297-8.372-2.32 0 0-6.333-.379-9.418 2.452-1.716 1.716-2.317 4.229-2.386 7.346s-.146 8.959 5.485 10.547h.005l-.005 2.419s-.037.98.607 1.177c.778.244 1.238-.502 1.983-1.304.408-.441.97-1.087 1.397-1.58.6.059 1.296.092 2.001.092 1.827 0 3.602-.225 5.298-.649l-.15.032c.778-.253 5.18-.816 5.892-6.657.744-6.03-.354-9.834-2.337-11.555zm.652 11.115c-.607 4.875-4.173 5.185-4.829 5.395-1.432.364-3.076.572-4.769.572-.486 0-.968-.017-1.445-.051l.064.004s-2.438 2.939-3.197 3.703c-.248.248-.521.228-.516-.267 0-.323.019-4.018.019-4.018-4.767-1.322-4.491-6.298-4.435-8.897s.544-4.735 1.997-6.169c2.612-2.367 7.989-2.016 7.989-2.016 4.543.019 6.718 1.388 7.224 1.847 1.674 1.435 2.527 4.867 1.898 9.896zm-6.511-3.788v.014c0 .168-.136.304-.304.304-.163 0-.296-.128-.303-.289v-.001c.004-.042.007-.092.007-.141 0-.801-.649-1.45-1.45-1.45-.03 0-.06.001-.089.003h.004c-.161-.009-.288-.141-.288-.303 0-.168.136-.304.304-.304h.017-.001c.02-.001.045-.001.069-.001 1.126 0 2.038.912 2.038 2.038 0 .046-.002.092-.005.137v-.006zm.951.531c.047-1.988-1.195-3.544-3.553-3.718-.159-.011-.283-.143-.283-.303 0-.168.136-.304.304-.304.007 0 .015 0 .022.001h-.001.017c2.267 0 4.106 1.838 4.106 4.106 0 .081-.002.162-.007.242l.001-.011c-.004.165-.138.296-.303.296-.168 0-.304-.136-.304-.304 0-.003 0-.005 0-.008zm2.2.629v.002c0 .168-.136.304-.304.304s-.302-.135-.303-.301c-.024-3.822-2.573-5.903-5.662-5.925-.168 0-.303-.136-.303-.303s.136-.303.303-.303c3.459.024 6.239 2.411 6.267 6.525zm-.525 4.598v.009c-.506.891-1.453 1.875-2.428 1.561l-.009-.014c-1.832-.684-3.416-1.578-4.831-2.679l.041.03c-.743-.592-1.396-1.245-1.969-1.963l-.019-.025c-.509-.638-.986-1.352-1.402-2.106l-.04-.079c-.457-.746-.87-1.608-1.193-2.513l-.03-.098c-.314-.975.665-1.922 1.561-2.428h.009c.13-.083.288-.133.458-.133.267 0 .505.123.662.314l.001.002s.581.693.83 1.036c.234.319.549.83.712 1.115.094.147.149.327.149.52 0 .288-.124.547-.322.726l-.001.001-.562.45c-.155.15-.251.36-.251.592 0 .023.001.045.003.067v-.003c.579 1.903 2.048 3.372 3.91 3.941l.042.011c.019.002.042.003.064.003.232 0 .442-.096.592-.25l.45-.562c.18-.199.439-.323.727-.323.193 0 .372.056.524.152l-.004-.002c.813.463 1.516.972 2.157 1.549l-.011-.01c.192.154.313.389.313.652 0 .169-.05.326-.137.458l.002-.003z"/>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="telegram">
+                <path style="fill:#fff;" d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/>
+            </symbol>
+        </svg>
+    </div>
+</body>
+</html>
