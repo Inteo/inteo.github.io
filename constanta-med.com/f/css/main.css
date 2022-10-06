@@ -2896,7 +2896,6 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     z-index: 10;
     white-space: nowrap;
     width: 100%;
-    overflow: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -2967,6 +2966,9 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     }
 }
 @media (max-width: 991.98px) {
+    .breadcrumbs {
+        overflow: auto;
+    }
     .breadcrumbs-list .dropdown-menu, .breadcrumbs-list .dropdown__icon {
         display: none;
     }
