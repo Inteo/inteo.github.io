@@ -164,9 +164,15 @@ $(document).ready(function(){
   $(window).scroll(function(e) {
     constantaJSCore.fixMenu();
   });
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
   const observer = lozad();
   observer.observe();
+
+  tippy('[data-tippy-content]', {
+    theme: 'light',
+    interactive: true,
+    allowHTML: true,
+    appendTo: document.body,
+    maxWidth: 200
+  });
 });
