@@ -13,7 +13,10 @@
     <script src="f/js/common.js"></script>
     <script src="npm/swiper/swiper-bundle.min.js"></script>
     <script src="npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="f/js/popper.min.js"></script>
+    <script src="f/js/tippy-bundle.umd.min.js"></script>
     <link href="dist/css/custom.min.css" rel="stylesheet">
+    <link href="f/css/light.css" rel="stylesheet">
     <link href="f/css/main.css?2" rel="stylesheet">
 </head>
 <body>
@@ -22,7 +25,7 @@
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link">О клинике</a></li>
                 <li class="nav-item dropdown"><a href="#" class="nav-link">Пациентам <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round; stroke-width: 0.6px"/></svg></span></a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-block">
                         <ul>
                             <li><a href="#">Взрослое отделение</a></li>
                             <li><a href="#">Детское отделение</a></li>
@@ -32,7 +35,7 @@
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link">Организациям</a></li>
                 <li class="nav-item dropdown"><a href="#" class="nav-link">Блог <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round; stroke-width: 0.6px"/></svg></span></a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-block">
                         <ul>
                             <li><a href="#">Взрослое отделение</a></li>
                             <li><a href="#">Детское отделение</a></li>
@@ -66,7 +69,7 @@
                                 <div class="intro__contacts messengers">
                                     <div class="messengers__link dropdown">
                                         <span class="messenger messenger_whatsapp" data-messengers><svg><use xlink:href="#whatsapp"></use></svg></span>
-                                        <div class="dropdown-menu text-md">
+                                        <div class="dropdown-block text-md">
                                             <ul>
                                                 <li>
                                                     <a class="d-flex align-items-center" href="#">
@@ -132,7 +135,7 @@
                                             <li class="nav-item nav-item_main"><a href="#" class="nav-link" data-open-menu><span class="menu-toggle menu-toggle_small"><span class="menu-toggle__box"><span class="menu-toggle__inner"></span></span></span> Услуги</a></li>
                                             <li class="nav-item"><a href="#" class="nav-link">Лечение боли</a></li>
                                             <li class="nav-item dropdown"><a href="#" class="nav-link">Программы <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
-                                                <div class="dropdown-menu text-md">
+                                                <div class="dropdown-block text-md">
                                                     <ul>
                                                         <li><a href="#">Пункт 1</a></li>
                                                         <li><a href="#">Пункт 2</a></li>
@@ -140,7 +143,7 @@
                                                 </div>
                                             </li>
                                             <li class="nav-item dropdown"><a href="#" class="nav-link">Врачи <span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
-                                                <div class="dropdown-menu text-md">
+                                                <div class="dropdown-block text-md">
                                                     <ul>
                                                         <li><a href="#">Взрослое отделение</a></li>
                                                         <li><a href="#">Детское отделение</a></li>
@@ -497,7 +500,7 @@
                     <li>
                         <div class="dropdown">
                             <a href="#">Услуги<span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round; stroke-width: 0.6px"></polyline></svg></span></a>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-block">
                                 <ul>
                                     <li><a href="#">Взрослое отделение</a></li>
                                     <li><a href="#">Детское отделение</a></li>
@@ -509,7 +512,7 @@
                     <li>
                         <div class="dropdown">
                             <a href="#">Анализы<span class="dropdown__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round; stroke-width: 0.6px"></polyline></svg></span></a>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-block">
                                 <ul>
                                     <li><a href="#">Взрослое отделение</a></li>
                                     <li><a href="#">Детское отделение</a></li>
@@ -653,7 +656,7 @@
                                             <div class="promo-event">
                                                 <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
                                                 <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -<br>
+                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
                                                         <b class="font-bold">скидка 20%</b></p>
                                                     <div class="promo-event__actions">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
@@ -666,7 +669,7 @@
                                             <div class="promo-event">
                                                 <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
                                                 <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -<br>
+                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
                                                         <b class="font-bold">скидка 20%</b></p>
                                                     <div class="promo-event__actions">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
@@ -679,7 +682,7 @@
                                             <div class="promo-event">
                                                 <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
                                                 <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -<br>
+                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
                                                         <b class="font-bold">скидка 20%</b></p>
                                                     <div class="promo-event__actions">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
@@ -692,7 +695,7 @@
                                             <div class="promo-event">
                                                 <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
                                                 <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -<br>
+                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
                                                         <b class="font-bold">скидка 20%</b></p>
                                                     <div class="promo-event__actions">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
@@ -705,7 +708,7 @@
                                             <div class="promo-event">
                                                 <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
                                                 <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -<br>
+                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
                                                         <b class="font-bold">скидка 20%</b></p>
                                                     <div class="promo-event__actions">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
@@ -1138,7 +1141,7 @@
                                 <div class="promo-event">
                                     <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
                                     <div class="promo-event__content">
-                                        <p class="promo-event__title text-lg-xl font-semibold font-lg-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -<br>
+                                        <p class="promo-event__title text-lg-xl font-semibold font-lg-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
                                             <b class="font-bold">скидка 20%</b></p>
                                         <div class="promo-event__actions">
                                             <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
@@ -1151,7 +1154,7 @@
                                 <div class="promo-event">
                                     <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
                                     <div class="promo-event__content">
-                                        <p class="promo-event__title text-lg-xl font-semibold font-lg-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -<br>
+                                        <p class="promo-event__title text-lg-xl font-semibold font-lg-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
                                             <b class="font-bold">скидка 20%</b></p>
                                         <div class="promo-event__actions">
                                             <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
@@ -1164,7 +1167,7 @@
                                 <div class="promo-event">
                                     <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
                                     <div class="promo-event__content">
-                                        <p class="promo-event__title text-lg-xl font-semibold font-lg-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -<br>
+                                        <p class="promo-event__title text-lg-xl font-semibold font-lg-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
                                             <b class="font-bold">скидка 20%</b></p>
                                         <div class="promo-event__actions">
                                             <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>

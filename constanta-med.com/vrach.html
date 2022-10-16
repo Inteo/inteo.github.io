@@ -492,146 +492,225 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="bg-light">
         <div class="breadcrumbs">
             <div class="container-fluid container-xxl">
                 <ul class="breadcrumbs-list text-xxxs text-lg-xxs">
                     <li><a href="/">Главная</a></li>
-                    <li><a href="#">Акции</a></li>
-                    <li>Главное сердцем не стареть</li>
+                    <li><a href="/">Врачи</a></li>
+                    <li>Тринчук Ирина Анатольевна</li>
                 </ul>
             </div>
         </div>
-        <div class="main-intro main-intro_medium">
-            <div class="container-fluid container-xxl">
-                <div class="main-presentation main-presentation_single bg-light">
-                    <div class="swiper-container swiper-container_large">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="main-presentation__slide d-flex align-items-end align-items-lg-center swiper-lazy" data-background="f/i/event-back.jpg">
-                                        <div class="swiper-lazy-preloader">
-                                            <div class="heart-rate">
-                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73" xml:space="preserve">
-                                                    <polyline fill="none" stroke="#67a4bf" stroke-width="3" stroke-miterlimit="10" points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486"></polyline>
-                                                </svg>
-                                                <div class="fade-in"></div>
-                                                <div class="fade-out"></div>
-                                            </div>
-                                        </div>
 
+        <div class="doctor-page">
+            <div class="container-fluid container-xxl">
+
+                <div class="doctor-card doctor-card_page d-flex flex-column flex-lg-row">
+                    <div class="doctor-card__image flex-shrink-0">
+                        <img data-src="f/i/doc1.jpg" class="lozad">
+                    </div>
+                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-center flex-column">
+                        <h1 class="doctor-card__name h1">Тринчук<br> Ирина Анатольевна</h1>
+                        <p class="doctor-card__position flex-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                        <div class="doctor-card__actions d-lg-none">
+                            <div class="doctor-card__extra d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                            </div>
+                        </div>
+                        <div class="doctor-card__actions doctor-card__actions_full">
+                            <div class="doctor-card__extra d-flex">
+                                <div class="doctor-card__extra-buttons flex-grow-0">
+                                    <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                                </div>
+                                <div class="doctor-card__extra-details">
+                                    <div class="doctor-card__merits">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="doctor-card__merits-item text-xxxs">
+                                                        Кандидат медицинских наук
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="doctor-card__merits-item text-xxxs">
+                                                        Высшая категория
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="doctor-card__merits-item text-xxxs">
+                                                        Автор 7 научных&nbsp;работ по&nbsp;стоматологии
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-scrollbar"></div>
+                                        </div>
+                                        <script>
+                                            const swiper = new Swiper('.doctor-card__merits .swiper', {
+                                                slidesPerView: 'auto',
+                                                spaceBetween: 20,
+                                                breakpoints: {
+                                                    992: {
+                                                        spaceBetween: 50
+                                                    }
+                                                },
+                                                navigation: {
+                                                    nextEl: '.doctor-card__merits .swiper-button-next',
+                                                    prevEl: '.doctor-card__merits .swiper-button-prev',
+                                                },
+                                                scrollbar: {
+                                                    el: '.doctor-card__merits .swiper-scrollbar',
+                                                    dragSize: 100
+                                                },
+                                            });
+                                        </script>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                        <!--<div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev d-none d-lg-flex"></div>
-                        <div class="swiper-button-next d-none d-lg-flex"></div>-->
                     </div>
-                    <script>
-                      const mainswiper = new Swiper('.main-presentation .swiper', {
-                        preloadImages: false,
-                        lazy: {
-                          loadPrevNext: true,
-                          loadPrevNextAmount: 1,
-                          checkInView: true,
-                        },
-                        loop: false/*,
-                        pagination: {
-                          el: '.main-presentation .swiper-pagination',
-                        },
-                        navigation: {
-                          nextEl: '.main-presentation .swiper-button-next',
-                          prevEl: '.main-presentation .swiper-button-prev',
-                        },
-                        autoplay: false*/
-                      });
-                    </script>
                 </div>
+
             </div>
         </div>
-        <div class="inner-content text-md">
+
+        <div class="inner-content bg-white text-md">
             <div class="container-fluid container-xxl">
                 <div class="inner-content__holder">
                     <div class="inner-content__main" data-scrollto-target="description"><a name="description" title="description"></a>
                         <div class="inner-content__block">
-                            <h1>Главное, сердцем не стареть - скидка 20%. Узи сердца бесплатно</h1>
-                            <p>Лабораторные анализы назначаются после консультации с врачом, который проводит первичный осмотр. Они помогают подтвердить или опровергнуть подозрения на предполагаемые заболевания, выявленные по симптомам и жалобам пациента. При этом ряд исследований могут назначаться повторно в ходе лечения, а также на этапе реабилитации.</p>
-                            <h3>Как получить скидку?</h3>
-                            <ol class="list-styled mb-0">
-                                <li>Общеклинические</li>
-                                <li>Биохимические</li>
-                                <li>Серологические</li>
-                                <li class="mb-0">Аллергологические (120 аллергенов)</li>
-                            </ol>
+                            <div class="text-block-lg">
+                                <h2>Специализация</h2>
+                                <p>Лабораторные анализы назначаются после консультации с врачом, который проводит первичный осмотр. Они помогают подтвердить или опровергнуть подозрения на предполагаемые заболевания, выявленные по симптомам и жалобам пациента. При этом ряд исследований могут назначаться повторно в ходе лечения, а также на этапе реабилитации и профилактического контроля после перенесенного заболевания. Общие анализы могут быть выполнены по желанию самого пациента без направления врача с целью самоконтроля.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <hr class="hr_light d-lg-none">
+                                    <h3 class="font-medium h2-md-only">Образование</h3>
+                                    <div class="storyline d-flex flex-column">
+                                        <div class="storyline__item">
+                                            <div class="storyline__title h3 font-medium">1999 г</div>
+                                            Закончил Ярославскую медицинскую академию по специальности «Врачебное дело»
+                                        </div>
+                                        <div class="storyline__item">
+                                            <div class="storyline__title h3 font-medium">1999 - 2001 гг</div>
+                                            Окончил ординатуру на кафедре стоматологии Ярославской Медицинской академии
+                                        </div>
+                                        <div class="storyline__item">
+                                            <div class="storyline__title h3 font-medium">2002 г</div>
+                                            Окончил ординатуру на кафедре стоматологии Ярославской Медицинской академии
+                                        </div>
+                                        <div class="storyline__item">
+                                            <div class="storyline__title h3 font-medium">2002 г</div>
+                                            Окончил ординатуру на кафедре стоматологии Ярославской Медицинской академии
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <hr class="hr_light d-lg-none">
+                                    <h3 class="font-medium h2-md-only">Место работы</h3>
+                                    <div class="storyline d-flex flex-column">
+                                        <div class="storyline__item">
+                                            <div class="storyline__title h3 font-medium">1999 г</div>
+                                            Закончил Ярославскую медицинскую академию по специальности «Врачебное дело»
+                                        </div>
+                                        <div class="storyline__item">
+                                            <div class="storyline__title h3 font-medium">1999 - 2001 гг</div>
+                                            Окончил ординатуру на кафедре стоматологии Ярославской Медицинской академии
+                                        </div>
+                                        <div class="storyline__item">
+                                            <div class="storyline__title h3 font-medium">2002 г</div>
+                                            Окончил ординатуру на кафедре стоматологии Ярославской Медицинской академии
+                                        </div>
+                                        <div class="storyline__item">
+                                            <div class="storyline__title h3 font-medium">2002 г</div>
+                                            Окончил ординатуру на кафедре стоматологии Ярославской Медицинской академии
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <aside class="inner-content__sidebar d-none d-lg-block">
                         <div class="sticky">
+                            <h2>Коллеги</h2>
                             <div class="swiper-container swiper-container_controls-bottom promo-swiper">
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="promo-event">
-                                                <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
-                                                <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
-                                                        <b class="font-bold">скидка 20%</b></p>
-                                                    <div class="promo-event__actions">
+                                            <div class="doctor-card doctor-card_vertical d-flex flex-column">
+                                                <div class="doctor-card__image">
+                                                    <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                                    <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                                    <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                                    <div class="doctor-card__actions d-flex justify-content-center">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="promo-event">
-                                                <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
-                                                <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">64 зуба -<br>
-                                                        <b class="font-bold">скидка 15%</b></p>
-                                                    <div class="promo-event__actions">
+                                            <div class="doctor-card doctor-card_vertical d-flex flex-column">
+                                                <div class="doctor-card__image">
+                                                    <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                                    <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                                    <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                                    <div class="doctor-card__actions d-flex justify-content-center">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="promo-event">
-                                                <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
-                                                <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
-                                                        <b class="font-bold">скидка 20%</b></p>
-                                                    <div class="promo-event__actions">
+                                            <div class="doctor-card doctor-card_vertical d-flex flex-column">
+                                                <div class="doctor-card__image">
+                                                    <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                                    <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                                    <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                                    <div class="doctor-card__actions d-flex justify-content-center">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="promo-event">
-                                                <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
-                                                <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
-                                                        <b class="font-bold">скидка 20%</b></p>
-                                                    <div class="promo-event__actions">
+                                            <div class="doctor-card doctor-card_vertical d-flex flex-column">
+                                                <div class="doctor-card__image">
+                                                    <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                                    <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                                    <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                                    <div class="doctor-card__actions d-flex justify-content-center">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="promo-event">
-                                                <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
-                                                <div class="promo-event__content">
-                                                    <p class="promo-event__title text-lg-xl font-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
-                                                        <b class="font-bold">скидка 20%</b></p>
-                                                    <div class="promo-event__actions">
+                                            <div class="doctor-card doctor-card_vertical d-flex flex-column">
+                                                <div class="doctor-card__image">
+                                                    <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                                    <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                                    <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                                    <div class="doctor-card__actions d-flex justify-content-center">
                                                         <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -645,7 +724,6 @@
                             <script>
                                 const promoswiper = new Swiper('.promo-swiper .swiper', {
                                     preloadImages: false,
-                                    effect: 'fade',
                                     slidesPerView: 1,
                                     spaceBetween: 0,
                                     lazy: {
@@ -669,13 +747,342 @@
                 </div>
             </div>
         </div>
-        <div class="special special_wide d-lg-none">
+        <hr class="m-0">
+        <div class="diseases diseases_wide diseases_prices bg-white">
             <div class="container-fluid container-xxl">
                 <div class="row align-items-end header-links">
-                    <div class="col-12 col-lg"><h2 class="text-uppercase">Специальные предложения</h2></div>
+                    <div class="col-12 col-lg"><h2 class="text-uppercase">Стоимость приема специалиста</h2></div>
+                </div>
+                <div class="prices text-sm text-lg-default">
+                    <div class="prices__tab">
+                        <div class="tab-pane__collapse-sub-header">
+                            <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#priceSubSection1" aria-expanded="false" aria-controls="priceSubSection1"><span class="price__title">Направление</span><span class="label" data-tippy-content="<p>Свободная информация по акции - от названия до тезисного изложения</p><a href='#'>Посмотреть Акцию</a>">Акция</span> <span class="nav-content__arrow d-flex align-items-center"><span class="nav-content__arrow_text d-none d-lg-inline font-medium text-xxs"><span class="nav-content__arrow_closed">Развернуть</span><span class="nav-content__arrow_opened">Свернуть</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                        </div>
+                        <div class="tab-pane__collapse-sub-content collapse" id="priceSubSection1">
+                            <div class="prices__section">
+                                <div class="tab-pane__collapse-sub-sub-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-semibold font-lg-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection1" aria-expanded="false" aria-controls="priceSubSubSection1">Прием специалистов <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection1">
+                                    <ul class="prices__list">
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                            <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span>
+                                            <span class="prices__price">1 595 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                            <span class="prices__price">1 045 ₽</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices__section">
+                                <div class="tab-pane__collapse-sub-sub-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-semibold font-lg-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection2" aria-expanded="false" aria-controls="priceSubSubSection2"><span class="price__title">Услуги</span><span class="label" data-tippy-content="<p>Свободная информация по акции - от названия до тезисного изложения</p><a href='#'>Посмотреть Акцию</a>">Акция</span> <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection2">
+                                    <ul class="prices__list">
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                            <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title"><span class="price__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span><a href="#" onclick="return false" class="label" data-tippy-content="<p>Свободная информация по акции - от названия до тезисного изложения</p><a href='#'>Посмотреть Акцию</a>">Акция</a></span>
+                                            <span class="prices__price">1 595 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                            <span class="prices__price">1 045 ₽</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices__section">
+                                <div class="tab-pane__collapse-sub-sub-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-semibold font-lg-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection3" aria-expanded="false" aria-controls="priceSubSubSection3">Дополнительно <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection3">
+                                    <ul class="prices__list">
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                            <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span>
+                                            <span class="prices__price">1 595 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                            <span class="prices__price">1 045 ₽</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices__extra d-flex align-items-center">
+                                <a href="#" class="btn btn-outline-white btn-light text-uppercase text-xxxxs font-medium">Скачать прайс</a>
+                                <span class="nav-content__arrow d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#priceSubSection1" aria-expanded="false" aria-controls="priceSubSection1"><span class="nav-content__arrow_text d-none d-lg-inline font-medium text-xxs">Свернуть</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span>
+                            </div>
+                        </div>
+                        <div class="tab-pane__collapse-sub-header">
+                            <a href="#" class="tab-pane__collapse-header-link font-bold" data-bs-toggle="collapse" data-bs-target="#priceSubSection2" aria-expanded="false" aria-controls="priceSubSection2"><span class="price__title">Направление</span> <span class="nav-content__arrow d-flex align-items-center"><span class="nav-content__arrow_text d-none d-lg-inline font-medium text-xxs"><span class="nav-content__arrow_closed">Развернуть</span><span class="nav-content__arrow_opened">Свернуть</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                        </div>
+                        <div class="tab-pane__collapse-sub-content collapse" id="priceSubSection2">
+                            <div class="prices__section">
+                                <div class="tab-pane__collapse-sub-sub-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-semibold font-lg-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection21" aria-expanded="false" aria-controls="priceSubSubSection21">Прием специалистов <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection21">
+                                    <ul class="prices__list">
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                            <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span>
+                                            <span class="prices__price">1 595 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                            <span class="prices__price">1 045 ₽</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices__section">
+                                <div class="tab-pane__collapse-sub-sub-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-semibold font-lg-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection22" aria-expanded="false" aria-controls="priceSubSubSection22"><span class="price__title">Услуги</span> <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection22">
+                                    <ul class="prices__list">
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                            <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title"><span class="price__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span></span>
+                                            <span class="prices__price">1 595 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                            <span class="prices__price">1 045 ₽</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices__section">
+                                <div class="tab-pane__collapse-sub-sub-header">
+                                    <a href="#" class="tab-pane__collapse-header-link font-semibold font-lg-medium" data-bs-toggle="collapse" data-bs-target="#priceSubSubSection23" aria-expanded="false" aria-controls="priceSubSubSection23">Дополнительно <span class="nav-content__arrow d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span></a>
+                                </div>
+                                <div class="tab-pane__collapse-sub-sub-content collapse" id="priceSubSubSection23">
+                                    <ul class="prices__list">
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога</span>
+                                            <span class="prices__price"><span class="prices__old-price">1 365 ₽</span> 1 265 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Первичная консультация акушера-гинеколога, к.м.н./высшей квалификационной категории</span>
+                                            <span class="prices__price">1 595 ₽</span>
+                                        </li>
+                                        <li class="prices__item d-flex justify-content-between">
+                                            <span class="prices__title">Повторная консультация акушера-гинеколога</span>
+                                            <span class="prices__price">1 045 ₽</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices__extra d-flex align-items-center">
+                                <a href="#" class="btn btn-outline-white btn-light text-uppercase text-xxxxs font-medium">Скачать прайс</a>
+                                <span class="nav-content__arrow d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#priceSubSection2" aria-expanded="false" aria-controls="priceSubSection2"><span class="nav-content__arrow_text d-none d-lg-inline font-medium text-xxs">Свернуть</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.75 6.5"><polyline points="0.5 0.5 3.25 3.25 0.5 6" style="fill: none;stroke-linecap: round;stroke-linejoin: round"/></svg></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="doctor-list bg-light inner-shadow">
+            <div class="container-fluid container-xxl">
+                <div class="row align-items-end header-links">
+                    <div class="col-12 col-lg"><h2 class="text-uppercase">Коллеги</h2></div>
+                </div>
+                <div class="swiper-container swiper-container_small">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
+                                    <div class="doctor-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                        <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
+                                    <div class="doctor-card__image">
+                                        <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                        <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
+                                    <div class="doctor-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                        <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
+                                    <div class="doctor-card__image">
+                                        <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                        <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
+                                    <div class="doctor-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                        <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
+                                    <div class="doctor-card__image">
+                                        <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                        <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
+                                    <div class="doctor-card__image">
+                                        <a href="#"><img data-src="f/i/doc1.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                        <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Тринчук<br> Ирина Анатольевна</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Стоматолог-терапевт<br> Стаж 7 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctor-card d-flex flex-column flex-lg-row">
+                                    <div class="doctor-card__image">
+                                        <a href="#"><img data-src="f/i/doc2.jpg" class="swiper-lazy"></a>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="doctor-card__content flex-grow-1 d-flex justify-content-between justify-content-xl-center flex-column">
+                                        <p class="doctor-card__name text-lg-xl font-semibold font-lg-medium"><a href="#">Дроздов<br> Алексей Владимирович</a></p>
+                                        <p class="doctor-card__position flex-grow-1 flex-xl-grow-0 text-xs text-lg-sm">Травматолог-ортопед<br> Стаж 10 лет</p>
+                                        <div class="doctor-card__actions d-flex justify-content-center justify-content-lg-start align-items-center">
+                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Записаться</a>
+                                            <a href="#" class="btn btn-link text-xxs font-medium d-none d-lg-inline-block">Профиль врача</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination d-lg-none"></div>
+                    <div class="swiper-button-prev d-none d-lg-flex"></div>
+                    <div class="swiper-button-next d-none d-lg-flex"></div>
+                </div>
+                <script>
+                    const docswiper = new Swiper('.doctor-list .swiper', {
+                        preloadImages: false,
+                        slidesPerView: "auto",
+                        spaceBetween: 15,
+                        slideToClickedSlide: true,
+                        lazy: {
+                            loadPrevNext: true,
+                            loadPrevNextAmount: 2,
+                            checkInView: true,
+                        },
+                        loop: false,
+                        pagination: {
+                            el: '.doctor-list .swiper-pagination',
+                            //dynamicBullets: true
+                        },
+                        watchSlidesProgress: true,
+                        breakpoints: {
+                            992: {
+                                slidesPerView: 2
+                            }
+                        },
+                        navigation: {
+                            nextEl: '.doctor-list .swiper-button-next',
+                            prevEl: '.doctor-list .swiper-button-prev',
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="responses responses_wide-top bg-light inner-shadow">
+            <div class="container-fluid container-xxl">
+                <div class="row align-items-end header-links">
+                    <div class="col-12 col-lg"><h2 class="text-uppercase">Отзывы</h2></div>
                     <div class="col-12 col-lg-auto">
                         <a href="#" class="more">
-                            <span class="text-sm text-lg-default">Все акции</span>
+                            <span class="d-none d-lg-inline">Читать все отзывы</span>
+                            <span class="d-lg-none text-sm">Все отзывы</span>
                         </a>
                     </div>
                 </div>
@@ -683,81 +1090,162 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="promo-event">
-                                    <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
-                                    <div class="promo-event__content">
-                                        <p class="promo-event__title text-lg-xl font-semibold font-lg-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
-                                            <b class="font-bold">скидка 20%</b></p>
-                                        <div class="promo-event__actions">
-                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
-
-                                        </div>
+                                <div class="response-card d-flex flex-column">
+                                    <div class="response-card__date text-xxs text-lg-sm">
+                                        15 июля 2022
+                                    </div>
+                                    <div class="response-card__text text-md text-lg-md flex-grow-1">
+                                        <span class="response-card__text-wrapper">Дунаев Андрей Владимирович, Очень грамотный доктор - невролог высшей категории, врач от Бога,  и просто хороший, чуткий и отзывчивый человек. Были у него на приеме, когда жутко болела голова, но теперь это уже все в порядке</span>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
+                                    </div>
+                                    <div class="response-card__doctor d-flex align-items-center">
+                                        <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc3.jpg" class="swiper-lazy"></a></div>
+                                        <div class="response-card__doctor-details text-xxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="promo-event">
-                                    <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
-                                    <div class="promo-event__content">
-                                        <p class="promo-event__title text-lg-xl font-semibold font-lg-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
-                                            <b class="font-bold">скидка 20%</b></p>
-                                        <div class="promo-event__actions">
-                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
-
-                                        </div>
+                                <div class="response-card d-flex flex-column">
+                                    <div class="response-card__date text-xxs text-lg-sm">
+                                        9 мая 2022
+                                    </div>
+                                    <div class="response-card__text text-md text-lg-md flex-grow-1">
+                                        <span class="response-card__text-wrapper">Про поликлинику узнал от друзей. Приехал из другого города, чтобы пройти обследование перед операцией. Прошел многих специалистов за короткий срок. Был составлен протокол лечения и вот наконец я могу жить </span>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
+                                    </div>
+                                    <div class="response-card__doctor d-flex align-items-center">
+                                        <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc4.jpg" class="swiper-lazy"></a></div>
+                                        <div class="response-card__doctor-details text-xxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="promo-event">
-                                    <img data-src="f/i/aside.jpg" class="swiper-lazy promo-event__image" alt="">
-                                    <div class="promo-event__content">
-                                        <p class="promo-event__title text-lg-xl font-semibold font-lg-medium">Комплексная программа «Быстрые ноги, зоркий глаз» -
-                                            <b class="font-bold">скидка 20%</b></p>
-                                        <div class="promo-event__actions">
-                                            <a href="#" class="btn btn-primary btn-sm text-uppercase text-xxs text-lg-xxs font-medium">Подробнее</a>
-
-                                        </div>
+                                <div class="response-card d-flex flex-column">
+                                    <div class="response-card__date text-xxs text-lg-sm">
+                                        15 июля 2022
+                                    </div>
+                                    <div class="response-card__text text-md text-lg-md flex-grow-1">
+                                        <span class="response-card__text-wrapper">Дунаев Андрей Владимирович, Очень грамотный доктор - невролог высшей категории, врач от Бога,  и просто хороший, чуткий и отзывчивый человек. Были у него на приеме, когда жутко болела голова, но теперь это уже все в порядке</span>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
+                                    </div>
+                                    <div class="response-card__doctor d-flex align-items-center">
+                                        <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc3.jpg" class="swiper-lazy"></a></div>
+                                        <div class="response-card__doctor-details text-xxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="response-card d-flex flex-column">
+                                    <div class="response-card__date text-xxs text-lg-sm">
+                                        9 мая 2022
+                                    </div>
+                                    <div class="response-card__text text-md text-lg-md flex-grow-1">
+                                        <span class="response-card__text-wrapper">Про поликлинику узнал от друзей. Приехал из другого города, чтобы пройти обследование перед операцией. Прошел многих специалистов за короткий срок. Был составлен протокол лечения и вот наконец я могу жить </span>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
+                                    </div>
+                                    <div class="response-card__doctor d-flex align-items-center">
+                                        <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc4.jpg" class="swiper-lazy"></a></div>
+                                        <div class="response-card__doctor-details text-xxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="response-card d-flex flex-column">
+                                    <div class="response-card__date text-xxs text-lg-sm">
+                                        15 июля 2022
+                                    </div>
+                                    <div class="response-card__text text-md text-lg-md flex-grow-1">
+                                        <span class="response-card__text-wrapper">Дунаев Андрей Владимирович, Очень грамотный доктор - невролог высшей категории, врач от Бога,  и просто хороший, чуткий и отзывчивый человек. Были у него на приеме, когда жутко болела голова, но теперь это уже все в порядке</span>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
+                                    </div>
+                                    <div class="response-card__doctor d-flex align-items-center">
+                                        <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc3.jpg" class="swiper-lazy"></a></div>
+                                        <div class="response-card__doctor-details text-xxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="response-card d-flex flex-column">
+                                    <div class="response-card__date text-xxs text-lg-sm">
+                                        9 мая 2022
+                                    </div>
+                                    <div class="response-card__text text-md text-lg-md flex-grow-1">
+                                        <span class="response-card__text-wrapper">Про поликлинику узнал от друзей. Приехал из другого города, чтобы пройти обследование перед операцией. Прошел многих специалистов за короткий срок. Был составлен протокол лечения и вот наконец я могу жить </span>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
+                                    </div>
+                                    <div class="response-card__doctor d-flex align-items-center">
+                                        <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc4.jpg" class="swiper-lazy"></a></div>
+                                        <div class="response-card__doctor-details text-xxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="response-card d-flex flex-column">
+                                    <div class="response-card__date text-xxs text-lg-sm">
+                                        15 июля 2022
+                                    </div>
+                                    <div class="response-card__text text-md text-lg-md flex-grow-1">
+                                        <span class="response-card__text-wrapper">Дунаев Андрей Владимирович, Очень грамотный доктор - невролог высшей категории, врач от Бога,  и просто хороший, чуткий и отзывчивый человек. Были у него на приеме, когда жутко болела голова, но теперь это уже все в порядке</span>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
+                                    </div>
+                                    <div class="response-card__doctor d-flex align-items-center">
+                                        <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc3.jpg" class="swiper-lazy"></a></div>
+                                        <div class="response-card__doctor-details text-xxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дунаев Андрей Владимирович</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="response-card d-flex flex-column">
+                                    <div class="response-card__date text-xxs text-lg-sm">
+                                        9 мая 2022
+                                    </div>
+                                    <div class="response-card__text text-md text-lg-md flex-grow-1">
+                                        <span class="response-card__text-wrapper">Про поликлинику узнал от друзей. Приехал из другого города, чтобы пройти обследование перед операцией. Прошел многих специалистов за короткий срок. Был составлен протокол лечения и вот наконец я могу жить </span>
+                                        <a href="#" class="more more_small font-semibold text-xxs text-lg-sm">Читать полностью</a>
+                                    </div>
+                                    <div class="response-card__doctor d-flex align-items-center">
+                                        <div class="response-card__doctor-image bg-light"><a href="#"><img data-src="f/i/doc4.jpg" class="swiper-lazy"></a></div>
+                                        <div class="response-card__doctor-details text-xxs text-lg-sm">Отзыв о враче <b class="font-semibold">Дроздов Алексей Владимирович</b></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination swiper-pagination_dark d-lg-none"></div>
+                    <div class="swiper-pagination d-lg-none"></div>
                     <div class="swiper-button-prev d-none d-lg-flex"></div>
                     <div class="swiper-button-next d-none d-lg-flex"></div>
                 </div>
                 <script>
-                    const specialswiper = new Swiper('.special .swiper', {
+                    const responsesswiper = new Swiper('.responses .swiper', {
                         preloadImages: false,
                         slidesPerView: "auto",
-                        spaceBetween: 15,
                         slideToClickedSlide: true,
+                        spaceBetween: 15,
+                        breakpoints: {
+                            992: {
+                                slidesPerView: 2
+                            }
+                        },
                         lazy: {
                             loadPrevNext: true,
-                            loadPrevNextAmount: 10,
+                            loadPrevNextAmount: 1,
                             checkInView: true,
                         },
                         loop: false,
                         pagination: {
-                            el: '.special .swiper-pagination',
+                            el: '.responses .swiper-pagination',
                             //dynamicBullets: true
                         },
                         watchSlidesProgress: true,
-                        breakpoints: {
-                            1200: {
-                                slideToClickedSlide: true
-                            }
-                        },
                         navigation: {
-                            nextEl: '.special .swiper-button-next',
-                            prevEl: '.special .swiper-button-prev',
+                            nextEl: '.responses .swiper-button-next',
+                            prevEl: '.responses .swiper-button-prev',
                         },
                     });
                 </script>
             </div>
         </div>
-        <div class="request bg-light inner-shadow">
+        <div class="request bg-light">
             <div class="container-fluid container-xxl">
                 <div class="row align-items-end header-links d-lg-none">
                     <div class="col-12"><h2 class="text-uppercase">Всегда рядом</h2></div>
