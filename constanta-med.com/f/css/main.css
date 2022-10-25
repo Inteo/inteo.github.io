@@ -3523,6 +3523,9 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         margin-left: auto;
         margin-right: auto;
     }
+    .features_condensed {
+        margin-top: 39px;
+    }
 }
 @media (min-width: 1240px) {
     .features__item {
@@ -4592,7 +4595,12 @@ footer {
 /*endregion*/
 /*region About page*/
 .about-page {
-    padding: 32px 0 67px;
+    padding: 32px 0 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 50px;
+}
+.about-page .inner-content__main {
+    padding-bottom: 37px;
 }
 .about-gallery {
     padding-bottom: 112px;
@@ -4631,7 +4639,11 @@ footer {
 }
 @media (max-width: 991.98px) {
     .about-page {
-        padding: 17px 0 30px;
+        padding: 17px 0 0;
+        margin-bottom: 30px;
+    }
+    .about-page .inner-content__block > *:last-child {
+        margin-bottom: 0;
     }
     .about-gallery {
         padding-bottom: 47px;
