@@ -178,7 +178,7 @@
     --bs-dropdown-link-hover-bg: #efefef;
 }
 .dropdown-menu_dark {
-    background: var(--color-background);
+    --bs-dropdown-bg: var(--color-background);
     --bs-dropdown-link-hover-bg: #d6d6d6;
 }
 @media (max-width: 991.98px) {
@@ -799,6 +799,9 @@ ol.list-styled li:before, [data-counter]:before {
 .scrollbar_inside::-webkit-scrollbar-thumb, .scrollbar_inside::-webkit-scrollbar-thumb:window-inactive {
     border-width: 7px;
     border-left-width: 0;
+}
+.dropdown-menu_dark .scrollbar_inside::-webkit-scrollbar-thumb, .dropdown-menu_dark .scrollbar_inside::-webkit-scrollbar-thumb:window-inactive {
+    border-color: var(--color-background);
 }
 .symbols {
     position: fixed;
