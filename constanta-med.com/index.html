@@ -811,7 +811,7 @@
         <div class="pain-locator" id="pain-locator" data-current-step="0">
             <div class="container-fluid container-xxl">
                 <div class="pain-locator__holder" data-current="front">
-                    <div class="pain-locator__figure">
+                    <div class="pain-locator__figure" id="pain-locator-markers">
                         <div class="row align-items-end header-links">
                             <div class="col-12 col-lg"><h2 class="text-uppercase">Нажмите на место <br><span>вашей боли</span></h2></div>
                         </div>
@@ -1094,7 +1094,7 @@
                             $(document).ready(function() {
                                 tippy('[data-tippy-marker]', {
                                     theme: 'light',
-                                    appendTo: document.getElementById('pain-locator'),
+                                    appendTo: document.getElementById('pain-locator-markers'),
                                     maxWidth: 200,
                                     trigger: 'manual',
                                     hideOnClick: false,
@@ -1102,16 +1102,19 @@
                                 });
                                 let currentInstance = false, $stepHolder = $('[data-current-step]');
                                 $('.pain-locator__marker').each(function(index) {
-                                    const instance = $(this)[0]._tippy, tippyText = $(this).data('tippy-marker');
+                                    const elem = $(this)[0], instance = elem._tippy, tippyText = $(this).data('tippy-marker');
                                     instance.setContent(tippyText);
                                     $(this).click(function() {
                                         if ($(this).hasClass('active')) return false;
+                                        const popperInstance = elem._tippy.popperInstance;
                                         $('.pain-locator__marker.active').removeClass('active');
+                                        $stepHolder.attr('data-current-step', 1);
                                         $(this).addClass('active');
+                                        popperInstance.update();
                                         instance.show();
                                         if (currentInstance !== false) currentInstance.hide();
                                         currentInstance = instance;
-                                        $stepHolder.attr('data-current-step', 1);
+
                                         if (currentSlide > 1) {
                                             swiperPain.enable();
                                             swiperPain.slideTo(0, 300);
