@@ -574,6 +574,9 @@ h2 span:not([class]) {
 .header-links .more {
     margin-top: -4px;
 }
+.header-links h2 + p {
+    margin-top: 17px;
+}
 ol.list-styled {
     list-style-type: none;
     counter-reset: num;
@@ -1015,6 +1018,9 @@ ol.list-styled li:before, [data-counter]:before {
     user-select: none;
     cursor: pointer;
 }
+.radio input:disabled + label {
+    cursor: default;
+}
 .radio input + label:after, .radio input + label:before {
     position: absolute;
     display: block;
@@ -1417,7 +1423,7 @@ img.swiper-lazy-loaded, img.lozad[data-loaded="true"] {
 .noUi-marker-horizontal.noUi-marker-large {
     height: 12px;
 }
-.noUi-pips .noUi-value-large + .noUi-marker + .noUi-marker + .noUi-marker + .noUi-marker + .noUi-marker {
+#pain-measure .noUi-pips .noUi-value-large + .noUi-marker + .noUi-marker + .noUi-marker + .noUi-marker + .noUi-marker {
     height: 12px;
 }
 /*endregion*/
@@ -2734,9 +2740,16 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     background: #fff;
     padding: 20px;
 }
+.pain-locator__current .hr_light {
+    margin: 26px -20px 17px;
+    border-top: 1px solid #eaeaea;
+}
 .pain-locator__content {
     position: relative;
     margin-top: 39px;
+}
+.pain-locator__measure > * {
+    outline: none!important;
 }
 .pain-locator__measure.noUi-target.noUi-horizontal {
     margin: 0 20px 50px;
@@ -2845,6 +2858,18 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     top: 0;
     transform: translateX(-50%);
 }
+.pain-locator__actions_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pain-locator__actions_group .pain-locator__actions-button {
+    position: static;
+    transform: translateX(0);
+}
+.pain-locator__actions_group .pain-locator__actions-button + .pain-locator__actions-button {
+    margin-left: 10px;
+}
 [data-no-step] .btn {
     opacity: 0;
     visibility: hidden;
@@ -2914,6 +2939,11 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
 .pain-locator__current[data-step='2'] .pain-locator__measure.noUi-target.noUi-horizontal {
     margin-bottom: 36px;
 }
+.pain-locator__title {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+}
 @media (max-width: 991.98px) {
     [data-current-step] .pain-locator__steps-holder {
         transform: translateX(0);
@@ -2960,17 +2990,15 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         margin-bottom: 14px;
     }
     .pain-locator__actions {
-        margin-top: 18px;
+        margin-top: 33px;
+        height: 34px;
+        padding-bottom: 0;
     }
     .pain-locator__actions .btn {
         min-width: 102px;
     }
     .pain-locator__measure.noUi-target.noUi-horizontal {
         margin-bottom: 45px;
-    }
-    .pain-locator__actions {
-        height: 34px;
-        padding-bottom: 0;
     }
     .pain-locator__side_front {
         z-index: 2;
@@ -2993,15 +3021,15 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         transform: translateY(0);
     }
     .pain-locator__select-step {
-        transition: height .3s;
-        overflow: hidden;
-        height: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        /*transition: height .3s;*/
+
+        display: none;
     }
     [data-current-step='0'] .pain-locator__select-step {
         height: 63px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
     .pain-locator__select-step .btn {
         display: block;
@@ -3021,27 +3049,36 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     .pain-locator__side-holder {
         width: 100%;
     }
-    .pain-locator .header-links {
-        margin-bottom: 45px;
-    }
     .pain-locator__current {
         padding: 34px 49px;
     }
-    .pain-locator__holder {
+    .pain-locator__current .hr_light {
+        margin: 30px -49px 20px;
+    }
+    .pain-locator__holder, .pain-locator__title {
         display: flex;
     }
+    .pain-locator__content {
+        padding-bottom: 13px;
+    }
     .pain-locator__steps {
+        padding-top: 30px;
+    }
+    .pain-locator__steps, .pain-locator__title-second {
         margin-left: 30px;
         flex: 0 0 calc(50% - 15px);
         max-width: calc(50% - 15px);
     }
-    .pain-locator__figure {
+    .pain-locator__figure, .pain-locator__title-first {
         flex: 1 1 auto;
+    }
+    .pain-locator__title-first p {
+        max-width: 620px;
     }
     .pain-locator__step-title {
         font-size: 30px;
-        line-height: 40px;
-        margin-bottom: 20px;
+        line-height: 35px;
+        margin-bottom: 25px;
     }
     .pain-locator__sides-holder {
         display: flex;
@@ -3054,7 +3091,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     .pain-locator__side, .pain-locator__side-holder {
         width: 296px;
     }
-    .pain-locator__steps {
+    .pain-locator__steps, .pain-locator__title-second {
         margin-left: 30px;
         flex: 0 0 42.14%;
         max-width: 42.14%;

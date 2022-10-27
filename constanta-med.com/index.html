@@ -810,11 +810,21 @@
         </div>
         <div class="pain-locator" id="pain-locator" data-current-step="0">
             <div class="container-fluid container-xxl">
-                <div class="pain-locator__holder" data-current="front">
-                    <div class="pain-locator__figure" id="pain-locator-markers">
-                        <div class="row align-items-end header-links">
-                            <div class="col-12 col-lg"><h2 class="text-uppercase">Нажмите на место <br><span>вашей боли</span></h2></div>
+                <div class="pain-locator__title">
+                    <div class="pain-locator__title-first">
+                        <div class="header-links">
+                            <h2>Нажмите на место вашей боли</h2>
+                            <p class="text-md">Чтобы узнать свой диагноз и&nbsp;тактику лечения, нажмите на&nbsp;красный маркер на&nbsp;человеке и&nbsp;укажите характеристики боли из&nbsp;выпадающего списка.</p>
                         </div>
+                    </div>
+                    <div class="pain-locator__title-second d-none d-lg-block">
+                        <div class="header-links">
+                            <h2>Выберите характеристики вашей боли</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="pain-locator__holder" data-current="front">
+                    <div class="pain-locator__figure">
                         <div class="pain-locator__content">
                             <div class="pain-locator__sides">
                                 <div class="pain-locator__sides-holder">
@@ -965,9 +975,7 @@
                         </div>
                     </div>
                     <div class="pain-locator__steps">
-                        <div class="row align-items-end header-links d-none d-lg-block">
-                            <div class="col-12 col-lg"><h2 class="text-uppercase">Укажите характеристику <br><span>вашей боли</span></h2></div>
-                        </div>
+
                         <div class="pain-locator__steps-holder swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -1016,18 +1024,21 @@
                                             <script>
                                                 const painLength = document.getElementById('pain-length');
                                                 noUiSlider.create(painLength, {
-                                                    start: [7],
+                                                    start: [1.5],
                                                     connect: 'upper',
-                                                    step: 1,
-                                                    //tooltips: [wNumb({decimals: 0})],
+                                                    step: 0.5,
+                                                    tooltips: [wNumb({decimals: 1, edit: function(a){
+                                                            return (Math.round(a) == a) ? (Math.round(a) == 1) ? '<1' : (Math.round(a) == 3) ? '>3' : Math.round(a) : a;
+                                                        }})
+                                                    ],
                                                     range: {
                                                         'min': [1],
-                                                        'max': [20]
+                                                        'max': [3]
                                                     },
                                                     pips: {
                                                         mode: 'count',
-                                                        values: 20,
-                                                        density: 1,
+                                                        values: 10,
+                                                        density: 1.2,
                                                         stepped: true
                                                     }
                                                 });
@@ -1037,7 +1048,8 @@
                                                 <div class="pain-locator__type-item text-center">1,5–2 мес</div>
                                                 <div class="pain-locator__type-item text-right">3 мес и более</div>
                                             </div>
-                                            <div class="pain-locator__actions">
+                                            <div class="pain-locator__actions pain-locator__actions_group">
+                                                <span class="pain-locator__actions-button" data-pain-prev><span class="btn btn-outline-primary font-medium text-xxs text-uppercase">Назад</span></span>
                                                 <span class="pain-locator__actions-button" data-pain-next><span class="btn btn-primary font-medium text-xxs text-uppercase">Дальше</span></span>
                                             </div>
                                         </div>
@@ -1046,7 +1058,7 @@
                                 <div class="swiper-slide">
                                     <div class="pain-locator__current" data-step="3">
                                         <div class="pain-locator__step">
-                                            <div class="pain-locator__step-title font-medium">Укажите характеристику боли</div>
+                                            <div class="pain-locator__step-title font-medium">Укажите область и характеристику боли</div>
 
                                             <div class="radio text-xs text-lg-default">
                                                 <input id="painchar1" type="radio" name="painchar" checked/>
@@ -1064,8 +1076,83 @@
                                                 <input id="painchar4" type="radio" name="painchar"/>
                                                 <label for="painchar4">Болит по внутренней поверхности</label>
                                             </div>
-                                            <div class="pain-locator__actions pain-locator__actions_condensed">
+                                            <div class="pain-locator__actions pain-locator__actions_condensed pain-locator__actions_group">
+                                                <span class="pain-locator__actions-button" data-pain-prev><span class="btn btn-outline-primary font-medium text-xxs text-uppercase">Назад</span></span>
                                                 <span class="pain-locator__actions-button" data-pain-next><span class="btn btn-primary font-medium text-xxs text-uppercase">Дальше</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="pain-locator__current" data-step="4">
+                                        <div class="pain-locator__step">
+                                            <div class="pain-locator__step-title font-medium">Предполагаемый диагноз</div>
+
+                                            <div class="radio text-xs text-lg-default">
+                                                <input id="paindiagnose1" type="radio" name="paindiagnose" checked disabled/>
+                                                <label for="paindiagnose1">Бурсит локтевой сумки</label>
+                                            </div>
+                                            <hr class="hr_light">
+                                            <div class="pain-locator__step-title font-medium">Возможные варианты</div>
+                                            <div class="radio text-xs text-lg-default">
+                                                <input id="paindiagnose2" type="radio" name="paindiagnose" disabled/>
+                                                <label for="paindiagnose2">Туннельный синдром</label>
+                                            </div>
+                                            <div class="radio text-xs text-lg-default">
+                                                <input id="paindiagnose3" type="radio" name="paindiagnose" disabled/>
+                                                <label for="paindiagnose3">Локоть теннисиста</label>
+                                            </div>
+
+                                            <div class="pain-locator__actions pain-locator__actions_condensed pain-locator__actions_group">
+                                                <span class="pain-locator__actions-button"><span class="btn btn-primary font-medium text-xxs text-uppercase">Записаться</span></span>
+                                                <span class="pain-locator__actions-button" data-pain-next><span class="btn btn-outline-primary font-medium text-xxs text-uppercase">Как лечить</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="pain-locator__diagnose" data-step="5">
+                                        <div class="pain-locator__diagnose-variants">
+                                            <div class="pain-locator__diagnose-variants-item">
+                                                <div class="pain-locator__diagnose-variants-title pain-locator__diagnose-variants-title_important">
+                                                    80%
+                                                </div>
+                                                <div class="pain-locator__diagnose-variants-content">
+                                                    <div class="text-mlg">Бурсит локтевой сумки</div>
+                                                    <div class="text-md">Вероятность данного диагноза составляет 80%</div>
+                                                </div>
+                                            </div>
+                                            <div class="pain-locator__diagnose-variants-item">
+                                                <div class="pain-locator__diagnose-variants-title">
+                                                    20%
+                                                </div>
+                                                <div class="pain-locator__diagnose-variants-content">
+                                                    <div class="text-mlg">Менее вероятный диагноз</div>
+                                                    <div class="text-md">- Туннельный синдром<br>- Локоть теннисиста</div>
+                                                </div>
+                                            </div>
+                                            <div class="pain-locator__diagnose-variants-item">
+                                                <div class="pain-locator__diagnose-variants-title">
+                                                    20%
+                                                </div>
+                                                <div class="pain-locator__diagnose-variants-content">
+                                                    <div class="text-mlg">Симптомы</div>
+                                                    <div class="text-md">
+                                                        - Локоть болит не сбоку, а вершинка локтевого отростка<br>
+                                                        - Покраснение<br>
+                                                        - Отёк<br>
+                                                        - Боль при надавливании<br>
+                                                        - Местная повышенная температура
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pain-locator__diagnose-actions">
+                                                <span class="btn btn-primary font-medium text-xxs text-uppercase">План лечения</span>
+                                            </div>
+                                            <div class="pain-locator__disease">
+                                                <img src="f/i/disease1.jpg" alt="">
+                                                <p class="h2">Что такое бурсит локтевой сумки?</p>
+                                                <p>В локте находится небольшое пространство (сумка) с жидкостью, которая снижает трение и защищает ткани от быстрого износа. Переизбыток жидкости приводит к воспалению.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1136,6 +1223,12 @@
                                     currentSlide++;
                                     swiperPain.enable();
                                     swiperPain.slideNext(300);
+                                    swiperPain.disable();
+                                });
+                                $('[data-pain-prev]').click(function() {
+                                    currentSlide--;
+                                    swiperPain.enable();
+                                    swiperPain.slidePrev(300);
                                     swiperPain.disable();
                                 });
                                 $('.pain-locator__switch-item').click(function(){
