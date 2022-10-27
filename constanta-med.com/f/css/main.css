@@ -3144,6 +3144,9 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         margin-bottom: 60px;
         padding-top: 0;
     }
+    .pain-locator__diagnose-actions .btn {
+        min-width: 174px;
+    }
     .pain-locator__disease {
         padding-bottom: 10px;
     }
