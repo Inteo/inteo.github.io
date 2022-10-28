@@ -29,6 +29,7 @@
     --swiper-preloader-color: rgba(0,0,0,.12);
     --color-background: #efefef;
     --bs-gutter-x: 30px;
+    --hr-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAKCAIAAAD6sKMdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDQ4OCwgMjAyMC8wNy8xMC0yMjowNjo1MyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjAgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA3RDg1RUM3NDMxQzExRURCOEQxQTRGNjFDOEI4Q0NFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA3RDg1RUM4NDMxQzExRURCOEQxQTRGNjFDOEI4Q0NFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDdEODVFQzU0MzFDMTFFREI4RDFBNEY2MUM4QjhDQ0UiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDdEODVFQzY0MzFDMTFFREI4RDFBNEY2MUM4QjhDQ0UiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6mpyWeAAAAKUlEQVR42hzDwQkAMAwCQGPQ/Sd0Eh8tOTgkYVtKou27u5wZArjfE2AAzs4F5pkNiuoAAAAASUVORK5CYII=");
 }
 .main-presentation {
     --swiper-pagination-bullet-inactive-color: #fff;
@@ -2875,6 +2876,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     visibility: hidden;
     transform: translateX(-50px);
 }
+/*
 [data-next-step='2'] .btn {
     opacity: 0;
     visibility: hidden;
@@ -2889,7 +2891,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-}
+}*/
 .pain-locator__sides-holder {
     margin: 0 auto;
 }
@@ -2907,7 +2909,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     width: 100%;
     height: 100%;
 }
-.pain-locator__marker {
+.pain-locator__marker, .pain-locator__marker-swap {
     position: absolute;
     left: 0;
     top: 0;
@@ -2916,7 +2918,13 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     transition: all .3s;
     transform: translateY(-50%) translateX(-50%);
 }
-.pain-locator__marker svg {
+.pain-locator__marker {
+    color: var(--color-important);
+}
+.pain-locator__marker-swap {
+    color: #575757;
+}
+.pain-locator__marker svg, .pain-locator__marker-swap svg {
     display: block;
     width: 20px;
     height: 20px;
@@ -2969,7 +2977,7 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     height: 100px;
 }
 .pain-locator__diagnose-icon.active {
-    animation: zoom-in-zoom-out 2s ease-in-out 2;
+    animation: zoom-in-zoom-out 1.5s ease-in-out 2;
 }
 @keyframes zoom-in-zoom-out {
     0% {
@@ -2982,7 +2990,109 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         transform: scale(1);
     }
 }
+.pain-locator__diagnose-variants-title {
+    font-weight: bold;
+    color: var(--color-main);
+}
+.pain-locator__diagnose-variants-title_important {
+    color: var(--color-important);
+}
+.pain-locator__diagnose-actions .btn {
+    min-width: 174px;
+}
+.pain-locator__possible {
+    position: relative;
+    padding-left: 45px;
+}
+.pain-locator__possible svg {
+    position: absolute;
+    left: 0;
+    top: -3px;
+    width: 28px;
+    height: 28px;
+    color: var(--color-important);
+}
+.pain-locator__possible_secondary svg  {
+    color: #73738c;
+}
+.pain-locator__possible + .pain-locator__possible {
+    margin-top: 12px;
+}
+.pain-locator__error {
+    color: var(--color-important);
+    padding-top: 5px;
+    display: none;
+}
+.pain-locator__step-close {
+    display: none;
+}
 @media (max-width: 991.98px) {
+    .pain-locator__step-close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -8px;
+        top: -8px;
+        width: 33px;
+        height: 33px;
+        background: #b0bcc5;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .pain-locator__step-close svg {
+        width: 13px;
+        height: 13px;
+    }
+    .pain-locator__possible {
+        padding-left: 33px;
+    }
+    .pain-locator__possible svg {
+        width: 22px;
+        height: 22px;
+        top: -2px;
+    }
+    .pain-locator__diagnose-variants {
+        padding: 45px 15px 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .pain-locator__disease, .pain-locator__diagnose-variants {
+        background-image: var(--hr-image);
+        background-repeat: repeat-x;
+    }
+    .pain-locator__disease {
+        padding: 45px 15px 0;
+    }
+    .pain-locator__disease .h2 {
+        margin: 30px 0 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .pain-locator__diagnose-variants-item + .pain-locator__diagnose-variants-item {
+        border-top: 1px solid #eaeaea;
+        padding-top: 30px;
+        margin-top: 30px
+    }
+    .pain-locator__diagnose-variants-title {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 15px;
+    }
+    .pain-locator__diagnose-icon, .pain-locator__diagnose-icon svg {
+        width: 76px;
+        height: 76px;
+    }
+    .pain-locator__diagnose-icon {
+        margin: 0 auto;
+    }
+    .pain-locator__diagnose-actions {
+        margin: 0 0 30px;
+        text-align: center;
+    }
+    .pain-locator__holder {
+        position: relative;
+    }
     [data-current-step] .pain-locator__steps-holder {
         transform: translateX(0);
         opacity: 1;
@@ -3035,6 +3145,9 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     .pain-locator__actions .btn {
         min-width: 102px;
     }
+    .pain-locator__actions .pain-locator__error {
+        display: none;
+    }
     .pain-locator__measure.noUi-target.noUi-horizontal {
         margin-bottom: 45px;
     }
@@ -3046,9 +3159,13 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     }
     .pain-locator__steps {
         position: absolute;
-        left: 15px;
-        bottom: 30px;
-        right: 15px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        visibility: visible;
+    }
+    [data-current-step="0"] .pain-locator__steps {
+        visibility: hidden;
     }
     [data-no-step] {
         display: none;
@@ -3059,12 +3176,10 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         transform: translateY(0);
     }
     .pain-locator__select-step {
-        /*transition: height .3s;*/
-
+        padding-top: 28px;
         display: none;
     }
     [data-current-step='0'] .pain-locator__select-step {
-        height: 63px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -3073,8 +3188,30 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
         display: block;
         width: 100%;
     }
+    .pain-locator__select-step-holder .btn-outline-danger svg {
+        margin-left: 10px;
+        margin-top: -3px;
+        margin-bottom: -2px;
+        transform: rotate(-90deg);
+    }
+    .pain-locator__select-step-holder .btn-outline-danger svg path {
+        fill: var(--color-important);
+    }
+    .pain-locator__results {
+        transition: max-height .3s;
+        max-height: 0;
+        overflow: hidden;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .pain-locator__results.active {
+        max-height: 5000px;
+    }
 }
 @media (min-width: 992px) {
+    .pain-locator__marker-swap {
+        display: none;
+    }
     .pain-locator {
         padding: 50px 0;
     }
@@ -3101,6 +3238,11 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     }
     .pain-locator__steps {
         padding-top: 30px;
+    }
+    [data-current-step='0'] [data-pain-next] .btn {
+        background: #b7b7b7!important;
+        border-color: #b7b7b7!important;
+        color: #fff!important;
     }
     .pain-locator__steps, .pain-locator__title-second {
         margin-left: 30px;
@@ -3133,19 +3275,11 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     .pain-locator__diagnose-variants-title {
         font-size: 80px;
         line-height: 60px;
-        font-weight: bold;
         flex: 0 0 210px;
-        color: var(--color-main);
-    }
-    .pain-locator__diagnose-variants-title_important {
-        color: var(--color-important);
     }
     .pain-locator__diagnose-actions {
         margin-bottom: 60px;
         padding-top: 0;
-    }
-    .pain-locator__diagnose-actions .btn {
-        min-width: 174px;
     }
     .pain-locator__disease {
         padding-bottom: 10px;
@@ -3155,6 +3289,12 @@ a:hover .icon_search svg path, a:hover .icon_search svg line {
     }
     .pain-locator__disease .h2 {
         margin-bottom: 20px;
+    }
+    .pain-locator__actions .pain-locator__error {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -35px;
     }
 }
 @media (min-width: 1100px) {
